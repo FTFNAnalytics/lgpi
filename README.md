@@ -1,7 +1,83 @@
 # LGPI 2023 Reconstruction
 
-Independent, source-cited reconstruction of the Local Government Performance Index (LGPI) for fiscal year 2023.
+A pitch-ready, source-cited reconstruction of Canada's Local Government Performance Index (LGPI) for fiscal year 2023.
 
-This repository is a pitch-ready working prototype. It reproduces the published LGPI transparency methodology and core municipal-data browsing experience from public sources, while adding modern provenance, coverage, and QA conventions.
+This project starts by faithfully reproducing the published LGPI transparency methodology and legacy financial field structure, then improves the product layer with modern navigation, explicit provenance, coverage reporting, QA states, and a maintainable ingestion model.
 
-Development work continues on the `build/2023-reconstruction` branch.
+## What works now
+
+- Modern Next.js frontend.
+- 2023 Transparency Index explorer.
+- 80 of 99 published municipality totals reconstructed.
+- 73 municipality records with all ten transparency components.
+- Municipality profile pages.
+- Side-by-side comparison.
+- Reconstructed legacy financial metric catalogue.
+- Official-source 2023 financial seed observations for Calgary, Edmonton, and Toronto.
+- Source links and review states on financial observations.
+- Explicit missing-data semantics: pending is never treated as zero.
+- Known publication discrepancies documented rather than hidden.
+- CI typecheck and production build.
+
+## Current coverage
+
+| Layer | Status |
+| --- | ---: |
+| Published municipality universe | 99 |
+| Verified 2023 transparency totals | 80 |
+| Full component breakdowns | 73 |
+| Quebec transparency records pending extraction | 19 |
+| Legacy financial fields reconstructed | 57 |
+| Official financial observations seeded | 9 |
+
+The transparency data is reconstructed from Frontier Centre's 2025 LGPI publication, which assesses 2023 municipal financial statements. The financial layer is being rebuilt independently from official municipal reports and provincial data sources.
+
+## Product routes
+
+- `/` — overview and municipality search
+- `/transparency` — sortable/filterable 2023 index
+- `/cities` — municipality directory
+- `/cities/[slug]` — evidence-backed municipality profile
+- `/compare` — two-municipality comparison
+- `/metrics` — legacy LGPI financial metric explorer
+- `/methodology` — reconstruction methodology and QA rules
+
+## Data philosophy
+
+The reconstruction uses five explicit financial observation states:
+
+- `reported`
+- `pending_review`
+- `not_reported`
+- `not_applicable`
+- `source_unavailable`
+
+No blank field is silently converted to zero.
+
+Legacy LGPI per-household and provincial-average calculations are intentionally withheld until the exact 2023 dwelling denominators and aggregation rules are verified.
+
+## Research notes
+
+See:
+
+- [Reconstruction status](docs/RECONSTRUCTION_STATUS.md)
+- [Data provenance and QA contract](docs/DATA_PROVENANCE.md)
+- [Next data tranche](docs/NEXT_DATA_TRANCHE.md)
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+For validation:
+
+```bash
+npm run typecheck
+npm run build
+```
+
+## Status
+
+This is an independent reconstruction/prototype, not an official Frontier Centre production release. The objective is to demonstrate that the existing LGPI can be reproduced, brought current, and turned into a transparent, maintainable municipal-data product without inventing missing observations.
