@@ -103,7 +103,7 @@ ROWS = {
         "depreciation_object": (154974, 102, "Amortization", "reported", None),
         "depreciation_function": (154974, 102, "Amortization", "reported", None),
         "object_other": (1804, 102, "Accretion", "reported", None),
-        "total_expenditure_object": (988598, 102, "Total", "reported", None),
+        "total_expenditure_object": (988598, 102, "Total", "derived", "Derived from the eight audited expense-by-object components, which sum to $988.598m and reconcile to the Statement of Operations. The PDF text layer mis-renders the printed total as 998,598."),
     },
     "winnipeg": {
         "financial_assets_total": (1686720, 52, "Financial Assets", "reported", None),
