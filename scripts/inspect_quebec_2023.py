@@ -168,6 +168,12 @@ def probe_mamh_workbook(payload: bytes) -> None:
         "frais de financement",
     ]
     print("ACCOUNTING CODE CANDIDATES:")
+    exact_prefixes=("CRIIX0044","CRIIX0045","CRIIX0054","CRIIX0055","CRIIX0056","CRIIX006","CRIIX018")
+    print("EXACT CURRENT-YEAR INTEGRAL CODE NEIGHBORHOODS:")
+    for row in desc.iter_rows(min_row=2,values_only=True):
+        code=str(row[0] or "")
+        if code.startswith(exact_prefixes):
+            print(f"  EXACT {code} | {row[1]} | {row[2]} | {row[3]}")
     seen=set()
     for row in desc.iter_rows(min_row=2,values_only=True):
         code=str(row[0] or "")
