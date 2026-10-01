@@ -22,8 +22,16 @@ LGPI_URL = "https://lgpi.ca/"
 
 
 def fetch(url: str) -> bytes:
+    parsed=urllib.parse.urlsplit(url)
+    safe_url=urllib.parse.urlunsplit((
+        parsed.scheme,
+        parsed.netloc,
+        urllib.parse.quote(urllib.parse.unquote(parsed.path), safe="/"),
+        parsed.query,
+        parsed.fragment,
+    ))
     request = urllib.request.Request(
-        url,
+        safe_url,
         headers={"User-Agent":"LGPI-reconstruction/0.1 (+https://github.com/FTFNAnalytics/lgpi)"},
     )
     with urllib.request.urlopen(request, timeout=120) as response:
@@ -62,7 +70,10 @@ def recover_lgpi_city_options() -> list[str]:
         raise RuntimeError("No select options found on LGPI homepage")
     labels=max(candidates,key=lambda x:x[0])[1]
     # remove prompt labels
-    labels=[x for x in labels if x.lower() not in {"select","browse cities","city","choose a city"}]
+    labels=[
+        x for x in labels
+        if x.lower() not in {"select","browse cities","city","choose a city","- choose a city -"}
+    ]
     return labels
 
 
