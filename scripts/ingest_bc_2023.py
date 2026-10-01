@@ -44,7 +44,7 @@ TARGETS = {
     "delta": ("DELTA",),
     "kamloops": ("KAMLOOPS",),
     "kelowna": ("KELOWNA",),
-    "langley-township": ("LANGLEY TOWNSHIP", "TOWNSHIP OF LANGLEY", "LANGLEY, TOWNSHIP"),
+    "langley-township": ("LANGLEY",),
     "maple-ridge": ("MAPLE RIDGE",),
     "nanaimo": ("NANAIMO",),
     "new-westminster": ("NEW WESTMINSTER",),
@@ -54,6 +54,10 @@ TARGETS = {
     "saanich": ("SAANICH",),
     "vancouver": ("VANCOUVER",),
     "victoria": ("VICTORIA",),
+}
+
+TARGET_TYPES = {
+    "langley-township": "D",
 }
 
 
@@ -94,12 +98,14 @@ def load_schedule(code: str, url: str) -> Schedule:
     ws = workbook[workbook.sheetnames[0]]
     headers = [str(v).strip() if v is not None else "" for v in next(ws.iter_rows(min_row=2, max_row=2, values_only=True))]
     rows: dict[str, dict[str, object]] = {}
-    for values in ws.iter_rows(min_row=3, values_only=True):
+    for row_number, values in enumerate(ws.iter_rows(min_row=3, values_only=True), start=3):
         if not values or values[0] is None:
             continue
         name = str(values[0]).strip()
         row = {header: values[i] if i < len(values) else None for i, header in enumerate(headers) if header}
-        rows[name] = row
+        row["_source_row"] = row_number
+        row_key = f"{name}::{row.get('Type')}::{row.get('RD')}::{row_number}"
+        rows[row_key] = row
     return Schedule(code=code, url=url, headers=headers, rows=rows)
 
 
@@ -107,14 +113,39 @@ def find_target_names(schedule: Schedule) -> dict[str, str]:
     found: dict[str, str] = {}
     for slug, aliases in TARGETS.items():
         needles = {normalize_name(alias) for alias in aliases}
-        exact = [name for name in schedule.rows if normalize_name(name) in needles]
+        expected_type = TARGET_TYPES.get(slug)
+
+        def eligible(item: tuple[str, dict[str, object]]) -> bool:
+            _, row = item
+            if expected_type is None:
+                return True
+            return str(row.get("Type") or "").strip().upper() == expected_type
+
+        exact = [
+            key for key, row in schedule.rows.items()
+            if eligible((key, row))
+            and normalize_name(row.get("Municipalities")) in needles
+        ]
         fuzzy = [
-            name for name in schedule.rows
-            if any(needle in normalize_name(name) for needle in needles)
+            key for key, row in schedule.rows.items()
+            if eligible((key, row))
+            and any(needle in normalize_name(row.get("Municipalities")) for needle in needles)
         ]
         matches = exact if exact else fuzzy
         if len(matches) != 1:
-            raise RuntimeError(f"Expected one BC source row for {slug}; exact={exact}, fuzzy={fuzzy}")
+            detail = [
+                {
+                    "name": schedule.rows[key].get("Municipalities"),
+                    "type": schedule.rows[key].get("Type"),
+                    "rd": schedule.rows[key].get("RD"),
+                    "source_row": schedule.rows[key].get("_source_row"),
+                }
+                for key in matches
+            ]
+            raise RuntimeError(
+                f"Expected one BC source row for {slug}; "
+                f"expected_type={expected_type!r}, matches={detail}"
+            )
         found[slug] = matches[0]
     return found
 
@@ -319,7 +350,7 @@ def main() -> None:
         stats_row = schedules["201"].rows[row_names["201"]]
         municipalities.append({
             "slug": slug,
-            "sourceMunicipality": row_names["301"],
+            "sourceMunicipality": schedules["301"].rows[row_names["301"]].get("Municipalities"),
             "sourceType": schedules["301"].rows[row_names["301"]].get("Type"),
             "regionalDistrictCode": schedules["301"].rows[row_names["301"]].get("RD"),
             "population2021Census": numeric(stats_row.get("2021 Census")),
