@@ -11,7 +11,7 @@ Move the prototype from a strong transparency reconstruction to a broad 2023 fin
 3. Alberta reference extraction is complete: all 9 LGPI Alberta municipalities are generated from the official 2023 FIR/SIR workbook, with Calgary reconciled to its audited report.
 4. B.C. structured-schedule extraction is complete: all 17 LGPI municipalities are generated from eight official 2023 provincial schedules with cross-schedule reconciliation.
 5. Ontario FIR extraction is complete for the 40 source-available LGPI municipalities; Hamilton remains explicitly source-unavailable in Ontario's 2023 system.
-6. Complete the remaining 13 financial profiles: Regina, Saskatoon, Winnipeg; Halifax, Cape Breton, Moncton, Fredericton, Saint John, St. John's, Charlottetown; Whitehorse, Yellowknife and Iqaluit.
+6. Prairie statement extraction is complete. Complete the final 10 financial profiles: Halifax, Cape Breton, Moncton, Fredericton, Saint John, St. John's, Charlottetown, Whitehorse, Yellowknife and Iqaluit.
 7. Source the Statistics Canada dwelling denominators used by LGPI.
 8. Reproduce dollars-per-household and provincial-average calculations.
 9. Run reconciliation checks against historical LGPI values that remain publicly accessible.

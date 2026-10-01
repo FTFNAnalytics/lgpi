@@ -1,0 +1,1341 @@
+{
+  "schemaVersion": 1,
+  "year": 2023,
+  "sourceType": "audited_annual_reports",
+  "municipalities": [
+    {
+      "slug": "regina",
+      "name": "Regina",
+      "province": "SK",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "observationCount": 23
+    },
+    {
+      "slug": "saskatoon",
+      "name": "Saskatoon",
+      "province": "SK",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "observationCount": 34
+    },
+    {
+      "slug": "winnipeg",
+      "name": "Winnipeg",
+      "province": "MB",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "observationCount": 28
+    }
+  ],
+  "observations": [
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 650290,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 38",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "pdf:p38:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 676515,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 38",
+      "sourceReportedLabel": "Financial liabilities",
+      "sourceFieldCodes": [
+        "pdf:p38:Financial liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": -26225,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 38",
+      "sourceReportedLabel": "Net financial (debt) assets",
+      "sourceFieldCodes": [
+        "pdf:p38:Net financial (debt) assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 313122,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 43",
+      "sourceReportedLabel": "Total debt outstanding",
+      "sourceFieldCodes": [
+        "pdf:p43:Total debt outstanding"
+      ],
+      "mappingMethod": "direct",
+      "note": "Consolidated debt outstanding across the City and controlled/accountable agencies."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 322119,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Taxation",
+      "sourceFieldCodes": [
+        "pdf:p54:Taxation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 267363,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Fees and charges",
+      "sourceFieldCodes": [
+        "pdf:p54:Fees and charges"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 175482,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Government transfers",
+      "sourceFieldCodes": [
+        "pdf:p54:Government transfers"
+      ],
+      "mappingMethod": "direct",
+      "note": "The consolidated statement combines operating and capital government transfers."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 20568,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Interest on investments",
+      "sourceFieldCodes": [
+        "pdf:p54:Interest on investments"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "developer_contributions",
+      "valueThousands": 10755,
+      "status": "pending_review",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Servicing agreement fees + Contribution of tangible capital assets",
+      "sourceFieldCodes": [
+        "pdf:p54:Servicing agreement fees + Contribution of tangible capital assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Derived from servicing agreement fees ($7.118m) plus contributed tangible capital assets ($3.637m); retained pending review against the legacy LGPI developer-contribution convention."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 82178,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Other consolidated revenue categories",
+      "sourceFieldCodes": [
+        "pdf:p54:Other consolidated revenue categories"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Residual after mapped taxes, fees/charges, transfers, investment income and developer-related contributions."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 878465,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Total consolidated revenue",
+      "sourceFieldCodes": [
+        "pdf:p54:Total consolidated revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 157987,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Parks, recreation and community services",
+      "sourceFieldCodes": [
+        "pdf:p54:Parks, recreation and community services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "police",
+      "valueThousands": 131962,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Police",
+      "sourceFieldCodes": [
+        "pdf:p54:Police"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "fire",
+      "valueThousands": 53726,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Fire",
+      "sourceFieldCodes": [
+        "pdf:p54:Fire"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 185688,
+      "status": "pending_review",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Police + Fire",
+      "sourceFieldCodes": [
+        "pdf:p54:Police + Fire"
+      ],
+      "mappingMethod": "direct",
+      "note": "Derived from separately reported police and fire functions. Other protective services are not separately identified in this high-level statement."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 101120,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Legislative and administrative services",
+      "sourceFieldCodes": [
+        "pdf:p54:Legislative and administrative services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 147167,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Water, wastewater and drainage + Waste collection and disposal",
+      "sourceFieldCodes": [
+        "pdf:p54:Water, wastewater and drainage + Waste collection and disposal"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Combined environmental-service functions in the consolidated statement."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "transportation",
+      "valueThousands": 89798,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Roads and traffic",
+      "sourceFieldCodes": [
+        "pdf:p54:Roads and traffic"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "transit",
+      "valueThousands": 49381,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Transit",
+      "sourceFieldCodes": [
+        "pdf:p54:Transit"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 139179,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Roads and traffic + Transit",
+      "sourceFieldCodes": [
+        "pdf:p54:Roads and traffic + Transit"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "grants_function",
+      "valueThousands": 15975,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Grants",
+      "sourceFieldCodes": [
+        "pdf:p54:Grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 18382,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Planning and development",
+      "sourceFieldCodes": [
+        "pdf:p54:Planning and development"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 765498,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/dae57e17-4742-42fb-a090-1dcc59260bdd/download/cor_2023_annual_report.pdf",
+      "sourceLabel": "City of Regina 2023 Annual Report",
+      "sourceLocation": "PDF page 54",
+      "sourceReportedLabel": "Total consolidated expenses",
+      "sourceFieldCodes": [
+        "pdf:p54:Total consolidated expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 823297,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 73",
+      "sourceReportedLabel": "Total Assets",
+      "sourceFieldCodes": [
+        "pdf:p73:Total Assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Financial assets total on the consolidated statement of financial position."
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 554039,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 73",
+      "sourceReportedLabel": "Total Financial Liabilities",
+      "sourceFieldCodes": [
+        "pdf:p73:Total Financial Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": 269258,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 73",
+      "sourceReportedLabel": "Total Net Financial Assets",
+      "sourceFieldCodes": [
+        "pdf:p73:Total Net Financial Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 4836145,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 73",
+      "sourceReportedLabel": "Tangible Capital Assets",
+      "sourceFieldCodes": [
+        "pdf:p73:Tangible Capital Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 263043,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 73",
+      "sourceReportedLabel": "Long-Term Debt",
+      "sourceFieldCodes": [
+        "pdf:p73:Long-Term Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 43332,
+      "status": "pending_review",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 73",
+      "sourceReportedLabel": "Employee Benefits Payable",
+      "sourceFieldCodes": [
+        "pdf:p73:Employee Benefits Payable"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source label is broader than the legacy LGPI employee-future-benefit-liability field."
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 324261,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Taxation",
+      "sourceFieldCodes": [
+        "pdf:p74:Taxation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 472030,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "User Fees",
+      "sourceFieldCodes": [
+        "pdf:p74:User Fees"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 138026,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Government Transfers - Capital + Government Transfers - Operating",
+      "sourceFieldCodes": [
+        "pdf:p74:Government Transfers - Capital + Government Transfers - Operating"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Operating ($77.753m) plus capital ($60.273m) government transfers."
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 19750,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Investment Income",
+      "sourceFieldCodes": [
+        "pdf:p74:Investment Income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "developer_contributions",
+      "valueThousands": 69415,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Contribution from Developers & Others - Capital + Operating",
+      "sourceFieldCodes": [
+        "pdf:p74:Contribution from Developers & Others - Capital + Operating"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Capital ($27.766m) plus operating ($41.649m) developer/other contributions."
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 111204,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Grants in lieu + Franchise Fees + General Revenues",
+      "sourceFieldCodes": [
+        "pdf:p74:Grants in lieu + Franchise Fees + General Revenues"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Residual high-level revenue: grants in lieu of taxes, franchise fees and general revenues."
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 1134686,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Total Revenues",
+      "sourceFieldCodes": [
+        "pdf:p74:Total Revenues"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 87143,
+      "status": "pending_review",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Corporate Asset Management + Corporate Governance & Finance + Taxation and General Revenues",
+      "sourceFieldCodes": [
+        "pdf:p74:Corporate Asset Management + Corporate Governance & Finance + Taxation and General Revenues"
+      ],
+      "mappingMethod": "direct",
+      "note": "Derived high-level general-government grouping for legacy LGPI compatibility."
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 186593,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Saskatoon Fire + Saskatoon Police Service",
+      "sourceFieldCodes": [
+        "pdf:p74:Saskatoon Fire + Saskatoon Police Service"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "fire",
+      "valueThousands": 59673,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Saskatoon Fire",
+      "sourceFieldCodes": [
+        "pdf:p74:Saskatoon Fire"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "police",
+      "valueThousands": 126920,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Saskatoon Police Service",
+      "sourceFieldCodes": [
+        "pdf:p74:Saskatoon Police Service"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 207700,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Transportation",
+      "sourceFieldCodes": [
+        "pdf:p74:Transportation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 26338,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Environmental Health",
+      "sourceFieldCodes": [
+        "pdf:p74:Environmental Health"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "utility_operations",
+      "valueThousands": 230220,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Utilities",
+      "sourceFieldCodes": [
+        "pdf:p74:Utilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 69544,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Land Development + Urban Planning and Development",
+      "sourceFieldCodes": [
+        "pdf:p74:Land Development + Urban Planning and Development"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 151871,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Arts, Culture and Events Venues + Recreation and Culture + Saskatoon Public Library",
+      "sourceFieldCodes": [
+        "pdf:p74:Arts, Culture and Events Venues + Recreation and Culture + Saskatoon Public Library"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 988598,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 74",
+      "sourceReportedLabel": "Total Expenses",
+      "sourceFieldCodes": [
+        "pdf:p74:Total Expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "salaries_benefits",
+      "valueThousands": 407893,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Wages and Benefits",
+      "sourceFieldCodes": [
+        "pdf:p102:Wages and Benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "contracted_services",
+      "valueThousands": 192254,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Contracted and General Services",
+      "sourceFieldCodes": [
+        "pdf:p102:Contracted and General Services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "goods",
+      "valueThousands": 77993,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Material, Goods and Supplies",
+      "sourceFieldCodes": [
+        "pdf:p102:Material, Goods and Supplies"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "goods_services_other",
+      "valueThousands": 129595,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Heating, Lighting, Power, Water and Telephone",
+      "sourceFieldCodes": [
+        "pdf:p102:Heating, Lighting, Power, Water and Telephone"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "goods_services_total",
+      "valueThousands": 399842,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Contracted and General Services + Heating/Lighting/Power/Water/Telephone + Material/Goods/Supplies",
+      "sourceFieldCodes": [
+        "pdf:p102:Contracted and General Services + Heating/Lighting/Power/Water/Telephone + Material/Goods/Supplies"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "grants_object",
+      "valueThousands": 12764,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Donations, Grants and Subsidies",
+      "sourceFieldCodes": [
+        "pdf:p102:Donations, Grants and Subsidies"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "interest_expense",
+      "valueThousands": 11321,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Finance Charges",
+      "sourceFieldCodes": [
+        "pdf:p102:Finance Charges"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "depreciation_object",
+      "valueThousands": 154974,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "pdf:p102:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 154974,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "pdf:p102:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "object_other",
+      "valueThousands": 1804,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Accretion",
+      "sourceFieldCodes": [
+        "pdf:p102:Accretion"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2023,
+      "metric": "total_expenditure_object",
+      "valueThousands": 988598,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/finance-supply/COS_2023-AnnualReport-Aug29-FINAL-web.pdf",
+      "sourceLabel": "City of Saskatoon 2023 Annual Report",
+      "sourceLocation": "PDF page 102",
+      "sourceReportedLabel": "Total",
+      "sourceFieldCodes": [
+        "pdf:p102:Total"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Derived from the eight audited expense-by-object components, which sum to $988.598m and reconcile to the Statement of Operations. The PDF text layer mis-renders the printed total as 998,598."
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 1686720,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 52",
+      "sourceReportedLabel": "Financial Assets",
+      "sourceFieldCodes": [
+        "pdf:p52:Financial Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "holdings_council_controlled",
+      "valueThousands": 20216,
+      "status": "pending_review",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 52",
+      "sourceReportedLabel": "Investment in business partnerships",
+      "sourceFieldCodes": [
+        "pdf:p52:Investment in business partnerships"
+      ],
+      "mappingMethod": "direct",
+      "note": "Mapped to the closest legacy LGPI council-controlled-operations field."
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "financial_assets_other",
+      "valueThousands": 1666504,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 52",
+      "sourceReportedLabel": "Financial Assets less Investment in business partnerships",
+      "sourceFieldCodes": [
+        "pdf:p52:Financial Assets less Investment in business partnerships"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 2855630,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 52",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "pdf:p52:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": -1168910,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 52",
+      "sourceReportedLabel": "Net Financial Liabilities",
+      "sourceFieldCodes": [
+        "pdf:p52:Net Financial Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 8423939,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 52",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "pdf:p52:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 1411222,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 52",
+      "sourceReportedLabel": "Debt",
+      "sourceFieldCodes": [
+        "pdf:p52:Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 267131,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 52",
+      "sourceReportedLabel": "Employee benefits obligations",
+      "sourceFieldCodes": [
+        "pdf:p52:Employee benefits obligations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 884442,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 53",
+      "sourceReportedLabel": "Taxation",
+      "sourceFieldCodes": [
+        "pdf:p53:Taxation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 690991,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 53",
+      "sourceReportedLabel": "Sales of services and regulatory fees",
+      "sourceFieldCodes": [
+        "pdf:p53:Sales of services and regulatory fees"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 477384,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 53",
+      "sourceReportedLabel": "Government transfers + Government transfers related to capital",
+      "sourceFieldCodes": [
+        "pdf:p53:Government transfers + Government transfers related to capital"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Operating transfers ($262.451m) plus capital-related transfers ($214.933m)."
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 64387,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 53",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "pdf:p53:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "developer_contributions",
+      "valueThousands": 142178,
+      "status": "pending_review",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 53",
+      "sourceReportedLabel": "Developer contributions-in-kind related to capital",
+      "sourceFieldCodes": [
+        "pdf:p53:Developer contributions-in-kind related to capital"
+      ],
+      "mappingMethod": "direct",
+      "note": "Direct capital developer contribution; retained pending legacy aggregation review."
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 32855,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 53",
+      "sourceReportedLabel": "Land sales and other revenue + Other capital contributions",
+      "sourceFieldCodes": [
+        "pdf:p53:Land sales and other revenue + Other capital contributions"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 2292237,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 53",
+      "sourceReportedLabel": "Total consolidated revenues including capital revenues",
+      "sourceFieldCodes": [
+        "pdf:p53:Total consolidated revenues including capital revenues"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Operating revenues ($1.927704b) plus capital-related transfers and contributions ($364.533m)."
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 144283,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 44",
+      "sourceReportedLabel": "Finance and administration + General government",
+      "sourceFieldCodes": [
+        "pdf:p44:Finance and administration + General government"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "utility_operations",
+      "valueThousands": 529152,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 44",
+      "sourceReportedLabel": "Utility operations",
+      "sourceFieldCodes": [
+        "pdf:p44:Utility operations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "public_works",
+      "valueThousands": 380359,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 44",
+      "sourceReportedLabel": "Public works",
+      "sourceFieldCodes": [
+        "pdf:p44:Public works"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 138947,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 44",
+      "sourceReportedLabel": "Property and development",
+      "sourceFieldCodes": [
+        "pdf:p44:Property and development"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "civic_corporations",
+      "valueThousands": 103148,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 44",
+      "sourceReportedLabel": "Civic corporations",
+      "sourceFieldCodes": [
+        "pdf:p44:Civic corporations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 1915408,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 53",
+      "sourceReportedLabel": "Total Expenses",
+      "sourceFieldCodes": [
+        "pdf:p53:Total Expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "salaries_benefits",
+      "valueThousands": 997609,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 82",
+      "sourceReportedLabel": "Salaries and benefits",
+      "sourceFieldCodes": [
+        "pdf:p82:Salaries and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "goods_services_total",
+      "valueThousands": 522603,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 82",
+      "sourceReportedLabel": "Goods and services",
+      "sourceFieldCodes": [
+        "pdf:p82:Goods and services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "depreciation_object",
+      "valueThousands": 306512,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 82",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "pdf:p82:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 306512,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 82",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "pdf:p82:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "interest_expense",
+      "valueThousands": 62371,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 82",
+      "sourceReportedLabel": "Interest",
+      "sourceFieldCodes": [
+        "pdf:p82:Interest"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "object_other",
+      "valueThousands": 26313,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 82",
+      "sourceReportedLabel": "Other expenses",
+      "sourceFieldCodes": [
+        "pdf:p82:Other expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2023,
+      "metric": "total_expenditure_object",
+      "valueThousands": 1915408,
+      "status": "reported",
+      "sourceUrl": "https://www.winnipeg.ca/finance/files/2023AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2023 Annual Financial Report",
+      "sourceLocation": "PDF page 82",
+      "sourceReportedLabel": "Total expenses by object",
+      "sourceFieldCodes": [
+        "pdf:p82:Total expenses by object"
+      ],
+      "mappingMethod": "direct"
+    }
+  ],
+  "mapping": {
+    "name": "LGPI Prairie audited statements 2023",
+    "version": 1,
+    "notes": [
+      "Amounts are transcribed from audited annual-report tables reported in thousands of Canadian dollars.",
+      "Every emitted amount is validated against extracted text on its cited PDF page before JSON is written.",
+      "Derived groupings preserve a source note; uncertain legacy compatibility is marked pending_review.",
+      "No per-household denominator is calculated in this importer."
+    ]
+  },
+  "stats": {
+    "municipalityCount": 3,
+    "observationCount": 85,
+    "reportedCount": 79,
+    "pendingReviewCount": 6
+  }
+}

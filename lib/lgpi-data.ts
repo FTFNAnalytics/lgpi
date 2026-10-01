@@ -2,6 +2,7 @@ import alberta2023 from "@/data/2023/alberta.json";
 import bc2023 from "@/data/2023/bc.json";
 import ontario2023 from "@/data/2023/ontario.json";
 import quebec2023 from "@/data/2023/quebec.json";
+import prairies2023 from "@/data/2023/prairies.json";
 
 export const REPORT_URL =
   "https://frontiercentre.org/wp-content/uploads/PR148_LGPI2025_JN0525_F1.pdf";
@@ -334,12 +335,15 @@ const ontarioFinancial2023 =
   ontario2023.observations as unknown as FinancialObservation[];
 const quebecFinancial2023 =
   quebec2023.observations as unknown as FinancialObservation[];
+const prairiesFinancial2023 =
+  prairies2023.observations as unknown as FinancialObservation[];
 
 export const financial2023: FinancialObservation[] = [
   ...albertaFinancial2023,
   ...bcFinancial2023,
   ...ontarioFinancial2023,
   ...quebecFinancial2023,
+  ...prairiesFinancial2023,
 ];
 
 export const alberta2023MunicipalityContext = alberta2023.municipalities;
