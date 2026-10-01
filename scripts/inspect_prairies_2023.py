@@ -70,6 +70,18 @@ def main() -> None:
             print(f"\n--- PAGE {page_num} score={score} ---")
             print(text[:6500])
 
+        exact_pages = {
+            "regina": [53, 54, 94],
+            "saskatoon": [71, 72, 100, 112, 117, 128],
+            "winnipeg": [52, 53, 82, 88],
+        }.get(slug, [])
+        print("\n=== EXACT PAGE PROBE ===")
+        for page_num in exact_pages:
+            if 1 <= page_num <= len(reader.pages):
+                text=normalize(reader.pages[page_num-1].extract_text() or "")
+                print(f"\n--- EXACT PAGE {page_num} ---")
+                print(text[:9000])
+
 
 if __name__=="__main__":
     main()
