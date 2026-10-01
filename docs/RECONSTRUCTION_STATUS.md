@@ -10,7 +10,8 @@ Last reconstruction pass: 2026-10-01.
 - Published total-only Atlantic records: 7.
 - Quebec municipalities without published transparency scores in this edition: 19 (the report explicitly omits Quebec scores).
 - Legacy financial field catalogue: reconstructed from the public LGPI site.
-- Official 2023 financial seed observations: Calgary, Edmonton, Toronto.
+- Alberta 2023 bulk financial import: 9 LGPI municipalities, 414 source-backed observations, generated from the official FIR/SIR workbook.
+- Toronto 2023 official-report seed: long-term debt.
 
 ## Transparency coverage
 
@@ -48,10 +49,11 @@ An Ontario media-release summary reports 23/33, while the detailed Ontario table
 
 The financial ingestion layer is deliberately stricter than a visual mock-up. Values are only attached to a legacy LGPI metric where the source concept can be mapped without silently changing the definition.
 
-Current seed:
+Current financial coverage:
 
-- Calgary: capital assets, long-term debt, net taxes, investment income, developer contributions (pending aggregation review), total expenditure.
-- Edmonton: total financial assets and total financial liabilities.
-- Toronto: long-term debt.
+- Alberta: all 9 LGPI municipalities are bulk-imported from the Government of Alberta 2023 Financial and Statistical Data workbook. The importer emits 414 observations with exact source field codes and mapping methods.
+- Calgary is the Alberta control municipality: headline FIR-derived mappings reconcile against its audited 2023 Annual Financial Report before the importer is allowed to emit data.
+- Toronto: long-term debt remains as an official-report seed pending the Ontario FIR bulk importer.
+- Alberta population and SIR dwelling-unit fields are retained as source context only. They are not used for LGPI per-household normalization.
 
-Next financial-data tranche should prioritize the remaining official 2023 annual financial statements and provincial structured returns, then add household denominators and provincial-average calculations only after denominator rules are confirmed.
+Next financial-data tranche should prioritize B.C. and Ontario structured 2023 returns, then the remaining provinces and territories. Statistics Canada dwelling denominators and provincial-average calculations remain gated until the exact LGPI denominator convention is reproduced.
