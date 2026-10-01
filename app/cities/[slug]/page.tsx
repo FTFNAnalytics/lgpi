@@ -85,14 +85,22 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                 const metric = getMetricDefinition(observation.metric);
                 return (
                   <article className="metric-card" key={observation.metric}>
-                    <span className={"chip " + (observation.status === "reported" ? "good" : "pending")}>
-                      {observation.status.replaceAll("_", " ")}
-                    </span>
+                    <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                      <span className={"chip " + (observation.status === "reported" ? "good" : "pending")}>
+                        {observation.status.replaceAll("_", " ")}
+                      </span>
+                      {observation.mappingMethod && (
+                        <span className="chip pending">{observation.mappingMethod.replaceAll("_", " ")}</span>
+                      )}
+                    </div>
                     <h3>{metric?.label ?? observation.metric}</h3>
                     <span className="metric-value">{formatThousands(observation.valueThousands)}</span>
+                    {observation.sourceReportedLabel && (
+                      <p className="metric-meta"><strong>Source field:</strong> {observation.sourceReportedLabel}</p>
+                    )}
                     <p className="metric-meta">{observation.sourceLocation}</p>
                     {observation.note && <p className="metric-meta">{observation.note}</p>}
-                    <a className="source-link" href={observation.sourceUrl} target="_blank" rel="noreferrer">Official municipal source ↗</a>
+                    <a className="source-link" href={observation.sourceUrl} target="_blank" rel="noreferrer">Open official source ↗</a>
                   </article>
                 );
               })}
