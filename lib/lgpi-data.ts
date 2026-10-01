@@ -1,10 +1,8 @@
+import alberta2023 from "@/data/2023/alberta.json";
+
 export const REPORT_URL =
   "https://frontiercentre.org/wp-content/uploads/PR148_LGPI2025_JN0525_F1.pdf";
 
-export const CALGARY_2023_URL =
-  "https://www.calgary.ca/content/dam/www/cfod/finance/documents/Finance-2023-Annual-Report.pdf";
-export const EDMONTON_2023_URL =
-  "https://www.edmonton.ca/sites/default/files/public-files/FinancialAnnualReportConsolidatedFinancialStatements2023.pdf";
 export const TORONTO_2023_URL =
   "https://www.toronto.ca/wp-content/uploads/2024/09/95d9-2023-City-of-Toronto-Financial-Report.pdf";
 
@@ -282,91 +280,17 @@ export type FinancialObservation = {
   sourceUrl: string;
   sourceLabel: string;
   sourceLocation: string;
+  sourceReportedLabel?: string;
+  sourceFieldCodes?: string[];
+  mappingMethod?: "direct" | "derived_sum" | "derived_residual";
   note?: string;
 };
 
+const albertaFinancial2023 =
+  alberta2023.observations as unknown as FinancialObservation[];
+
 export const financial2023: FinancialObservation[] = [
-  {
-    municipalitySlug: "calgary",
-    year: 2023,
-    metric: "capital_assets",
-    valueThousands: 20319980,
-    status: "reported",
-    sourceUrl: CALGARY_2023_URL,
-    sourceLabel: "City of Calgary 2023 Annual Financial Report",
-    sourceLocation: "Financial statements / tangible capital asset reporting",
-  },
-  {
-    municipalitySlug: "calgary",
-    year: 2023,
-    metric: "long_term_debt",
-    valueThousands: 2700337,
-    status: "reported",
-    sourceUrl: CALGARY_2023_URL,
-    sourceLabel: "City of Calgary 2023 Annual Financial Report",
-    sourceLocation: "Long-term debt disclosure",
-  },
-  {
-    municipalitySlug: "calgary",
-    year: 2023,
-    metric: "net_taxes",
-    valueThousands: 2607604,
-    status: "reported",
-    sourceUrl: CALGARY_2023_URL,
-    sourceLabel: "City of Calgary 2023 Annual Financial Report",
-    sourceLocation: "Consolidated Statement of Operations, p. 43",
-  },
-  {
-    municipalitySlug: "calgary",
-    year: 2023,
-    metric: "investment_income",
-    valueThousands: 219934,
-    status: "reported",
-    sourceUrl: CALGARY_2023_URL,
-    sourceLabel: "City of Calgary 2023 Annual Financial Report",
-    sourceLocation: "Consolidated Statement of Operations, p. 43",
-  },
-  {
-    municipalitySlug: "calgary",
-    year: 2023,
-    metric: "developer_contributions",
-    valueThousands: 188830,
-    status: "pending_review",
-    sourceUrl: CALGARY_2023_URL,
-    sourceLabel: "City of Calgary 2023 Annual Financial Report",
-    sourceLocation: "Consolidated Statement of Operations, p. 43",
-    note: "The report also lists developer contributions-in-kind. Legacy LGPI aggregation treatment must be confirmed before publication.",
-  },
-  {
-    municipalitySlug: "calgary",
-    year: 2023,
-    metric: "total_expenditure",
-    valueThousands: 4657747,
-    status: "reported",
-    sourceUrl: CALGARY_2023_URL,
-    sourceLabel: "City of Calgary 2023 Annual Financial Report",
-    sourceLocation: "Consolidated Statement of Operations, p. 43",
-  },
-  {
-    municipalitySlug: "edmonton",
-    year: 2023,
-    metric: "financial_assets_total",
-    valueThousands: 8873700,
-    status: "reported",
-    sourceUrl: EDMONTON_2023_URL,
-    sourceLabel: "City of Edmonton 2023 Financial Annual Report",
-    sourceLocation: "Consolidated financial position",
-  },
-  {
-    municipalitySlug: "edmonton",
-    year: 2023,
-    metric: "financial_liabilities_total",
-    valueThousands: 6041700,
-    status: "reported",
-    sourceUrl: EDMONTON_2023_URL,
-    sourceLabel: "City of Edmonton 2023 Financial Annual Report",
-    sourceLocation: "Consolidated financial position",
-  },
+  ...albertaFinancial2023,
   {
     municipalitySlug: "toronto",
     year: 2023,
@@ -376,8 +300,15 @@ export const financial2023: FinancialObservation[] = [
     sourceUrl: TORONTO_2023_URL,
     sourceLabel: "City of Toronto 2023 Annual Financial Report",
     sourceLocation: "Long-term debt disclosure",
+    mappingMethod: "direct",
   },
 ];
+
+export const alberta2023MunicipalityContext = alberta2023.municipalities;
+
+export function getAlbertaMunicipalityContext(slug: string) {
+  return alberta2023MunicipalityContext.find((record) => record.slug === slug);
+}
 
 export function getFinancialObservations(slug: string) {
   return financial2023.filter((observation) => observation.municipalitySlug === slug);
