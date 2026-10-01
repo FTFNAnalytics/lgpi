@@ -8,7 +8,7 @@ This project starts by faithfully reproducing the published LGPI transparency me
 
 - Modern Next.js frontend.
 - 2023 Transparency Index explorer.
-- 80 of 99 published municipality totals reconstructed.
+- All 80 transparency scores published for non-Quebec municipalities in the 2023 edition are loaded.
 - 73 municipality records with all ten transparency components.
 - Municipality profile pages.
 - Side-by-side comparison.
@@ -24,13 +24,13 @@ This project starts by faithfully reproducing the published LGPI transparency me
 | Layer | Status |
 | --- | ---: |
 | Published municipality universe | 99 |
-| Verified 2023 transparency totals | 80 |
+| Published 2023 transparency scores loaded | 80 / 80 non-Quebec scores |
 | Full component breakdowns | 73 |
-| Quebec transparency records pending extraction | 19 |
-| Legacy financial fields reconstructed | 57 |
+| Quebec municipalities unscored in the published report | 19 |
+| Legacy financial fields reconstructed | 56 |
 | Official financial observations seeded | 9 |
 
-The transparency data is reconstructed from Frontier Centre's 2025 LGPI publication, which assesses 2023 municipal financial statements. The financial layer is being rebuilt independently from official municipal reports and provincial data sources.
+The transparency data is reconstructed from Frontier Centre's 2025 LGPI publication, which assesses 2023 municipal financial statements. That report explicitly omits transparency scores for Quebec, so Quebec municipalities are treated as unscored rather than missing or zero. The financial layer is being rebuilt independently from official municipal reports and provincial data sources.
 
 ## Product routes
 

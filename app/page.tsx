@@ -40,7 +40,7 @@ export default function Home() {
             <p>The prototype publishes only observations recoverable from the LGPI report or official municipal financial records. Pending research stays visibly pending.</p>
           </div>
           <div className="stat-grid">
-            <div className="stat"><strong>{VERIFIED_TRANSPARENCY_TOTALS}/{TARGET_MUNICIPALITIES}</strong><span>2023 transparency totals verified</span></div>
+            <div className="stat"><strong>{VERIFIED_TRANSPARENCY_TOTALS}/{TARGET_MUNICIPALITIES}</strong><span>published 2023 scores loaded</span></div>
             <div className="stat"><strong>{VERIFIED_COMPONENT_BREAKDOWNS}</strong><span>municipalities with all 10 component scores loaded</span></div>
             <div className="stat"><strong>33</strong><span>maximum published transparency score</span></div>
             <div className="stat"><strong>{financial2023.length}</strong><span>official financial observations seeded so far</span></div>

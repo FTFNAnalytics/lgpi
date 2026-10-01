@@ -5,10 +5,10 @@ Last reconstruction pass: 2026-10-01.
 ## What is loaded
 
 - Target universe: 99 municipalities.
-- Verified 2023 transparency totals: 80.
+- Published 2023 transparency scores loaded: 80 of 80 scores reported outside Quebec.
 - Verified component-level transparency records: 73.
 - Published total-only Atlantic records: 7.
-- Quebec records pending detailed-table extraction: 19.
+- Quebec municipalities without published transparency scores in this edition: 19 (the report explicitly omits Quebec scores).
 - Legacy financial field catalogue: reconstructed from the public LGPI site.
 - Official 2023 financial seed observations: Calgary, Edmonton, Toronto.
 
@@ -32,7 +32,7 @@ Published totals are loaded for:
 - Newfoundland and Labrador: 1
 - Prince Edward Island: 1
 
-Quebec is intentionally absent from the score dataset until the detailed table is independently recovered. Pending does not mean zero.
+Quebec is intentionally absent from the score dataset because the 2025 LGPI report explicitly says its current report omits transparency scores for Quebec. These municipalities are unscored in the publication, not zero-score records. Any future Quebec scoring produced by this repository must be identified as an independent reconstruction rather than a transcribed published result.
 
 ## Source discrepancy register
 

@@ -35,9 +35,9 @@ export default function MethodologyPage() {
 
           <h2>Coverage as of this build</h2>
           <p>
-            The published project universe is {TARGET_MUNICIPALITIES} municipalities. This reconstruction currently has {VERIFIED_TRANSPARENCY_TOTALS} verified 2023 totals, including {VERIFIED_COMPONENT_BREAKDOWNS} with all ten component values. The remaining 19 records are Quebec municipalities whose detailed source table is still being recovered.
+            The published project universe is {TARGET_MUNICIPALITIES} municipalities. The 2025 report publishes {VERIFIED_TRANSPARENCY_TOTALS} non-Quebec 2023 transparency scores, all of which are loaded here; {VERIFIED_COMPONENT_BREAKDOWNS} currently include all ten component values. The report explicitly states that its current edition omits transparency scores for Quebec.
           </p>
-          <p>No pending municipality is assigned a zero. Missing evidence is represented as pending evidence.</p>
+          <p>The 19 Quebec municipalities are therefore unscored in the published 2023 report, not zero-score municipalities. If this reconstruction later calculates Quebec scores independently, they will be labeled separately from published LGPI results.</p>
 
           <h2>Financial observations</h2>
           <p>

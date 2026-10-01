@@ -37,7 +37,7 @@ export default function CitiesPage() {
             );
           })}
           <div className="notice">
-            <strong>Quebec:</strong> 19 municipalities remain in the source-extraction queue. They are intentionally not represented as zero or missing-score records.
+            <strong>Quebec:</strong> the published 2023 LGPI report explicitly omits Quebec transparency scores. Those municipalities are not represented as zero-score records; any future Quebec scores in this reconstruction will be clearly labeled as independently calculated.
           </div>
         </div>
       </section>
