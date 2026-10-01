@@ -23,6 +23,10 @@ INDEX_URL = "https://efis.fma.csc.gov.on.ca/fir/index.php/en/open-data/fir-by-sc
 OUTPUT = Path("data/2023/ontario.json")
 SCHEDULES = ["02","10","40","42","51","70","74"]
 
+ALLOW_MISSING = {
+    "hamilton": "Ontario's 2023 FIR by-year page lists Hamilton C as Not Available.",
+}
+
 TARGETS = {
     "ajax": "Ajax T",
     "aurora": "Aurora T",
@@ -123,16 +127,20 @@ def load_schedule(schedule: str) -> dict:
     return {"schedule":schedule,"url":url,"rows":rows}
 
 
-def target_source_names(rows: list[dict]) -> dict[str,str]:
+def target_source_names(rows: list[dict]) -> tuple[dict[str,str],dict[str,str]]:
     available={}
     for row in rows:
         name=str(row.get("Municipality") or "").strip()
         available.setdefault(normalize(name),name)
 
     found={}
+    missing={}
     for slug,expected in TARGETS.items():
         key=normalize(expected)
         if key not in available:
+            if slug in ALLOW_MISSING:
+                missing[slug]=ALLOW_MISSING[slug]
+                continue
             fuzzy=sorted({
                 str(row.get("Municipality") or "").strip()
                 for row in rows
@@ -140,7 +148,7 @@ def target_source_names(rows: list[dict]) -> dict[str,str]:
             })
             raise RuntimeError(f"Ontario municipality match failed for {slug}: expected={expected!r}, fuzzy={fuzzy[:20]}")
         found[slug]=available[key]
-    return found
+    return found,missing
 
 
 def index_rows(schedule_data: dict, source_names: dict[str,str]) -> dict[tuple[str,int],dict]:
@@ -314,7 +322,7 @@ def build(slug,schedules,indexes):
 
 def main():
     schedules=[load_schedule(code) for code in SCHEDULES]
-    source_names=target_source_names(schedules[0]["rows"])
+    source_names,missing_sources=target_source_names(schedules[0]["rows"])
     indexes={item["schedule"]:index_rows(item,source_names) for item in schedules}
     s={item["schedule"]:item for item in schedules}
 
@@ -371,9 +379,20 @@ def main():
             ],
         },
         "municipalities":municipalities,
+        "sourceUnavailableMunicipalities":[
+            {
+                "slug":slug,
+                "expectedSourceMunicipality":TARGETS[slug],
+                "status":"source_unavailable",
+                "reason":reason,
+            }
+            for slug,reason in missing_sources.items()
+        ],
         "observations":observations,
         "stats":{
+            "targetMunicipalityCount":len(TARGETS),
             "municipalityCount":len(municipalities),
+            "sourceUnavailableMunicipalityCount":len(missing_sources),
             "observationCount":len(observations),
             "reportedCount":sum(1 for row in observations if row["status"]=="reported"),
             "pendingReviewCount":sum(1 for row in observations if row["status"]=="pending_review"),
@@ -381,7 +400,12 @@ def main():
     }
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     OUTPUT.write_text(json.dumps(document,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
-    print(f"Wrote {OUTPUT}: {len(municipalities)} municipalities, {len(observations)} observations")
+    print(
+        f"Wrote {OUTPUT}: {len(municipalities)} source-available municipalities, "
+        f"{len(missing_sources)} source-unavailable municipalities, {len(observations)} observations"
+    )
+    for slug,reason in missing_sources.items():
+        print(f"- {slug}: SOURCE UNAVAILABLE — {reason}")
     for m in municipalities:
         print(f"- {m['slug']}: source={m['sourceMunicipality']!r} tier={m['tier']} households={m['householdsCandidate']} population={m['populationCandidate']}")
 
