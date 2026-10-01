@@ -1,0 +1,38 @@
+name: Import BC 2023 schedules
+
+on:
+  push:
+    branches: [data/bc-2023-schedules]
+    paths:
+      - "scripts/ingest_bc_2023.py"
+      - ".github/workflows/ingest-bc.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-data]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/bc-2023-schedules
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Generate BC 2023 data
+        run: python scripts/ingest_bc_2023.py
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data/2023/bc.json && git ls-files --error-unmatch data/2023/bc.json >/dev/null 2>&1; then
+            echo "Generated data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2023/bc.json
+          git commit -m "Import BC 2023 schedule data [generated-data]"
+          git push origin HEAD:data/bc-2023-schedules
