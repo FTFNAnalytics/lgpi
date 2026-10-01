@@ -13,7 +13,7 @@ This project starts by faithfully reproducing the published LGPI transparency me
 - Municipality profile pages for the full 99-city LGPI universe, including Quebec as explicitly transparency-unscored.
 - Side-by-side comparison.
 - Reconstructed legacy financial metric catalogue.
-- Reproducible 2023 bulk imports covering all 9 Alberta, all 17 British Columbia, 40 of 41 Ontario, and all 19 Quebec LGPI municipalities; Hamilton is explicitly source-unavailable in Ontario's 2023 FIR.
+- Reproducible 2023 imports covering Alberta, British Columbia, Ontario, Quebec, Regina, Saskatoon and Winnipeg; Hamilton is explicitly source-unavailable in Ontario's 2023 FIR.
 - Source links and review states on financial observations.
 - Explicit missing-data semantics: pending is never treated as zero.
 - Known publication discrepancies documented rather than hidden.
@@ -28,7 +28,7 @@ This project starts by faithfully reproducing the published LGPI transparency me
 | Full component breakdowns | 73 |
 | Quebec municipalities unscored in the published report | 19 |
 | Legacy financial fields reconstructed | 56 |
-| Official financial observations loaded | 2,673 (414 Alberta + 510 B.C. + 1,160 Ontario + 589 Quebec) |
+| Official financial observations loaded | 2,758 (414 Alberta + 510 B.C. + 1,160 Ontario + 589 Quebec + 85 Prairie audited-report observations) |
 
 The transparency data is reconstructed from Frontier Centre's 2025 LGPI publication, which assesses 2023 municipal financial statements. That report explicitly omits transparency scores for Quebec, so Quebec municipalities are treated as unscored rather than missing or zero. The financial layer is rebuilt independently from official municipal and provincial sources. Alberta is generated from the province's standardized FIR/SIR workbook, British Columbia from standardized provincial financial schedules, Ontario from FIR by-schedule archives, and Quebec from MAMH's 2023 audited-report open-data workbook. Hamilton is retained as source-unavailable because its 2023 FIR is not available in Ontario's provincial system.
 
