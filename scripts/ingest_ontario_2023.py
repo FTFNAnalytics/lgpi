@@ -110,6 +110,8 @@ def load_schedule(schedule: str) -> dict:
     for sheet_name in workbook.sheetnames:
         if not sheet_name.startswith("SCHEDULE"):
             continue
+        if schedule == "74" and sheet_name != "SCHEDULE 74":
+            continue
         ws=workbook[sheet_name]
         header_values=list(next(ws.iter_rows(min_row=5,max_row=5,values_only=True)))
         headers=[str(v).strip() if v is not None else "" for v in header_values]
