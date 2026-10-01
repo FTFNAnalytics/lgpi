@@ -1,4 +1,5 @@
 import alberta2023 from "@/data/2023/alberta.json";
+import bc2023 from "@/data/2023/bc.json";
 
 export const REPORT_URL =
   "https://frontiercentre.org/wp-content/uploads/PR148_LGPI2025_JN0525_F1.pdf";
@@ -288,9 +289,12 @@ export type FinancialObservation = {
 
 const albertaFinancial2023 =
   alberta2023.observations as unknown as FinancialObservation[];
+const bcFinancial2023 =
+  bc2023.observations as unknown as FinancialObservation[];
 
 export const financial2023: FinancialObservation[] = [
   ...albertaFinancial2023,
+  ...bcFinancial2023,
   {
     municipalitySlug: "toronto",
     year: 2023,
@@ -305,9 +309,14 @@ export const financial2023: FinancialObservation[] = [
 ];
 
 export const alberta2023MunicipalityContext = alberta2023.municipalities;
+export const bc2023MunicipalityContext = bc2023.municipalities;
 
 export function getAlbertaMunicipalityContext(slug: string) {
   return alberta2023MunicipalityContext.find((record) => record.slug === slug);
+}
+
+export function getBcMunicipalityContext(slug: string) {
+  return bc2023MunicipalityContext.find((record) => record.slug === slug);
 }
 
 export function getFinancialObservations(slug: string) {
