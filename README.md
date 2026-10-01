@@ -13,7 +13,7 @@ This project starts by faithfully reproducing the published LGPI transparency me
 - Municipality profile pages.
 - Side-by-side comparison.
 - Reconstructed legacy financial metric catalogue.
-- Reproducible 2023 bulk imports covering all 9 Alberta and all 17 British Columbia LGPI municipalities, plus the initial Toronto official-report seed.
+- Reproducible 2023 bulk imports covering all 9 Alberta, all 17 British Columbia, and 40 of 41 Ontario LGPI municipalities; Hamilton is explicitly source-unavailable in Ontario's 2023 FIR.
 - Source links and review states on financial observations.
 - Explicit missing-data semantics: pending is never treated as zero.
 - Known publication discrepancies documented rather than hidden.
@@ -28,9 +28,9 @@ This project starts by faithfully reproducing the published LGPI transparency me
 | Full component breakdowns | 73 |
 | Quebec municipalities unscored in the published report | 19 |
 | Legacy financial fields reconstructed | 56 |
-| Official financial observations loaded | 925 (414 Alberta + 510 B.C. bulk + 1 Toronto seed) |
+| Official financial observations loaded | 2,084 (414 Alberta + 510 B.C. + 1,160 Ontario) |
 
-The transparency data is reconstructed from Frontier Centre's 2025 LGPI publication, which assesses 2023 municipal financial statements. That report explicitly omits transparency scores for Quebec, so Quebec municipalities are treated as unscored rather than missing or zero. The financial layer is being rebuilt independently from official municipal reports and provincial data sources. Alberta is generated from the province's standardized 2023 FIR/SIR workbook with field-level source codes and a Calgary audited-report reconciliation. British Columbia is generated from eight standardized provincial 2023 financial schedules with cross-schedule balance-sheet and debt reconciliation.
+The transparency data is reconstructed from Frontier Centre's 2025 LGPI publication, which assesses 2023 municipal financial statements. That report explicitly omits transparency scores for Quebec, so Quebec municipalities are treated as unscored rather than missing or zero. The financial layer is being rebuilt independently from official municipal reports and provincial data sources. Alberta is generated from the province's standardized 2023 FIR/SIR workbook with field-level source codes and a Calgary audited-report reconciliation. British Columbia is generated from eight standardized provincial 2023 financial schedules with cross-schedule balance-sheet and debt reconciliation. Ontario is generated from the province's 2023 FIR by-schedule archives for 40 LGPI municipalities; Hamilton is retained as source-unavailable because its 2023 FIR is not available in the provincial system.
 
 ## Product routes
 
