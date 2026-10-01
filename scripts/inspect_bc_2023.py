@@ -72,6 +72,20 @@ def main() -> None:
                 if idx >= 10:
                     break
 
+            if "schedule301_2023" in href.lower():
+                print("-- TARGET NAME PROBE --")
+                for row in ws.iter_rows(min_row=3, values_only=True):
+                    name = str(row[0] or "")
+                    normalized = re.sub(r"[^A-Z0-9]+", "", name.upper())
+                    probes = (
+                        "ABBOTSFORD","BURNABY","CHILLIWACK","COQUITLAM","DELTA",
+                        "KAMLOOPS","KELOWNA","LANGLEY","MAPLERIDGE","NANAIMO",
+                        "NEWWESTMINSTER","PORTCOQUITLAM","PRINCEGEORGE","RICHMOND",
+                        "SAANICH","VANCOUVER","VICTORIA"
+                    )
+                    if any(probe in normalized for probe in probes):
+                        print(f"TARGET: {name!r} type={row[1]!r} rd={row[2]!r}")
+
 
 if __name__ == "__main__":
     main()
