@@ -6,7 +6,7 @@ Move the prototype from a strong transparency reconstruction to a broad 2023 fin
 
 ## Sequence
 
-1. Recover and transcribe the 19 Quebec transparency records from the detailed report table.
+1. Decide whether to independently score the 19 Quebec municipalities using the published rubric and 2023 public reports; if done, keep those calculated scores distinct from the published LGPI results, which omit Quebec.
 2. Resolve the Kawartha Lakes and Chatham-Kent publication conflicts.
 3. Complete Calgary's legacy-field mapping as the reference extraction.
 4. Ingest Edmonton, Toronto, Vancouver, Burnaby and Halifax as cross-province validation cases.
