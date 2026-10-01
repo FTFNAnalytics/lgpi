@@ -131,9 +131,13 @@ def probe_mamh_workbook(payload: bytes) -> None:
 
     desc=wb["DescriptionPoste"]
     terms=[
-        "total des actifs financiers",
-        "total des passifs",
+        "actifs financiers",
+        "passifs",
         "actifs financiers nets",
+        "total des revenus",
+        "revenus",
+        "total des charges",
+        "charges",
         "dette a long terme",
         "dette à long terme",
         "immobilisations corporelles",
@@ -195,7 +199,7 @@ def inspect_resource(resource: dict) -> None:
         print(f"  XLSX bytes={len(payload)}")
         wb=load_workbook(io.BytesIO(payload),read_only=True,data_only=True)
         print(f"  sheets={wb.sheetnames}")
-        if "données réelles" in low or "donnees reelles" in low:
+        if "SimpleOccurrence" in wb.sheetnames:
             probe_mamh_workbook(payload)
         for sheet_name in wb.sheetnames[:12]:
             ws=wb[sheet_name]
