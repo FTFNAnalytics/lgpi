@@ -161,7 +161,7 @@ def normalize(text: str) -> str:
     return re.sub(r"\s+"," ",text).strip()
 
 
-def validate_page(reader: PdfReader, page: int, label: str, value: int) -> None:
+def validate_page(reader: PdfReader, page: int, label: str, value: int, *, require_amount: bool = True) -> None:
     if page < 1 or page > len(reader.pages):
         raise RuntimeError(f"Invalid PDF page {page}")
     text=normalize(reader.pages[page-1].extract_text() or "")
@@ -169,14 +169,15 @@ def validate_page(reader: PdfReader, page: int, label: str, value: int) -> None:
     label_tokens=[token.lower() for token in re.findall(r"[A-Za-z]+",label) if len(token)>=4]
     if label_tokens and sum(token in text.lower() for token in label_tokens[:5]) < min(2,len(label_tokens[:5])):
         raise RuntimeError(f"Source label validation failed p.{page}: {label!r}")
-    absolute=abs(value)
-    candidates={
-        f"{absolute:,}",
-        str(absolute),
-        f"({absolute:,})",
-    }
-    if not any(candidate in text for candidate in candidates):
-        raise RuntimeError(f"Source amount validation failed p.{page}: {label!r} value={value}")
+    if require_amount:
+        absolute=abs(value)
+        candidates={
+            f"{absolute:,}",
+            str(absolute),
+            f"({absolute:,})",
+        }
+        if not any(candidate in text for candidate in candidates):
+            raise RuntimeError(f"Source amount validation failed p.{page}: {label!r} value={value}")
 
 
 def main() -> None:
@@ -189,7 +190,10 @@ def main() -> None:
         source_rows=ROWS[slug]
 
         for metric,(value,page,label,kind,note) in source_rows.items():
-            validate_page(reader,page,label,value)
+            validate_page(
+                reader,page,label,value,
+                require_amount=(kind != "derived" and "+" not in label),
+            )
             observations.append({
                 "municipalitySlug":slug,
                 "year":2023,
