@@ -1,6 +1,7 @@
 import alberta2023 from "@/data/2023/alberta.json";
 import bc2023 from "@/data/2023/bc.json";
 import ontario2023 from "@/data/2023/ontario.json";
+import quebec2023 from "@/data/2023/quebec.json";
 
 export const REPORT_URL =
   "https://frontiercentre.org/wp-content/uploads/PR148_LGPI2025_JN0525_F1.pdf";
@@ -164,11 +165,51 @@ export const transparency2023: TransparencyRecord[] = transparencyRaw.map(
   }),
 );
 
+export type MunicipalityProfileRecord = {
+  slug: string;
+  name: string;
+  province: ProvinceCode;
+  provinceName: string;
+  year: 2023;
+  score: number | null;
+  components: number[] | null;
+  transparencyPublished: boolean;
+  sourceUrl: string | null;
+  sourceLabel: string | null;
+};
+
+export const municipalities2023: MunicipalityProfileRecord[] = [
+  ...transparency2023.map((record) => ({
+    slug: record.slug,
+    name: record.name,
+    province: record.province,
+    provinceName: record.provinceName,
+    year: 2023 as const,
+    score: record.score,
+    components: record.components,
+    transparencyPublished: true,
+    sourceUrl: record.sourceUrl,
+    sourceLabel: record.sourceLabel,
+  })),
+  ...quebec2023.municipalities.map((record) => ({
+    slug: record.slug,
+    name: record.name,
+    province: "QC" as const,
+    provinceName: provinceNames.QC,
+    year: 2023 as const,
+    score: null,
+    components: null,
+    transparencyPublished: false,
+    sourceUrl: null,
+    sourceLabel: null,
+  })),
+].sort((a, b) => a.name.localeCompare(b.name));
+
 export function getMunicipality(slug: string) {
-  return transparency2023.find((record) => record.slug === slug);
+  return municipalities2023.find((record) => record.slug === slug);
 }
 
-export function getComponentRows(record: TransparencyRecord) {
+export function getComponentRows(record: { components: number[] | null }) {
   if (!record.components) return [];
   return transparencyCriteria.map((criterion, index) => ({
     ...criterion,
@@ -291,16 +332,20 @@ const bcFinancial2023 =
   bc2023.observations as unknown as FinancialObservation[];
 const ontarioFinancial2023 =
   ontario2023.observations as unknown as FinancialObservation[];
+const quebecFinancial2023 =
+  quebec2023.observations as unknown as FinancialObservation[];
 
 export const financial2023: FinancialObservation[] = [
   ...albertaFinancial2023,
   ...bcFinancial2023,
   ...ontarioFinancial2023,
+  ...quebecFinancial2023,
 ];
 
 export const alberta2023MunicipalityContext = alberta2023.municipalities;
 export const bc2023MunicipalityContext = bc2023.municipalities;
 export const ontario2023MunicipalityContext = ontario2023.municipalities;
+export const quebec2023MunicipalityContext = quebec2023.municipalities;
 export const ontario2023SourceUnavailable = ontario2023.sourceUnavailableMunicipalities;
 
 export function getAlbertaMunicipalityContext(slug: string) {
