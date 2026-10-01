@@ -1,0 +1,23 @@
+name: Inspect Prairie 2023 financial statements
+
+on:
+  push:
+    branches: [data/prairies-2023-statements]
+    paths:
+      - "scripts/inspect_prairies_2023.py"
+      - ".github/workflows/inspect-prairies.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pypdf
+      - run: python scripts/inspect_prairies_2023.py
