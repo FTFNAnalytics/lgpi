@@ -27,7 +27,7 @@ This project starts by faithfully reproducing the published LGPI transparency me
 | Published 2023 transparency scores loaded | 80 / 80 non-Quebec scores |
 | Full component breakdowns | 73 |
 | Quebec municipalities unscored in the published report | 19 |
-| Legacy financial fields reconstructed | 57 |
+| Legacy financial fields reconstructed | 56 |
 | Official financial observations seeded | 9 |
 
 The transparency data is reconstructed from Frontier Centre's 2025 LGPI publication, which assesses 2023 municipal financial statements. That report explicitly omits transparency scores for Quebec, so Quebec municipalities are treated as unscored rather than missing or zero. The financial layer is being rebuilt independently from official municipal reports and provincial data sources.
