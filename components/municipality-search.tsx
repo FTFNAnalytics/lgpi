@@ -2,14 +2,14 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { transparency2023 } from "@/lib/lgpi-data";
+import { municipalities2023 } from "@/lib/lgpi-data";
 
 export function MunicipalitySearch() {
   const [query, setQuery] = useState("");
   const matches = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return transparency2023.slice(0, 8);
-    return transparency2023
+    if (!q) return municipalities2023.slice(0, 8);
+    return municipalities2023
       .filter((record) =>
         [record.name, record.provinceName, record.province].some((value) =>
           value.toLowerCase().includes(q),
@@ -40,10 +40,10 @@ export function MunicipalitySearch() {
               style={{ border: 0, borderBottom: "1px solid #e7e2d8" }}
             >
               <strong>{record.name}</strong>
-              <span>{record.province} · {record.score}/33</span>
+              <span>{record.province} · {record.score === null ? "Transparency unscored" : `${record.score}/33`}</span>
             </Link>
           )) : (
-            <div className="empty-state">No verified 2023 record matches that search yet.</div>
+            <div className="empty-state">No 2023 LGPI municipality matches that search.</div>
           )}
         </div>
       )}
