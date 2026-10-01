@@ -179,13 +179,24 @@ def derived_sum(slug: str, metric: str, sheet: Sheet, row: dict[str, object], co
 def find_target_codes(sheet_a: Sheet) -> dict[str, str]:
     found: dict[str, str] = {}
     for slug, needles in TARGETS.items():
-        matches = []
+        normalized_needles = [normalize_name(needle) for needle in needles]
+
+        exact_matches = []
+        fuzzy_matches = []
         for code, row in sheet_a.rows.items():
-            normalized = normalize_name(row.get("_municipality"))
-            if any(normalize_name(needle) in normalized for needle in needles):
-                matches.append((code, row.get("_municipality")))
+            source_name = row.get("_municipality")
+            normalized = normalize_name(source_name)
+            if normalized in normalized_needles:
+                exact_matches.append((code, source_name))
+            elif any(needle in normalized for needle in normalized_needles):
+                fuzzy_matches.append((code, source_name))
+
+        matches = exact_matches if exact_matches else fuzzy_matches
         if len(matches) != 1:
-            raise RuntimeError(f"Expected exactly one Alberta source match for {slug}; got {matches}")
+            raise RuntimeError(
+                f"Expected exactly one Alberta source match for {slug}; "
+                f"exact={exact_matches}, fuzzy={fuzzy_matches}"
+            )
         found[slug] = matches[0][0]
     return found
 
