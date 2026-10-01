@@ -1,0 +1,38 @@
+name: Import Prairie 2023 annual reports
+
+on:
+  push:
+    branches: [data/prairies-2023-final]
+    paths:
+      - "scripts/ingest_prairies_2023.py"
+      - ".github/workflows/ingest-prairies.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-data]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/prairies-2023-final
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pypdf
+      - name: Generate Prairie 2023 data
+        run: python scripts/ingest_prairies_2023.py
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data/2023/prairies.json && git ls-files --error-unmatch data/2023/prairies.json >/dev/null 2>&1; then
+            echo "Generated data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2023/prairies.json
+          git commit -m "Import Prairie 2023 annual report data [generated-data]"
+          git push origin HEAD:data/prairies-2023-final
