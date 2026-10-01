@@ -35,7 +35,7 @@ TARGETS = {
     "red-deer": ("RED DEER",),
     "st-albert": ("ST ALBERT",),
     "strathcona-county": ("STRATHCONA COUNTY",),
-    "wood-buffalo": ("WOOD BUFFALO",),
+    "wood-buffalo": ("WOOD BUFFALO, REGIONAL MUNICIPALITY OF",),
 }
 
 # Independent controls transcribed from Calgary's audited 2023 report.
