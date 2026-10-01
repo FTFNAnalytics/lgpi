@@ -13,6 +13,7 @@ Last reconstruction pass: 2026-10-01.
 - Alberta 2023 bulk financial import: 9 LGPI municipalities, 414 source-backed observations, generated from the official FIR/SIR workbook.
 - British Columbia 2023 bulk financial import: 17 LGPI municipalities, 510 source-backed observations, generated from standardized provincial schedules.
 - Ontario 2023 bulk financial import: 40 source-available LGPI municipalities, 1,160 source-backed observations; Hamilton is explicitly source-unavailable in the provincial FIR.
+- Quebec 2023 bulk financial import: all 19 LGPI municipalities, 589 source-backed observations from the MAMH audited financial-report open-data workbook. Quebec remains transparency-unscored because the published LGPI edition omitted Quebec scoring.
 
 ## Transparency coverage
 
@@ -56,6 +57,7 @@ Current financial coverage:
 - Calgary is the Alberta control municipality: headline FIR-derived mappings reconcile against its audited 2023 Annual Financial Report before the importer is allowed to emit data.
 - British Columbia: all 17 LGPI municipalities are bulk-imported from provincial Schedules 201, 301, 302, 304, 401, 402, 502 and 601.1. The importer emits 510 observations and requires financial assets, liabilities, net financial assets, non-financial assets and total debt to reconcile across schedules before publication. Langley Township is selected by municipal type so it cannot be confused with the City of Langley.
 - Ontario: 40 of 41 LGPI municipalities are imported from official 2023 FIR Schedules 02, 10, 40, 42, 51, 70 and 74. The importer emits 1,160 observations, cross-checks tangible capital assets between Schedules 70 and 51, and marks ambiguous legacy mappings as pending review. Hamilton is preserved as source_unavailable because Ontario lists its 2023 FIR as not available.
-- Alberta population/SIR dwelling fields, B.C. population fields and Ontario Schedule 02 household/population fields are retained as source context only. They are not yet used for LGPI per-household normalization.
+- Quebec: all 19 municipalities are imported from MAMH's 2023 `SimpleOccurrence` accounting data using current-year actual integral (`CRIIX`) fields. The importer reconciles function/object total charges and net financial assets before publication.
+- Alberta population/SIR dwelling fields, B.C. population fields, Ontario Schedule 02 household/population fields and Quebec MAMH population are retained as source context only. They are not yet used for LGPI per-household normalization.
 
-Next financial-data tranche should prioritize Saskatchewan, Manitoba, Atlantic Canada and the territories, followed by denominator reconciliation and provincial-average calculations. Statistics Canada dwelling denominators and provincial-average calculations remain gated until the exact LGPI denominator convention is reproduced.
+Financial observations are now loaded for 85 municipalities; Hamilton is explicitly source-unavailable; 13 municipalities remain for the Prairie, Atlantic and territorial statement tranche. Statistics Canada dwelling denominators and provincial-average calculations remain gated until the exact LGPI denominator convention is reproduced.
