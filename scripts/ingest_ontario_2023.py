@@ -223,6 +223,29 @@ def build(slug,schedules,indexes):
         amount,row=line_value(s[sched],indexes,slug,line,column)
         return obs(slug,metric,amount,s[sched],row,column,status=status,note=note)
 
+    def direct_optional(metric,sched,line,column,note):
+        row=indexes[sched].get((slug,line))
+        if row is None:
+            return {
+                "municipalitySlug":slug,
+                "year":2023,
+                "metric":metric,
+                "valueThousands":None,
+                "status":"not_reported",
+                "sourceUrl":s[sched]["url"],
+                "sourceLabel":f"Ontario Ministry of Municipal Affairs and Housing — FIR 2023 Schedule {sched}",
+                "sourceLocation":f"Schedule {sched}: line {line} absent for municipality; column {column}",
+                "sourceReportedLabel":f"Expected FIR line {line}",
+                "sourceFieldCodes":[f"{sched}:{line}:{column}"],
+                "mappingMethod":"direct",
+                "note":note + " The source row is absent for this municipality, so the observation is recorded as not_reported rather than zero.",
+            }
+        amount=number(row.get(column))
+        return obs(
+            slug,metric,amount,s[sched],row,column,
+            status="pending_review",note=note,
+        )
+
     def summed(metric,sched,lines,column,note,status=None):
         values=[]
         source_rows=[]
@@ -238,9 +261,8 @@ def build(slug,schedules,indexes):
         direct("financial_liabilities_total","70",9940,"70 xxxx 01"),
         direct("net_financial_assets","70",9945,"70 xxxx 01"),
         direct("capital_assets","70",6210,"70 xxxx 01"),
-        direct(
+        direct_optional(
             "employee_future_benefit_liability","70",6601,"70 xxxx 01",
-            status="pending_review",
             note="Ontario FIR label is 'Unfunded employee benefits'; legacy LGPI field compatibility is retained for review.",
         ),
         direct(
