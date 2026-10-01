@@ -241,6 +241,7 @@ def validate_row(slug: str, row_names: dict[str, str], schedules: dict[str, Sche
     nfa_502 = value(schedules["502"], r502, "Total Non-Financial Assets")
     nfa_304 = value(schedules["304"], r304, "Total Non-Financial Assets")
     debt_302 = value(schedules["302"], r302, "Long-Term Debt")
+    lease_financing_302 = value(schedules["302"], r302, "Leases and Equipment Financing") or 0
     debt_601 = value(schedules["601.1"], r601, "Total Debt at Year End")
 
     failures = []
@@ -252,8 +253,12 @@ def validate_row(slug: str, row_names: dict[str, str], schedules: dict[str, Sche
         failures.append(f"net financial assets expected={assets_304 - liabilities_304} got={net_304}")
     if nfa_502 != nfa_304:
         failures.append(f"non-financial assets 502={nfa_502} 304={nfa_304}")
-    if debt_302 != debt_601:
-        failures.append(f"long-term debt 302={debt_302} 601.1={debt_601}")
+    expected_total_debt = None if debt_302 is None else debt_302 + lease_financing_302
+    if expected_total_debt != debt_601:
+        failures.append(
+            f"total debt expected long-term+leases={expected_total_debt} "
+            f"(long-term={debt_302}, leases={lease_financing_302}) 601.1={debt_601}"
+        )
     if failures:
         raise RuntimeError(f"BC cross-schedule reconciliation failed for {slug}: " + "; ".join(failures))
 
