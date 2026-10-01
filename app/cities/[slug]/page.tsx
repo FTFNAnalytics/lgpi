@@ -3,6 +3,7 @@ import {
   formatThousands,
   getComponentRows,
   getFinancialObservations,
+  getFinancialSourceUnavailable,
   getMetricDefinition,
   getMunicipality,
   sourceDiscrepancies,
@@ -20,6 +21,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
 
   const components = getComponentRows(record);
   const financial = getFinancialObservations(slug);
+  const financialSourceUnavailable = getFinancialSourceUnavailable(slug);
   const discrepancy = sourceDiscrepancies.find((item) => item.municipality === record.name);
 
   return (
@@ -79,6 +81,12 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             </div>
             <p>Amounts below are source-mapped observations only. Per-household and provincial-average calculations stay off until their denominators and legacy mappings are independently verified.</p>
           </div>
+          {financialSourceUnavailable && (
+            <div className="notice" style={{ marginBottom: 20 }}>
+              <strong>2023 financial source unavailable:</strong> {financialSourceUnavailable.reason}
+              The municipality remains in the LGPI universe; no missing financial value is treated as zero.
+            </div>
+          )}
           {financial.length ? (
             <div className="metric-grid">
               {financial.map((observation) => {
@@ -107,7 +115,9 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             </div>
           ) : (
             <div className="empty-state">
-              Transparency evidence is loaded; 2023 financial field mapping for this municipality is still queued. This is not a zero-value record.
+              {financialSourceUnavailable
+                ? "The official 2023 structured financial source is unavailable for this municipality. No zero values have been inferred."
+                : "Transparency evidence is loaded; 2023 financial field mapping for this municipality is still queued. This is not a zero-value record."}
             </div>
           )}
         </div>

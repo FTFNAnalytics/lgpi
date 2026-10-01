@@ -10,8 +10,8 @@ Move the prototype from a strong transparency reconstruction to a broad 2023 fin
 2. Resolve the Kawartha Lakes and Chatham-Kent publication conflicts.
 3. Alberta reference extraction is complete: all 9 LGPI Alberta municipalities are generated from the official 2023 FIR/SIR workbook, with Calgary reconciled to its audited report.
 4. B.C. structured-schedule extraction is complete: all 17 LGPI municipalities are generated from eight official 2023 provincial schedules with cross-schedule reconciliation.
-5. Build the Ontario 2023 FIR adapter for all 41 LGPI Ontario municipalities.
-6. Ingest Atlantic, Prairie and territorial municipalities from the strongest structured or audited sources available.
+5. Ontario FIR extraction is complete for the 40 source-available LGPI municipalities; Hamilton remains explicitly source-unavailable in Ontario's 2023 system.
+6. Ingest Saskatchewan, Manitoba, Atlantic and territorial municipalities from the strongest structured or audited sources available.
 7. Source the Statistics Canada dwelling denominators used by LGPI.
 8. Reproduce dollars-per-household and provincial-average calculations.
 9. Run reconciliation checks against historical LGPI values that remain publicly accessible.

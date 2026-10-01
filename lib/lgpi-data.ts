@@ -1,11 +1,9 @@
 import alberta2023 from "@/data/2023/alberta.json";
 import bc2023 from "@/data/2023/bc.json";
+import ontario2023 from "@/data/2023/ontario.json";
 
 export const REPORT_URL =
   "https://frontiercentre.org/wp-content/uploads/PR148_LGPI2025_JN0525_F1.pdf";
-
-export const TORONTO_2023_URL =
-  "https://www.toronto.ca/wp-content/uploads/2024/09/95d9-2023-City-of-Toronto-Financial-Report.pdf";
 
 export const TARGET_MUNICIPALITIES = 99;
 export const VERIFIED_TRANSPARENCY_TOTALS = 80;
@@ -291,25 +289,19 @@ const albertaFinancial2023 =
   alberta2023.observations as unknown as FinancialObservation[];
 const bcFinancial2023 =
   bc2023.observations as unknown as FinancialObservation[];
+const ontarioFinancial2023 =
+  ontario2023.observations as unknown as FinancialObservation[];
 
 export const financial2023: FinancialObservation[] = [
   ...albertaFinancial2023,
   ...bcFinancial2023,
-  {
-    municipalitySlug: "toronto",
-    year: 2023,
-    metric: "long_term_debt",
-    valueThousands: 8586000,
-    status: "reported",
-    sourceUrl: TORONTO_2023_URL,
-    sourceLabel: "City of Toronto 2023 Annual Financial Report",
-    sourceLocation: "Long-term debt disclosure",
-    mappingMethod: "direct",
-  },
+  ...ontarioFinancial2023,
 ];
 
 export const alberta2023MunicipalityContext = alberta2023.municipalities;
 export const bc2023MunicipalityContext = bc2023.municipalities;
+export const ontario2023MunicipalityContext = ontario2023.municipalities;
+export const ontario2023SourceUnavailable = ontario2023.sourceUnavailableMunicipalities;
 
 export function getAlbertaMunicipalityContext(slug: string) {
   return alberta2023MunicipalityContext.find((record) => record.slug === slug);
@@ -317,6 +309,14 @@ export function getAlbertaMunicipalityContext(slug: string) {
 
 export function getBcMunicipalityContext(slug: string) {
   return bc2023MunicipalityContext.find((record) => record.slug === slug);
+}
+
+export function getOntarioMunicipalityContext(slug: string) {
+  return ontario2023MunicipalityContext.find((record) => record.slug === slug);
+}
+
+export function getFinancialSourceUnavailable(slug: string) {
+  return ontario2023SourceUnavailable.find((record) => record.slug === slug);
 }
 
 export function getFinancialObservations(slug: string) {
