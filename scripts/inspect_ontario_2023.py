@@ -63,6 +63,33 @@ def main() -> None:
                                 print(f"XROW {row_number}: {values}")
                             if row_number >= 12:
                                 break
+
+                        if sheet_name.startswith("SCHEDULE") and schedule in {"10","40","51","70","74"}:
+                            probes = {
+                                "10": ("total", "taxation", "user", "service charges", "government", "investment", "developer", "donation"),
+                                "40": ("general government", "protection services", "transportation", "environmental", "health", "social", "housing", "recreation", "planning", "total"),
+                                "51": ("total tangible", "total", "tangible capital"),
+                                "70": ("total financial assets", "total liabilities", "net financial", "tangible capital", "employee", "accumulated surplus", "debt"),
+                                "74": ("total net long term", "total net long-term", "total long term", "total long-term"),
+                            }[schedule]
+                            seen=set()
+                            print(f"-- LINE CODE PROBE {schedule} {sheet_name} --")
+                            for row in ws.iter_rows(min_row=6, values_only=True):
+                                if len(row) < 13:
+                                    continue
+                                line=row[9]
+                                desc=str(row[-2] if row[-1] is None else row[-3] if len(row) >= 3 else "")
+                                # More robust: locate the first cell containing a schedule-line marker.
+                                desc_candidates=[str(v) for v in row if isinstance(v,str) and "(S" in v]
+                                if desc_candidates:
+                                    desc=desc_candidates[-1]
+                                low=desc.lower()
+                                key=(str(line),desc)
+                                if key in seen:
+                                    continue
+                                if any(probe in low for probe in probes):
+                                    seen.add(key)
+                                    print(f"CODE: line={line!r} desc={desc!r}")
                 else:
                     print(f"binary_prefix={data[:40]!r}")
 
