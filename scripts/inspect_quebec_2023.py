@@ -19,6 +19,27 @@ CKAN_ENDPOINTS = [
     "https://donnees.iriu.ca/api/3/action/package_show?id=rapport-financier-des-organismes-municipaux-et-autres-documents",
 ]
 LGPI_URL = "https://lgpi.ca/"
+RECOVERED_QUEBEC_CITIES = [
+    "Blainville",
+    "Brossard",
+    "Drummondville",
+    "Gatineau",
+    "Granby",
+    "Laval",
+    "Levis",
+    "Longueuil",
+    "Montreal",
+    "Quebec",
+    "Repentigny",
+    "Saguenay",
+    "Saint-Hyacinthe",
+    "Saint-Jean-sur-Richelieu",
+    "Saint-Jerome",
+    "Shawinigan",
+    "Sherbrooke",
+    "Terrebonne",
+    "Trois-Rivieres",
+]
 
 
 def fetch(url: str) -> bytes:
@@ -116,11 +137,9 @@ def inspect_resource(resource: dict) -> None:
 
 
 def main() -> None:
-    cities=recover_lgpi_city_options()
-    loaded=loaded_non_quebec_names()
-    missing=sorted({c for c in cities if c not in loaded})
-    print(f"LGPI city labels={len(cities)} loaded_names={len(loaded)} missing_from_transparency={len(missing)}")
-    print("MISSING CITY LABELS:")
+    missing=RECOVERED_QUEBEC_CITIES
+    print(f"Recovered Quebec LGPI city universe={len(missing)}")
+    print("QUEBEC CITY LABELS:")
     for city in missing:
         print(f"  - {city}")
 
