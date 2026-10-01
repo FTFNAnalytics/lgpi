@@ -126,7 +126,20 @@ def load_schedule(schedule: str) -> dict:
             row["_sheet"]=sheet_name
             row["_source_row"]=row_number
             rows.append(row)
-    return {"schedule":schedule,"url":url,"rows":rows}
+
+    descriptions={}
+    for row in rows:
+        key=(normalize(row.get("Municipality")),int(float(row["Line"])))
+        descriptions.setdefault(
+            key,
+            str(row.get("Line Description") or f"Line {int(float(row['Line']))}"),
+        )
+    return {
+        "schedule":schedule,
+        "url":url,
+        "rows":rows,
+        "descriptions":descriptions,
+    }
 
 
 def target_source_names(rows: list[dict]) -> tuple[dict[str,str],dict[str,str]]:
@@ -185,17 +198,11 @@ def field(schedule: dict, indexes: dict[str,dict], slug: str, line: int, column:
 def obs(slug,metric,amount,schedule,row,column,method="direct",status=None,note=None,extra_lines=None):
     resolved=status or ("reported" if amount is not None else "not_reported")
     lines=[int(float(row["Line"]))] if extra_lines is None else extra_lines
-    descriptions=[]
-    for line in lines:
-        match=None
-        for candidate in schedule["rows"]:
-            if normalize(candidate.get("Municipality"))==normalize(row.get("Municipality")) and int(float(candidate["Line"]))==line:
-                match=candidate
-                break
-        if match:
-            descriptions.append(str(match.get("Line Description") or f"Line {line}"))
-        else:
-            descriptions.append(f"Line {line}")
+    municipality_key=normalize(row.get("Municipality"))
+    descriptions=[
+        schedule["descriptions"].get((municipality_key,line),f"Line {line}")
+        for line in lines
+    ]
     return {
         "municipalitySlug":slug,
         "year":2023,
