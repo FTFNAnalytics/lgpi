@@ -72,6 +72,12 @@ def main() -> None:
                 if idx >= 10:
                     break
 
+            if "schedule302_2023" in href.lower() or "schedule601_1_2023" in href.lower():
+                print("-- COQUITLAM DEBT PROBE --")
+                for row in ws.iter_rows(min_row=3, values_only=True):
+                    if str(row[0] or "").strip().lower() == "coquitlam":
+                        print(f"COQUITLAM: {[compact(value) for value in row]}")
+
             if "schedule301_2023" in href.lower():
                 print("-- TARGET NAME PROBE --")
                 for row in ws.iter_rows(min_row=3, values_only=True):
