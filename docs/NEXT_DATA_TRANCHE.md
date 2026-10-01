@@ -8,13 +8,13 @@ Move the prototype from a strong transparency reconstruction to a broad 2023 fin
 
 1. Decide whether to independently score the 19 Quebec municipalities using the published rubric and 2023 public reports; if done, keep those calculated scores distinct from the published LGPI results, which omit Quebec.
 2. Resolve the Kawartha Lakes and Chatham-Kent publication conflicts.
-3. Complete Calgary's legacy-field mapping as the reference extraction.
-4. Ingest Edmonton, Toronto, Vancouver, Burnaby and Halifax as cross-province validation cases.
-5. Build province-specific adapters for structured 2023 returns where available.
-6. Add the remaining municipalities.
-7. Source 2023 dwelling denominators used by LGPI.
+3. Alberta reference extraction is complete: all 9 LGPI Alberta municipalities are generated from the official 2023 FIR/SIR workbook, with Calgary reconciled to its audited report.
+4. Build the B.C. 2023 structured-schedule adapter for all 17 LGPI B.C. municipalities.
+5. Build the Ontario 2023 FIR adapter for all 41 LGPI Ontario municipalities.
+6. Ingest Atlantic, Prairie and territorial municipalities from the strongest structured or audited sources available.
+7. Source the Statistics Canada dwelling denominators used by LGPI.
 8. Reproduce dollars-per-household and provincial-average calculations.
-9. Run reconciliation checks against any historical LGPI values that remain publicly accessible.
+9. Run reconciliation checks against historical LGPI values that remain publicly accessible.
 
 ## Definition of complete for a municipality
 
