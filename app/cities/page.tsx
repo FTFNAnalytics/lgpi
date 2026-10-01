@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { provinceNames, transparency2023 } from "@/lib/lgpi-data";
+import { municipalities2023, provinceNames } from "@/lib/lgpi-data";
 
 export default function CitiesPage() {
-  const provinces = [...new Set(transparency2023.map((record) => record.province))].sort();
+  const provinces = [...new Set(municipalities2023.map((record) => record.province))].sort();
 
   return (
     <main>
@@ -16,20 +16,20 @@ export default function CitiesPage() {
       <section className="section">
         <div className="shell">
           {provinces.map((province) => {
-            const rows = transparency2023
+            const rows = municipalities2023
               .filter((record) => record.province === province)
               .sort((a, b) => a.name.localeCompare(b.name));
             return (
               <section key={province} style={{ marginBottom: 42 }}>
                 <div className="section-heading">
                   <h2>{provinceNames[province]}</h2>
-                  <p>{rows.length} verified 2023 records</p>
+                  <p>{rows.length} LGPI municipalities</p>
                 </div>
                 <div className="city-list">
                   {rows.map((record) => (
                     <Link className="city-link" href={"/cities/" + record.slug} key={record.slug}>
                       <strong>{record.name}</strong>
-                      <span>{record.score}/33</span>
+                      <span>{record.score === null ? "Transparency unscored" : `${record.score}/33`}</span>
                     </Link>
                   ))}
                 </div>
@@ -37,7 +37,7 @@ export default function CitiesPage() {
             );
           })}
           <div className="notice">
-            <strong>Quebec:</strong> the published 2023 LGPI report explicitly omits Quebec transparency scores. Those municipalities are not represented as zero-score records; any future Quebec scores in this reconstruction will be clearly labeled as independently calculated.
+            <strong>Quebec:</strong> all 19 LGPI municipalities now have 2023 financial profiles from MAMH. The published LGPI report omitted Quebec transparency scoring, so those profiles are shown as unscored rather than zero.
           </div>
         </div>
       </section>

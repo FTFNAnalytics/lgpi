@@ -6,12 +6,12 @@ import {
   getFinancialSourceUnavailable,
   getMetricDefinition,
   getMunicipality,
+  municipalities2023,
   sourceDiscrepancies,
-  transparency2023,
 } from "@/lib/lgpi-data";
 
 export function generateStaticParams() {
-  return transparency2023.map((record) => ({ slug: record.slug }));
+  return municipalities2023.map((record) => ({ slug: record.slug }));
 }
 
 export default async function CityPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -31,10 +31,20 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
           <div>
             <p className="eyebrow">{record.provinceName} · fiscal year 2023</p>
             <h1 className="city-title">{record.name}</h1>
-            <p>Source-cited reconstruction status: <strong>{record.components ? "component table verified" : "published total verified"}</strong>.</p>
+            <p>
+              Source-cited reconstruction status:{" "}
+              <strong>
+                {!record.transparencyPublished
+                  ? "financial profile verified; transparency not published"
+                  : record.components
+                    ? "component table verified"
+                    : "published total verified"}
+              </strong>.
+            </p>
           </div>
           <div className="big-score">
-            {record.score}<small>Transparency score / 33</small>
+            {record.score === null ? "—" : record.score}
+            <small>{record.score === null ? "Transparency score not published" : "Transparency score / 33"}</small>
           </div>
         </div>
       </section>
@@ -51,7 +61,11 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             <p>Component values are transcribed from the detailed regional tables where those tables have been recovered.</p>
           </div>
 
-          {components.length ? (
+          {!record.transparencyPublished ? (
+            <div className="notice">
+              <strong>Transparency score not published:</strong> the published 2023 LGPI edition explicitly omitted Quebec transparency scoring. This profile preserves that omission rather than calculating or assigning a score.
+            </div>
+          ) : components.length ? (
             <div className="component-grid">
               {components.map((row) => (
                 <div className="component" key={row.key}>
@@ -66,9 +80,11 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             </div>
           )}
 
-          <p style={{ marginTop: 16 }}>
-            <a className="source-link" href={record.sourceUrl} target="_blank" rel="noreferrer">Open transparency source ↗</a>
-          </p>
+          {record.sourceUrl && (
+            <p style={{ marginTop: 16 }}>
+              <a className="source-link" href={record.sourceUrl} target="_blank" rel="noreferrer">Open transparency source ↗</a>
+            </p>
+          )}
         </div>
       </section>
 

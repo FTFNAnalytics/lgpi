@@ -1,0 +1,38 @@
+name: Import Quebec 2023 MAMH data
+
+on:
+  push:
+    branches: [data/quebec-2023-mamh]
+    paths:
+      - "scripts/ingest_quebec_2023.py"
+      - ".github/workflows/ingest-quebec.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-data]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/quebec-2023-mamh
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Generate Quebec 2023 data
+        run: python scripts/ingest_quebec_2023.py
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data/2023/quebec.json && git ls-files --error-unmatch data/2023/quebec.json >/dev/null 2>&1; then
+            echo "Generated data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2023/quebec.json
+          git commit -m "Import Quebec 2023 MAMH data [generated-data]"
+          git push origin HEAD:data/quebec-2023-mamh
