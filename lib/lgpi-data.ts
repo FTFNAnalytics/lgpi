@@ -11,7 +11,7 @@ export const TORONTO_2023_URL =
 export const TARGET_MUNICIPALITIES = 99;
 export const VERIFIED_TRANSPARENCY_TOTALS = 80;
 export const VERIFIED_COMPONENT_BREAKDOWNS = 73;
-export const QUEBEC_PENDING = 19;
+export const QUEBEC_UNSCORED = 19;
 
 export const provinceNames = {
   AB: "Alberta",
@@ -398,6 +398,6 @@ export function formatThousands(value: number | null) {
 
 export const coverageByProvince = Object.entries(provinceNames).map(([province, name]) => {
   const verified = transparency2023.filter((record) => record.province === province).length;
-  const expected = province === "QC" ? QUEBEC_PENDING : verified;
+  const expected = province === "QC" ? QUEBEC_UNSCORED : verified;
   return { province: province as ProvinceCode, name, verified, expected };
 });
