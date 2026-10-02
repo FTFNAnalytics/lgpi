@@ -79,8 +79,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                   <strong>{row.value} / {row.max}</strong>
                 </div>
               ))}
-              </div>
-            </>
+            </div>
           ) : (
             <div className="empty-state">
               The 2023 total is verified, but its ten component values are not yet loaded. No component scores have been inferred.
@@ -190,7 +189,8 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                   </article>
                 );
               })}
-            </div>
+              </div>
+            </>
           ) : (
             <div className="empty-state">
               {financialSourceUnavailable
