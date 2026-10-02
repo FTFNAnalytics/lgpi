@@ -17,10 +17,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <div className="shell footer-grid">
             <div>
               <strong>LGPI 2023 Reconstruction</strong>
-              <p>Independent prototype built from published LGPI methodology and public municipal records.</p>
+              <p>Complete 99-municipality source reconstruction built from published LGPI methodology and official municipal records.</p>
             </div>
             <div className="footer-note">
-              Transparency scores describe financial reporting quality. They are not a fiscal-health rating.
+              2023 source pass complete · calculated per-household views remain gated pending exact denominator replication.
             </div>
           </div>
         </footer>
