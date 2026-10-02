@@ -330,6 +330,38 @@ def main() -> None:
                 **({"note":note} if note else {}),
             })
 
+    required_core={
+        "financial_assets_total",
+        "financial_liabilities_total",
+        "long_term_debt",
+        "net_financial_assets",
+        "capital_assets",
+        "total_revenue",
+        "total_expenditure",
+    }
+    by_municipality={}
+    for row in observations:
+        by_municipality.setdefault(row["municipalitySlug"],set()).add(row["metric"])
+
+    failures=[]
+    for slug in SOURCES:
+        missing=sorted(required_core-by_municipality.get(slug,set()))
+        if missing:
+            failures.append(f"{slug}: missing core metrics {missing}")
+    duplicate_keys=[]
+    seen=set()
+    for row in observations:
+        key=(row["municipalitySlug"],row["metric"])
+        if key in seen:
+            duplicate_keys.append(key)
+        seen.add(key)
+    if failures or duplicate_keys:
+        raise RuntimeError(
+            "Final tranche QA failed: "
+            + "; ".join(failures)
+            + (f"; duplicate keys={duplicate_keys}" if duplicate_keys else "")
+        )
+
     doc={
         "schemaVersion":1,
         "year":2023,
