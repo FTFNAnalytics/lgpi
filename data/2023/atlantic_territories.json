@@ -64,7 +64,7 @@
       "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
       "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
       "sourceUnits": "dollars",
-      "observationCount": 0
+      "observationCount": 23
     },
     {
       "slug": "whitehorse",
@@ -1973,6 +1973,358 @@
       "mappingMethod": "direct"
     },
     {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 56979.272,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total Financial Assets",
+      "sourceReportedLabel": "Total Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Total Financial Assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Image-only official statement; values extracted in one targeted OCR pass and reviewed against the statement layout."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "holdings_council_controlled",
+      "valueThousands": 1855.598,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Investment in Government Business Enterprise",
+      "sourceReportedLabel": "Investment in Government Business Enterprise",
+      "sourceFieldCodes": [
+        "statement:Investment in Government Business Enterprise"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest legacy council-controlled-operations concept."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "financial_assets_other",
+      "valueThousands": 55123.674,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Financial assets less Government Business Enterprise investment",
+      "sourceReportedLabel": "Financial assets less Government Business Enterprise investment",
+      "sourceFieldCodes": [
+        "statement:Financial assets less Government Business Enterprise investment"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 185307.445,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total Liabilities",
+      "sourceReportedLabel": "Total Liabilities",
+      "sourceFieldCodes": [
+        "statement:Total Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 6416.586,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Sick leave and post-employment benefits",
+      "sourceReportedLabel": "Sick leave and post-employment benefits",
+      "sourceFieldCodes": [
+        "statement:Sick leave and post-employment benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 91485.773,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Long term debt",
+      "sourceReportedLabel": "Long term debt",
+      "sourceFieldCodes": [
+        "statement:Long term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": -128328.173,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Net Debt",
+      "sourceReportedLabel": "Net Debt",
+      "sourceFieldCodes": [
+        "statement:Net Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 338911.585,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 44118.086,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Property taxes",
+      "sourceReportedLabel": "Property taxes",
+      "sourceFieldCodes": [
+        "statement:Property taxes"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 22241.684,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Water and sewer + recreation + parking + rentals",
+      "sourceReportedLabel": "Water and sewer + recreation + parking + rentals",
+      "sourceFieldCodes": [
+        "statement:Water and sewer + recreation + parking + rentals"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Selected service/user-charge lines; licences, tourism levy and miscellaneous revenues remain in other revenue."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 38494.189,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Government transfers for operations + capital + municipal capital expenditure grant",
+      "sourceReportedLabel": "Government transfers for operations + capital + municipal capital expenditure grant",
+      "sourceFieldCodes": [
+        "statement:Government transfers for operations + capital + municipal capital expenditure grant"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 168.363,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Interest and other",
+      "sourceReportedLabel": "Interest and other",
+      "sourceFieldCodes": [
+        "statement:Interest and other"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source line combines interest with other minor revenue."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 5945.983,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Licences + tourism levy + miscellaneous + police protection + switch program + CADC income",
+      "sourceReportedLabel": "Licences + tourism levy + miscellaneous + police protection + switch program + CADC income",
+      "sourceFieldCodes": [
+        "statement:Licences + tourism levy + miscellaneous + police protection + switch program + CADC income"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 110953.98,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Operating revenue plus capital-related transfers/gain, net of pension/post-employment adjustments",
+      "sourceReportedLabel": "Operating revenue plus capital-related transfers/gain, net of pension/post-employment adjustments",
+      "sourceFieldCodes": [
+        "statement:Operating revenue plus capital-related transfers/gain, net of pension/post-employment adjustments"
+      ],
+      "mappingMethod": "direct",
+      "note": "Full-statement revenue basis constructed from audited operating revenue and separately reported other-revenue items; retained pending exact legacy aggregation convention."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 8046.454,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "General government",
+      "sourceReportedLabel": "General government",
+      "sourceFieldCodes": [
+        "statement:General government"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 15849.727,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 14833.799,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Street maintenance and environment",
+      "sourceReportedLabel": "Street maintenance and environment",
+      "sourceFieldCodes": [
+        "statement:Street maintenance and environment"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level transportation/public-works function."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 8597.026,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Water and sewer",
+      "sourceReportedLabel": "Water and sewer",
+      "sourceFieldCodes": [
+        "statement:Water and sewer"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 10287.306,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Development, heritage, and other",
+      "sourceReportedLabel": "Development, heritage, and other",
+      "sourceFieldCodes": [
+        "statement:Development, heritage, and other"
+      ],
+      "mappingMethod": "direct",
+      "note": "Broader than the legacy planning/development field."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 9200.535,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Parks and recreation",
+      "sourceReportedLabel": "Parks and recreation",
+      "sourceFieldCodes": [
+        "statement:Parks and recreation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 11629.475,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "interest_expense",
+      "valueThousands": 3426.48,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Interest on long term debt",
+      "sourceReportedLabel": "Interest on long term debt",
+      "sourceFieldCodes": [
+        "statement:Interest on long term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 92766.742,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total expenditures",
+      "sourceReportedLabel": "Total expenditures",
+      "sourceFieldCodes": [
+        "statement:Total expenditures"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
       "municipalitySlug": "whitehorse",
       "year": 2023,
       "metric": "financial_assets_total",
@@ -3128,9 +3480,9 @@
   },
   "stats": {
     "municipalityCount": 10,
-    "municipalitiesWithObservations": 9,
-    "observationCount": 200,
-    "reportedCount": 186,
-    "pendingReviewCount": 14
+    "municipalitiesWithObservations": 10,
+    "observationCount": 223,
+    "reportedCount": 204,
+    "pendingReviewCount": 19
   }
 }
