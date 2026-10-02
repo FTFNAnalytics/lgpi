@@ -1,0 +1,23 @@
+name: Inspect final Atlantic and territorial 2023 statements
+
+on:
+  push:
+    branches: [data/atlantic-territories-2023-final]
+    paths:
+      - "scripts/inspect_final_10_2023.py"
+      - ".github/workflows/inspect-final-10.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pypdf beautifulsoup4
+      - run: python scripts/inspect_final_10_2023.py
