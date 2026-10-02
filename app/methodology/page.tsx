@@ -1,4 +1,7 @@
 import {
+  financialObservationCount,
+  financialSourceUnavailableCount,
+  municipalitiesWithFinancialObservations,
   REPORT_URL,
   sourceDiscrepancies,
   transparencyCriteria,
@@ -14,7 +17,7 @@ export default function MethodologyPage() {
         <div className="shell">
           <p className="eyebrow">Methods · provenance · QA</p>
           <h1>How this reconstruction works</h1>
-          <p>The goal is faithful replication before reinterpretation: preserve the published LGPI scoring model, recover 2023 values from evidence, and make every uncertainty explicit.</p>
+          <p>The reconstruction preserves the published LGPI model first, then rebuilds the 2023 evidence layer from official sources. Every uncertainty stays explicit rather than being hidden behind a completed-looking number.</p>
         </div>
       </section>
       <section className="section">
@@ -33,11 +36,13 @@ export default function MethodologyPage() {
             </table>
           </div>
 
-          <h2>Coverage as of this build</h2>
+          <h2>2023 coverage</h2>
           <p>
-            The published project universe is {TARGET_MUNICIPALITIES} municipalities. The 2025 report publishes {VERIFIED_TRANSPARENCY_TOTALS} non-Quebec 2023 transparency scores, all of which are loaded here; {VERIFIED_COMPONENT_BREAKDOWNS} currently include all ten component values. The report explicitly states that its current edition omits transparency scores for Quebec.
+            The product universe contains {TARGET_MUNICIPALITIES} municipalities. {municipalitiesWithFinancialObservations} have source-backed financial observations; the remaining {financialSourceUnavailableCount} municipality is explicitly source unavailable in the relevant provincial system. The financial layer contains {financialObservationCount.toLocaleString("en-CA")} source-backed observations.
           </p>
-          <p>The 19 Quebec municipalities are therefore unscored in the published 2023 report, not zero-score municipalities. If this reconstruction later calculates Quebec scores independently, they will be labeled separately from published LGPI results.</p>
+          <p>
+            The published report includes {VERIFIED_TRANSPARENCY_TOTALS} non-Quebec 2023 transparency scores, all of which are loaded here; {VERIFIED_COMPONENT_BREAKDOWNS} include all ten component values. The report explicitly omits transparency scores for Quebec, so the 19 Quebec municipalities remain unscored rather than being shown as zero.
+          </p>
 
           <h2>Financial observations</h2>
           <p>
@@ -49,7 +54,7 @@ export default function MethodologyPage() {
 
           <h2>Household normalization</h2>
           <p>
-            Legacy LGPI pages display totals, dollars per household, and percentage of provincial average. This prototype deliberately withholds the latter two until the exact 2023 dwelling denominators and aggregation rules are source-verified. The rebuild will preserve historical comparability rather than substituting population without disclosure.
+            Legacy LGPI pages display totals, dollars per household, and percentage of provincial average. This reconstruction deliberately withholds the latter two until the exact 2023 dwelling denominators and aggregation rules are source-verified. Historical comparability takes priority over substituting a convenient population denominator.
           </p>
 
           <h2>Known source conflicts</h2>
