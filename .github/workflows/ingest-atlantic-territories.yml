@@ -1,0 +1,37 @@
+name: Generate final Atlantic and territorial 2023 data
+
+on:
+  push:
+    branches: [data/atlantic-territories-2023-final]
+    paths:
+      - "scripts/ingest_atlantic_territories_2023.py"
+      - ".github/workflows/ingest-atlantic-territories.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-data]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/atlantic-territories-2023-final
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate final 2023 data
+        run: python scripts/ingest_atlantic_territories_2023.py
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data/2023/atlantic_territories.json && git ls-files --error-unmatch data/2023/atlantic_territories.json >/dev/null 2>&1; then
+            echo "Generated data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2023/atlantic_territories.json
+          git commit -m "Import final Atlantic and territorial 2023 data [generated-data]"
+          git push origin HEAD:data/atlantic-territories-2023-final
