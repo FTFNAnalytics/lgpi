@@ -389,6 +389,46 @@ export function formatThousands(value: number | null) {
   }).format(value * 1000);
 }
 
+export const financialObservationCount = financial2023.length;
+export const reportedFinancialObservationCount = financial2023.filter(
+  (observation) => observation.status === "reported",
+).length;
+export const pendingFinancialObservationCount = financial2023.filter(
+  (observation) => observation.status === "pending_review",
+).length;
+export const municipalitiesWithFinancialObservations = new Set(
+  financial2023.map((observation) => observation.municipalitySlug),
+).size;
+export const financialSourceUnavailableCount = ontario2023SourceUnavailable.length;
+
+export const financialCoverageByProvince = Object.entries(provinceNames).map(
+  ([province, name]) => {
+    const municipalitySlugs = municipalities2023
+      .filter((record) => record.province === province)
+      .map((record) => record.slug);
+    const withObservations = new Set(
+      financial2023
+        .filter((observation) => municipalitySlugs.includes(observation.municipalitySlug))
+        .map((observation) => observation.municipalitySlug),
+    ).size;
+    const sourceUnavailable = ontario2023SourceUnavailable.filter((record) =>
+      municipalitySlugs.includes(record.slug),
+    ).length;
+    const observations = financial2023.filter((observation) =>
+      municipalitySlugs.includes(observation.municipalitySlug),
+    ).length;
+
+    return {
+      province: province as ProvinceCode,
+      name,
+      municipalities: municipalitySlugs.length,
+      withObservations,
+      sourceUnavailable,
+      observations,
+    };
+  },
+);
+
 export const coverageByProvince = Object.entries(provinceNames).map(([province, name]) => {
   const verified = transparency2023.filter((record) => record.province === province).length;
   const expected = province === "QC" ? QUEBEC_UNSCORED : verified;
