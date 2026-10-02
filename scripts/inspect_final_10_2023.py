@@ -14,12 +14,8 @@ from pypdf import PdfReader
 CONFIG = {
     "halifax": {
         "name": "Halifax",
-        "pages": [
-            "https://www.halifax.ca/city-hall/accountability-transparency/financial-transparency/financial-reports",
-            "https://www.halifax.ca/city-hall/accountability-transparency/annual-reports",
-        ],
-        "must": ["2023"],
-        "prefer": ["financial", "report", "annual"],
+        "direct": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+        "prefer": ["financial"],
     },
     "cape-breton": {
         "name": "Cape Breton",
@@ -29,13 +25,8 @@ CONFIG = {
     },
     "moncton": {
         "name": "Moncton",
-        "pages": [
-            "https://www.moncton.ca/en/city-hall/budget-finances",
-            "https://www.moncton.ca/en/city-hall/annual-reports",
-            "https://www.moncton.ca/annual-reports",
-        ],
-        "must": ["2023"],
-        "prefer": ["annual", "financial"],
+        "direct": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+        "prefer": ["financial"],
     },
     "fredericton": {
         "name": "Fredericton",
@@ -51,12 +42,8 @@ CONFIG = {
     },
     "st-johns": {
         "name": "St. John's",
-        "pages": [
-            "https://www.stjohns.ca/en/city-hall/annual-reports.aspx",
-            "https://www.stjohns.ca/en/city-hall/budgets-and-financial-statements.aspx",
-        ],
-        "must": ["2023"],
-        "prefer": ["annual", "financial"],
+        "direct": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+        "prefer": ["financial"],
     },
     "charlottetown": {
         "name": "Charlottetown",
@@ -71,16 +58,12 @@ CONFIG = {
     },
     "yellowknife": {
         "name": "Yellowknife",
-        "pages": [
-            "https://www.yellowknife.ca/en/city-government/financial-statements.aspx",
-            "https://www.yellowknife.ca/en/city-government/resources/Financial-Services/",
-        ],
-        "must": ["2023"],
-        "prefer": ["financial", "audited"],
+        "direct": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+        "prefer": ["financial"],
     },
     "iqaluit": {
         "name": "Iqaluit",
-        "direct": "https://iqaluit.ca/sites/default/files/finance_cow_meeting_02_agenda_-_july_2_2024_eng.pdf",
+        "direct": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
         "prefer": ["2023 audited financial statements"],
     },
 }
@@ -113,9 +96,20 @@ TERMS = [
 ]
 
 
+def safe_url(url: str) -> str:
+    parts=urllib.parse.urlsplit(url)
+    return urllib.parse.urlunsplit((
+        parts.scheme,
+        parts.netloc,
+        urllib.parse.quote(urllib.parse.unquote(parts.path), safe="/,()"),
+        parts.query,
+        parts.fragment,
+    ))
+
+
 def fetch(url: str) -> bytes:
     req=urllib.request.Request(
-        url,
+        safe_url(url),
         headers={
             "User-Agent":"Mozilla/5.0 LGPI-reconstruction/0.1 (+https://github.com/FTFNAnalytics/lgpi)",
             "Accept":"text/html,application/pdf,*/*",
