@@ -1,0 +1,38 @@
+name: OCR Charlottetown 2023 statement pages
+
+on:
+  push:
+    branches: [data/atlantic-territories-2023-final]
+    paths:
+      - ".github/workflows/ocr-charlottetown.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OCR tools
+        run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils tesseract-ocr >/dev/null
+      - name: Fetch statement
+        run: |
+          python - <<'PY'
+          import urllib.parse, urllib.request
+          url="https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City of Charlottetown Consolidated Financial Statements - March 31, 2023.pdf"
+          p=urllib.parse.urlsplit(url)
+          safe=urllib.parse.urlunsplit((p.scheme,p.netloc,urllib.parse.quote(p.path,safe="/,()"),p.query,p.fragment))
+          req=urllib.request.Request(safe,headers={"User-Agent":"Mozilla/5.0 LGPI-reconstruction/0.1"})
+          with urllib.request.urlopen(req,timeout=120) as r:
+              open("/tmp/charlottetown.pdf","wb").write(r.read())
+          PY
+      - name: OCR core statement pages
+        run: |
+          mkdir -p /tmp/pages
+          pdftoppm -f 1 -l 10 -jpeg -r 180 /tmp/charlottetown.pdf /tmp/pages/page >/dev/null 2>&1
+          for img in /tmp/pages/*.jpg; do
+            echo "===== $img ====="
+            tesseract "$img" stdout --psm 6 2>/dev/null
+          done
