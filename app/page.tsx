@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { MunicipalitySearch } from "@/components/municipality-search";
 import {
-  financial2023,
+  financialObservationCount,
+  municipalitiesWithFinancialObservations,
   TARGET_MUNICIPALITIES,
   VERIFIED_COMPONENT_BREAKDOWNS,
   VERIFIED_TRANSPARENCY_TOTALS,
@@ -15,17 +16,17 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="shell">
-          <p className="eyebrow">2023 public reconstruction · working prototype</p>
-          <h1>Canadian municipal finance, made inspectable.</h1>
+          <p className="eyebrow">LGPI 2023 · national reconstruction</p>
+          <h1>Canadian municipal finance, rebuilt for inspection.</h1>
           <p className="hero-deck">
-            A modern reconstruction of the Local Government Performance Index using the published 33-point transparency methodology and source-cited municipal financial records.
+            The complete 99-municipality LGPI product universe, reconstructed from the published transparency methodology and official 2023 municipal financial sources.
           </p>
           <div style={{ marginTop: 30 }}>
             <MunicipalitySearch />
           </div>
           <div className="hero-actions">
-            <Link className="button primary" href="/transparency">Explore the 2023 index</Link>
-            <Link className="button secondary" href="/methodology">See methodology & provenance</Link>
+            <Link className="button primary" href="/cities">Explore all 99 municipalities</Link>
+            <Link className="button secondary" href="/coverage">View national coverage</Link>
           </div>
         </div>
       </section>
@@ -35,15 +36,47 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">Reconstruction status</p>
-              <h2>Evidence first. Missing never means zero.</h2>
+              <h2>The 2023 source pass is complete.</h2>
             </div>
-            <p>The prototype publishes only observations recoverable from the LGPI report or official municipal financial records. Pending research stays visibly pending.</p>
+            <p>All 99 LGPI municipalities now have a resolved financial-data status. Missing, unavailable and broader-than-legacy source concepts remain explicit rather than being converted to zero.</p>
           </div>
           <div className="stat-grid">
-            <div className="stat"><strong>{TARGET_MUNICIPALITIES}</strong><span>municipalities in the 2023 product universe</span></div>
-            <div className="stat"><strong>{VERIFIED_COMPONENT_BREAKDOWNS}</strong><span>municipalities with all 10 component scores loaded</span></div>
-            <div className="stat"><strong>33</strong><span>maximum published transparency score</span></div>
-            <div className="stat"><strong>{financial2023.length.toLocaleString("en-CA")}</strong><span>official 2023 financial observations loaded</span></div>
+            <div className="stat"><strong>{TARGET_MUNICIPALITIES}/99</strong><span>municipalities represented</span></div>
+            <div className="stat"><strong>{municipalitiesWithFinancialObservations}</strong><span>municipalities with financial observations</span></div>
+            <div className="stat"><strong>{VERIFIED_TRANSPARENCY_TOTALS}/80</strong><span>published non-Quebec transparency scores loaded</span></div>
+            <div className="stat"><strong>{financialObservationCount.toLocaleString("en-CA")}</strong><span>official/source-backed 2023 observations</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section white">
+        <div className="shell">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Presentation route</p>
+              <h2>Three ways to see the rebuild working.</h2>
+            </div>
+            <p>Start with a source-rich city, compare two jurisdictions, then inspect the national evidence layer.</p>
+          </div>
+          <div className="card-grid">
+            <article className="card feature-card">
+              <span className="chip good">City profile</span>
+              <h2 style={{ marginTop: 14 }}>Calgary</h2>
+              <p>Full transparency components plus structured Alberta financial-source mappings and provenance.</p>
+              <Link className="card-link" href="/cities/calgary">Open Calgary →</Link>
+            </article>
+            <article className="card feature-card">
+              <span className="chip good">Cross-jurisdiction</span>
+              <h2 style={{ marginTop: 14 }}>Compare cities</h2>
+              <p>Contrast transparency and source-backed financial fields without collapsing different service structures into a single score.</p>
+              <Link className="card-link" href="/compare">Open comparison →</Link>
+            </article>
+            <article className="card feature-card">
+              <span className="chip good">National evidence</span>
+              <h2 style={{ marginTop: 14 }}>Coverage</h2>
+              <p>See the full 99-city status, source availability, observations and deliberately withheld calculated views.</p>
+              <Link className="card-link" href="/coverage">Open coverage →</Link>
+            </article>
           </div>
         </div>
       </section>
