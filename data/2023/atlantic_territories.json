@@ -1,0 +1,3488 @@
+{
+  "schemaVersion": 1,
+  "year": 2023,
+  "sourceType": "official_audited_statements",
+  "municipalities": [
+    {
+      "slug": "halifax",
+      "name": "Halifax",
+      "province": "NS",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceUnits": "thousands",
+      "observationCount": 31
+    },
+    {
+      "slug": "cape-breton",
+      "name": "Cape Breton",
+      "province": "NS",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceUnits": "dollars",
+      "observationCount": 20
+    },
+    {
+      "slug": "moncton",
+      "name": "Moncton",
+      "province": "NB",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceUnits": "dollars",
+      "observationCount": 13
+    },
+    {
+      "slug": "fredericton",
+      "name": "Fredericton",
+      "province": "NB",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 22
+    },
+    {
+      "slug": "saint-john",
+      "name": "Saint John",
+      "province": "NB",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 19
+    },
+    {
+      "slug": "st-johns",
+      "name": "St. John's",
+      "province": "NL",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 19
+    },
+    {
+      "slug": "charlottetown",
+      "name": "Charlottetown",
+      "province": "PE",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceUnits": "dollars",
+      "observationCount": 23
+    },
+    {
+      "slug": "whitehorse",
+      "name": "Whitehorse",
+      "province": "YT",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceUnits": "dollars",
+      "observationCount": 30
+    },
+    {
+      "slug": "yellowknife",
+      "name": "Yellowknife",
+      "province": "NT",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceUnits": "thousands",
+      "observationCount": 27
+    },
+    {
+      "slug": "iqaluit",
+      "name": "Iqaluit",
+      "province": "NU",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 19
+    }
+  ],
+  "observations": [
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 1161128.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "holdings_council_controlled",
+      "valueThousands": 296323.0,
+      "status": "pending_review",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Investment in Halifax Regional Water Commission",
+      "sourceReportedLabel": "Investment in Halifax Regional Water Commission",
+      "sourceFieldCodes": [
+        "statement:Investment in Halifax Regional Water Commission"
+      ],
+      "mappingMethod": "direct",
+      "note": "Government business enterprise equity; closest legacy LGPI council-controlled-operations concept."
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "financial_assets_other",
+      "valueThousands": 864805.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Financial assets less HRWC investment",
+      "sourceReportedLabel": "Financial assets less HRWC investment",
+      "sourceFieldCodes": [
+        "statement:Financial assets less HRWC investment"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 607493.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Financial liabilities",
+      "sourceReportedLabel": "Financial liabilities",
+      "sourceFieldCodes": [
+        "statement:Financial liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 70274.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Employee future benefits",
+      "sourceReportedLabel": "Employee future benefits",
+      "sourceFieldCodes": [
+        "statement:Employee future benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 198262.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": 553635.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Net financial assets",
+      "sourceReportedLabel": "Net financial assets",
+      "sourceFieldCodes": [
+        "statement:Net financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 2033615.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 953085.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Taxation + taxation from other governments",
+      "sourceReportedLabel": "Taxation + taxation from other governments",
+      "sourceFieldCodes": [
+        "statement:Taxation + taxation from other governments"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 138962.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "User fees and charges",
+      "sourceReportedLabel": "User fees and charges",
+      "sourceFieldCodes": [
+        "statement:User fees and charges"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 109686.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Government grants",
+      "sourceReportedLabel": "Government grants",
+      "sourceFieldCodes": [
+        "statement:Government grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "developer_contributions",
+      "valueThousands": 1737.0,
+      "status": "pending_review",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Development levies",
+      "sourceReportedLabel": "Development levies",
+      "sourceFieldCodes": [
+        "statement:Development levies"
+      ],
+      "mappingMethod": "direct",
+      "note": "Development levies used as the closest explicit developer-related revenue line."
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 19661.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 166744.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Remaining consolidated revenue",
+      "sourceReportedLabel": "Remaining consolidated revenue",
+      "sourceFieldCodes": [
+        "statement:Remaining consolidated revenue"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Residual includes penalties/fines, land sales/contributions, HRWC income and grant in lieu."
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 1389875.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total revenue",
+      "sourceReportedLabel": "Total revenue",
+      "sourceFieldCodes": [
+        "statement:Total revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 146986.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "General government services",
+      "sourceReportedLabel": "General government services",
+      "sourceFieldCodes": [
+        "statement:General government services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 270084.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 333893.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Transportation services",
+      "sourceReportedLabel": "Transportation services",
+      "sourceFieldCodes": [
+        "statement:Transportation services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 51411.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Environmental services",
+      "sourceReportedLabel": "Environmental services",
+      "sourceFieldCodes": [
+        "statement:Environmental services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 165912.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 37769.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Planning and development services",
+      "sourceReportedLabel": "Planning and development services",
+      "sourceFieldCodes": [
+        "statement:Planning and development services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 1181179.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "salaries_benefits",
+      "valueThousands": 472923.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Salaries, wages and benefits",
+      "sourceReportedLabel": "Salaries, wages and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries, wages and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "interest_expense",
+      "valueThousands": 5109.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Interest on long-term debt",
+      "sourceReportedLabel": "Interest on long-term debt",
+      "sourceFieldCodes": [
+        "statement:Interest on long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "goods",
+      "valueThousands": 82642.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Materials, goods, supplies and utilities",
+      "sourceReportedLabel": "Materials, goods, supplies and utilities",
+      "sourceFieldCodes": [
+        "statement:Materials, goods, supplies and utilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "contracted_services",
+      "valueThousands": 163531.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Contracted services",
+      "sourceReportedLabel": "Contracted services",
+      "sourceFieldCodes": [
+        "statement:Contracted services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "grants_object",
+      "valueThousands": 228194.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "External transfers and grants",
+      "sourceReportedLabel": "External transfers and grants",
+      "sourceFieldCodes": [
+        "statement:External transfers and grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "depreciation_object",
+      "valueThousands": 146991.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 146991.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "object_other",
+      "valueThousands": 81789.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Other operating expenses",
+      "sourceReportedLabel": "Other operating expenses",
+      "sourceFieldCodes": [
+        "statement:Other operating expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2023,
+      "metric": "total_expenditure_object",
+      "valueThousands": 1181179.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2023-financial-statements_cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 102629.185,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Total financial assets",
+      "sourceReportedLabel": "Total financial assets",
+      "sourceFieldCodes": [
+        "statement:Total financial assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Audited statement is image-based; values visually verified from the official signed statement."
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 171687.131,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Total financial liabilities",
+      "sourceReportedLabel": "Total financial liabilities",
+      "sourceFieldCodes": [
+        "statement:Total financial liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 6186.993,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Employee benefits",
+      "sourceReportedLabel": "Employee benefits",
+      "sourceFieldCodes": [
+        "statement:Employee benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 85000.433,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": -69057.946,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Net debt",
+      "sourceReportedLabel": "Net debt",
+      "sourceFieldCodes": [
+        "statement:Net debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 466939.369,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Work in progress is reported separately and is not silently added to this legacy field."
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 128483.308,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Taxes + grants in lieu",
+      "sourceReportedLabel": "Taxes + grants in lieu",
+      "sourceFieldCodes": [
+        "statement:Taxes + grants in lieu"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 24494.97,
+      "status": "pending_review",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Sales of services + water utility revenue",
+      "sourceReportedLabel": "Sales of services + water utility revenue",
+      "sourceFieldCodes": [
+        "statement:Sales of services + water utility revenue"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level user-charge grouping from the audited statement."
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 49547.148,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Unconditional + conditional + capital grants",
+      "sourceReportedLabel": "Unconditional + conditional + capital grants",
+      "sourceFieldCodes": [
+        "statement:Unconditional + conditional + capital grants"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 794.255,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 16872.273,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Other own-source/consolidated revenue",
+      "sourceReportedLabel": "Other own-source/consolidated revenue",
+      "sourceFieldCodes": [
+        "statement:Other own-source/consolidated revenue"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 220191.954,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Total revenue",
+      "sourceReportedLabel": "Total revenue",
+      "sourceFieldCodes": [
+        "statement:Total revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 17022.224,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "General government",
+      "sourceReportedLabel": "General government",
+      "sourceFieldCodes": [
+        "statement:General government"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 49198.662,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 56957.968,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Transportation",
+      "sourceReportedLabel": "Transportation",
+      "sourceFieldCodes": [
+        "statement:Transportation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "health_services",
+      "valueThousands": 2721.969,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Public health and welfare",
+      "sourceReportedLabel": "Public health and welfare",
+      "sourceFieldCodes": [
+        "statement:Public health and welfare"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 1988.815,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Environmental development + planning/development",
+      "sourceReportedLabel": "Environmental development + planning/development",
+      "sourceFieldCodes": [
+        "statement:Environmental development + planning/development"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 13278.176,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "utility_operations",
+      "valueThousands": 16753.009,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Water utility expenses",
+      "sourceReportedLabel": "Water utility expenses",
+      "sourceFieldCodes": [
+        "statement:Water utility expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 174439.945,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2022-2023-CBRM_Audited_Financial_Statements_22-23.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Audited Financial Statements — March 31, 2023",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 188356.414,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Financial assets — 2023 comparative",
+      "sourceReportedLabel": "Financial assets — 2023 comparative",
+      "sourceFieldCodes": [
+        "statement:Financial assets — 2023 comparative"
+      ],
+      "mappingMethod": "direct",
+      "note": "Transcribed from the official 2024 consolidated statements' 2023 comparative column."
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 218402.681,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Liabilities — 2023 comparative",
+      "sourceReportedLabel": "Liabilities — 2023 comparative",
+      "sourceFieldCodes": [
+        "statement:Liabilities — 2023 comparative"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 13908.2,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Post-employment benefits — 2023 comparative",
+      "sourceReportedLabel": "Post-employment benefits — 2023 comparative",
+      "sourceFieldCodes": [
+        "statement:Post-employment benefits — 2023 comparative"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 144999.0,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Long-term debt — 2023 comparative",
+      "sourceReportedLabel": "Long-term debt — 2023 comparative",
+      "sourceFieldCodes": [
+        "statement:Long-term debt — 2023 comparative"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": -30046.267,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Net debt — 2023 comparative",
+      "sourceReportedLabel": "Net debt — 2023 comparative",
+      "sourceFieldCodes": [
+        "statement:Net debt — 2023 comparative"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 948117.107,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Tangible capital assets — 2023 comparative",
+      "sourceReportedLabel": "Tangible capital assets — 2023 comparative",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets — 2023 comparative"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 168249.168,
+      "status": "pending_review",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Property tax warrant",
+      "sourceReportedLabel": "Property tax warrant",
+      "sourceFieldCodes": [
+        "statement:Property tax warrant"
+      ],
+      "mappingMethod": "direct",
+      "note": "Legacy grants-in-lieu treatment remains under review."
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 38587.922,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Water and wastewater user fees",
+      "sourceReportedLabel": "Water and wastewater user fees",
+      "sourceFieldCodes": [
+        "statement:Water and wastewater user fees"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 17185.068,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Community/equalization + operating/capital government transfers",
+      "sourceReportedLabel": "Community/equalization + operating/capital government transfers",
+      "sourceFieldCodes": [
+        "statement:Community/equalization + operating/capital government transfers"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 12816.099,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Interest and return on investments",
+      "sourceReportedLabel": "Interest and return on investments",
+      "sourceFieldCodes": [
+        "statement:Interest and return on investments"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 273424.014,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Operating revenue plus capital transfers/contributions",
+      "sourceReportedLabel": "Operating revenue plus capital transfers/contributions",
+      "sourceFieldCodes": [
+        "statement:Operating revenue plus capital transfers/contributions"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "salaries_benefits",
+      "valueThousands": 66281.297,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Salaries and benefits",
+      "sourceReportedLabel": "Salaries and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 230277.911,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements — 2023 comparative column",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 119438.86,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 79586.782,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Liabilities",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "statement:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 26147.0,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": 39852.078,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Net surplus",
+      "sourceReportedLabel": "Net surplus",
+      "sourceFieldCodes": [
+        "statement:Net surplus"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 657111.435,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 137293.532,
+      "status": "pending_review",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Property tax/community funding and equalization grant",
+      "sourceReportedLabel": "Property tax/community funding and equalization grant",
+      "sourceFieldCodes": [
+        "statement:Property tax/community funding and equalization grant"
+      ],
+      "mappingMethod": "direct",
+      "note": "Segment source combines property taxation and community funding/equalization."
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 33615.229,
+      "status": "pending_review",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Sales, fines and other fees",
+      "sourceReportedLabel": "Sales, fines and other fees",
+      "sourceFieldCodes": [
+        "statement:Sales, fines and other fees"
+      ],
+      "mappingMethod": "direct",
+      "note": "Broader than pure user charges; retained pending legacy mapping review."
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 18494.887,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Government transfers",
+      "sourceReportedLabel": "Government transfers",
+      "sourceFieldCodes": [
+        "statement:Government transfers"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 4660.868,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Interest and return on investments",
+      "sourceReportedLabel": "Interest and return on investments",
+      "sourceFieldCodes": [
+        "statement:Interest and return on investments"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "developer_contributions",
+      "valueThousands": 23181.234,
+      "status": "pending_review",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Third-party contributions",
+      "sourceReportedLabel": "Third-party contributions",
+      "sourceFieldCodes": [
+        "statement:Third-party contributions"
+      ],
+      "mappingMethod": "direct",
+      "note": "Broader than developer contributions."
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 203847.849,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Total revenue",
+      "sourceReportedLabel": "Total revenue",
+      "sourceFieldCodes": [
+        "statement:Total revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 8728.882,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Governance & Civic Engagement + General Government Services - Corporate",
+      "sourceReportedLabel": "Governance & Civic Engagement + General Government Services - Corporate",
+      "sourceFieldCodes": [
+        "statement:Governance & Civic Engagement + General Government Services - Corporate"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 55265.211,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Public Safety",
+      "sourceReportedLabel": "Public Safety",
+      "sourceFieldCodes": [
+        "statement:Public Safety"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 35872.329,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Mobility including Transit",
+      "sourceReportedLabel": "Mobility including Transit",
+      "sourceFieldCodes": [
+        "statement:Mobility including Transit"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 165836.419,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "salaries_benefits",
+      "valueThousands": 85457.889,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Salaries and benefits",
+      "sourceReportedLabel": "Salaries and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "goods_services_total",
+      "valueThousands": 52303.37,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Goods and services",
+      "sourceReportedLabel": "Goods and services",
+      "sourceFieldCodes": [
+        "statement:Goods and services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "depreciation_object",
+      "valueThousands": 24473.41,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 24473.41,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "interest_expense",
+      "valueThousands": 838.282,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Interest",
+      "sourceReportedLabel": "Interest",
+      "sourceFieldCodes": [
+        "statement:Interest"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "object_other",
+      "valueThousands": 2763.468,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Other loss on assets",
+      "sourceReportedLabel": "Other loss on assets",
+      "sourceFieldCodes": [
+        "statement:Other loss on assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2023,
+      "metric": "total_expenditure_object",
+      "valueThousands": 165836.419,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-04/City%20of%20Fredericton%20-%202023%20Consolidated%20Financial%20Statements%20-%20English%20%282%29.pdf",
+      "sourceLabel": "City of Fredericton 2023 Consolidated Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 263160.883,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Official 2023 signed statement; values visually verified where the PDF text layer is incomplete."
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "holdings_council_controlled",
+      "valueThousands": 88117.0,
+      "status": "pending_review",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Investment in energy services",
+      "sourceReportedLabel": "Investment in energy services",
+      "sourceFieldCodes": [
+        "statement:Investment in energy services"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest legacy council-controlled-operations concept."
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "financial_assets_other",
+      "valueThousands": 175043.883,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Financial assets less energy-services investment",
+      "sourceReportedLabel": "Financial assets less energy-services investment",
+      "sourceFieldCodes": [
+        "statement:Financial assets less energy-services investment"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 321964.045,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Liabilities",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "statement:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 61683.4,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Employee future benefits",
+      "sourceReportedLabel": "Employee future benefits",
+      "sourceFieldCodes": [
+        "statement:Employee future benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 170491.74,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": -58803.162,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Net debt",
+      "sourceReportedLabel": "Net debt",
+      "sourceFieldCodes": [
+        "statement:Net debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 1000845.631,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 142169.733,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Property taxes",
+      "sourceReportedLabel": "Property taxes",
+      "sourceFieldCodes": [
+        "statement:Property taxes"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 47634.536,
+      "status": "pending_review",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Water and sewer revenue",
+      "sourceReportedLabel": "Water and sewer revenue",
+      "sourceFieldCodes": [
+        "statement:Water and sewer revenue"
+      ],
+      "mappingMethod": "direct",
+      "note": "Direct utility user-charge line; other municipal own-source revenue remains in other revenue."
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 42792.365,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Unconditional + regional-service + capital government grants",
+      "sourceReportedLabel": "Unconditional + regional-service + capital government grants",
+      "sourceFieldCodes": [
+        "statement:Unconditional + regional-service + capital government grants"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 270420.541,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Operating revenue plus capital government transfers",
+      "sourceReportedLabel": "Operating revenue plus capital government transfers",
+      "sourceFieldCodes": [
+        "statement:Operating revenue plus capital government transfers"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 29313.989,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "General government",
+      "sourceReportedLabel": "General government",
+      "sourceFieldCodes": [
+        "statement:General government"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 55542.543,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 44923.863,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Transportation",
+      "sourceReportedLabel": "Transportation",
+      "sourceFieldCodes": [
+        "statement:Transportation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 52555.01,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Water/sewer services + environmental health",
+      "sourceReportedLabel": "Water/sewer services + environmental health",
+      "sourceFieldCodes": [
+        "statement:Water/sewer services + environmental health"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 20484.761,
+      "status": "pending_review",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Environmental development",
+      "sourceReportedLabel": "Environmental development",
+      "sourceFieldCodes": [
+        "statement:Environmental development"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level planning/development function."
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 11038.059,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 213858.225,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20December%2031%202023%20Financial%20Statements%20Eng%20%28002%29%20-%20with%20Signature.pdf",
+      "sourceLabel": "City of Saint John 2023 Consolidated Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 233815.89,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 659734.608,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Liabilities",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "statement:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 228827.854,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Employee benefit obligations",
+      "sourceReportedLabel": "Employee benefit obligations",
+      "sourceFieldCodes": [
+        "statement:Employee benefit obligations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 339177.136,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Debenture debt + other long-term debt",
+      "sourceReportedLabel": "Debenture debt + other long-term debt",
+      "sourceFieldCodes": [
+        "statement:Debenture debt + other long-term debt"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": -425918.718,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Net debt",
+      "sourceReportedLabel": "Net debt",
+      "sourceFieldCodes": [
+        "statement:Net debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 1283935.929,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 232633.228,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Taxation + grants in lieu of taxes",
+      "sourceReportedLabel": "Taxation + grants in lieu of taxes",
+      "sourceFieldCodes": [
+        "statement:Taxation + grants in lieu of taxes"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 59105.203,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Sales of goods and services",
+      "sourceReportedLabel": "Sales of goods and services",
+      "sourceFieldCodes": [
+        "statement:Sales of goods and services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 38886.727,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Government grants and transfers",
+      "sourceReportedLabel": "Government grants and transfers",
+      "sourceFieldCodes": [
+        "statement:Government grants and transfers"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 27484.825,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Other own-source revenue",
+      "sourceReportedLabel": "Other own-source revenue",
+      "sourceFieldCodes": [
+        "statement:Other own-source revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 358109.983,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Total revenue",
+      "sourceReportedLabel": "Total revenue",
+      "sourceFieldCodes": [
+        "statement:Total revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 58930.532,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "General government + fiscal services",
+      "sourceReportedLabel": "General government + fiscal services",
+      "sourceFieldCodes": [
+        "statement:General government + fiscal services"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 70323.26,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Transportation",
+      "sourceReportedLabel": "Transportation",
+      "sourceFieldCodes": [
+        "statement:Transportation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 38812.79,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 52778.399,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Environmental health",
+      "sourceReportedLabel": "Environmental health",
+      "sourceFieldCodes": [
+        "statement:Environmental health"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 7221.837,
+      "status": "pending_review",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Environmental development",
+      "sourceReportedLabel": "Environmental development",
+      "sourceFieldCodes": [
+        "statement:Environmental development"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level planning/development function."
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 36555.179,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 46222.819,
+      "status": "pending_review",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Amortization and allowances",
+      "sourceReportedLabel": "Amortization and allowances",
+      "sourceFieldCodes": [
+        "statement:Amortization and allowances"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source combines amortization with allowances."
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 310844.816,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/media/miopyywx/20231231_city-of-st-johns-consolidated-financial-statements_final-signed.pdf",
+      "sourceLabel": "City of St. John's 2023 Consolidated Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 56979.272,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total Financial Assets",
+      "sourceReportedLabel": "Total Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Total Financial Assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Image-only official statement; values extracted in one targeted OCR pass and reviewed against the statement layout."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "holdings_council_controlled",
+      "valueThousands": 1855.598,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Investment in Government Business Enterprise",
+      "sourceReportedLabel": "Investment in Government Business Enterprise",
+      "sourceFieldCodes": [
+        "statement:Investment in Government Business Enterprise"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest legacy council-controlled-operations concept."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "financial_assets_other",
+      "valueThousands": 55123.674,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Financial assets less Government Business Enterprise investment",
+      "sourceReportedLabel": "Financial assets less Government Business Enterprise investment",
+      "sourceFieldCodes": [
+        "statement:Financial assets less Government Business Enterprise investment"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 185307.445,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total Liabilities",
+      "sourceReportedLabel": "Total Liabilities",
+      "sourceFieldCodes": [
+        "statement:Total Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 6416.586,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Sick leave and post-employment benefits",
+      "sourceReportedLabel": "Sick leave and post-employment benefits",
+      "sourceFieldCodes": [
+        "statement:Sick leave and post-employment benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 91485.773,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Long term debt",
+      "sourceReportedLabel": "Long term debt",
+      "sourceFieldCodes": [
+        "statement:Long term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": -128328.173,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Net Debt",
+      "sourceReportedLabel": "Net Debt",
+      "sourceFieldCodes": [
+        "statement:Net Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 338911.585,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 44118.086,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Property taxes",
+      "sourceReportedLabel": "Property taxes",
+      "sourceFieldCodes": [
+        "statement:Property taxes"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 22241.684,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Water and sewer + recreation + parking + rentals",
+      "sourceReportedLabel": "Water and sewer + recreation + parking + rentals",
+      "sourceFieldCodes": [
+        "statement:Water and sewer + recreation + parking + rentals"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Selected service/user-charge lines; licences, tourism levy and miscellaneous revenues remain in other revenue."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 38494.189,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Government transfers for operations + capital + municipal capital expenditure grant",
+      "sourceReportedLabel": "Government transfers for operations + capital + municipal capital expenditure grant",
+      "sourceFieldCodes": [
+        "statement:Government transfers for operations + capital + municipal capital expenditure grant"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 168.363,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Interest and other",
+      "sourceReportedLabel": "Interest and other",
+      "sourceFieldCodes": [
+        "statement:Interest and other"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source line combines interest with other minor revenue."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 5945.983,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Licences + tourism levy + miscellaneous + police protection + switch program + CADC income",
+      "sourceReportedLabel": "Licences + tourism levy + miscellaneous + police protection + switch program + CADC income",
+      "sourceFieldCodes": [
+        "statement:Licences + tourism levy + miscellaneous + police protection + switch program + CADC income"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 110953.98,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Operating revenue plus capital-related transfers/gain, net of pension/post-employment adjustments",
+      "sourceReportedLabel": "Operating revenue plus capital-related transfers/gain, net of pension/post-employment adjustments",
+      "sourceFieldCodes": [
+        "statement:Operating revenue plus capital-related transfers/gain, net of pension/post-employment adjustments"
+      ],
+      "mappingMethod": "direct",
+      "note": "Full-statement revenue basis constructed from audited operating revenue and separately reported other-revenue items; retained pending exact legacy aggregation convention."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 8046.454,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "General government",
+      "sourceReportedLabel": "General government",
+      "sourceFieldCodes": [
+        "statement:General government"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 15849.727,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 14833.799,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Street maintenance and environment",
+      "sourceReportedLabel": "Street maintenance and environment",
+      "sourceFieldCodes": [
+        "statement:Street maintenance and environment"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level transportation/public-works function."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 8597.026,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Water and sewer",
+      "sourceReportedLabel": "Water and sewer",
+      "sourceFieldCodes": [
+        "statement:Water and sewer"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 10287.306,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Development, heritage, and other",
+      "sourceReportedLabel": "Development, heritage, and other",
+      "sourceFieldCodes": [
+        "statement:Development, heritage, and other"
+      ],
+      "mappingMethod": "direct",
+      "note": "Broader than the legacy planning/development field."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 9200.535,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Parks and recreation",
+      "sourceReportedLabel": "Parks and recreation",
+      "sourceFieldCodes": [
+        "statement:Parks and recreation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 11629.475,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "interest_expense",
+      "valueThousands": 3426.48,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Interest on long term debt",
+      "sourceReportedLabel": "Interest on long term debt",
+      "sourceFieldCodes": [
+        "statement:Interest on long term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 92766.742,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/City%20of%20Charlottetown%20Consolidated%20Financial%20Statements%20-%20March%2031,%202023.pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2023",
+      "sourceLocation": "Total expenditures",
+      "sourceReportedLabel": "Total expenditures",
+      "sourceFieldCodes": [
+        "statement:Total expenditures"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 120630.937,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Total financial assets",
+      "sourceReportedLabel": "Total financial assets",
+      "sourceFieldCodes": [
+        "statement:Total financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 48473.987,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Total liabilities",
+      "sourceReportedLabel": "Total liabilities",
+      "sourceFieldCodes": [
+        "statement:Total liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 3797.0,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Employee future benefits",
+      "sourceReportedLabel": "Employee future benefits",
+      "sourceFieldCodes": [
+        "statement:Employee future benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 13650.345,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Debt",
+      "sourceReportedLabel": "Debt",
+      "sourceFieldCodes": [
+        "statement:Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": 72156.95,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Net financial assets",
+      "sourceReportedLabel": "Net financial assets",
+      "sourceFieldCodes": [
+        "statement:Net financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 465488.38,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 49483.51,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Taxes and payments in lieu of taxes",
+      "sourceReportedLabel": "Taxes and payments in lieu of taxes",
+      "sourceFieldCodes": [
+        "statement:Taxes and payments in lieu of taxes"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 30073.719,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Government transfers",
+      "sourceReportedLabel": "Government transfers",
+      "sourceFieldCodes": [
+        "statement:Government transfers"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 22203.509,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Sales of goods and services",
+      "sourceReportedLabel": "Sales of goods and services",
+      "sourceFieldCodes": [
+        "statement:Sales of goods and services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "developer_contributions",
+      "valueThousands": 531.824,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Developers' contributions",
+      "sourceReportedLabel": "Developers' contributions",
+      "sourceFieldCodes": [
+        "statement:Developers' contributions"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 5415.598,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 7413.187,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Licenses/permits/penalties/fines + other revenues",
+      "sourceReportedLabel": "Licenses/permits/penalties/fines + other revenues",
+      "sourceFieldCodes": [
+        "statement:Licenses/permits/penalties/fines + other revenues"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 115121.347,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Total revenues",
+      "sourceReportedLabel": "Total revenues",
+      "sourceFieldCodes": [
+        "statement:Total revenues"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 23392.478,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "General government services",
+      "sourceReportedLabel": "General government services",
+      "sourceFieldCodes": [
+        "statement:General government services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 11274.749,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 28441.8,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Transportation services",
+      "sourceReportedLabel": "Transportation services",
+      "sourceFieldCodes": [
+        "statement:Transportation services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 19898.674,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Environmental services",
+      "sourceReportedLabel": "Environmental services",
+      "sourceFieldCodes": [
+        "statement:Environmental services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "health_services",
+      "valueThousands": 187.569,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Public health services",
+      "sourceReportedLabel": "Public health services",
+      "sourceFieldCodes": [
+        "statement:Public health services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 3324.934,
+      "status": "pending_review",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Community development services",
+      "sourceReportedLabel": "Community development services",
+      "sourceFieldCodes": [
+        "statement:Community development services"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level planning/development field."
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 17599.782,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 104119.986,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "salaries_benefits",
+      "valueThousands": 51784.688,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Salaries and benefits",
+      "sourceReportedLabel": "Salaries and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "goods",
+      "valueThousands": 16995.496,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Materials and supplies",
+      "sourceReportedLabel": "Materials and supplies",
+      "sourceFieldCodes": [
+        "statement:Materials and supplies"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "contracted_services",
+      "valueThousands": 8504.222,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Professional services",
+      "sourceReportedLabel": "Professional services",
+      "sourceFieldCodes": [
+        "statement:Professional services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "grants_object",
+      "valueThousands": 1919.001,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Community grants",
+      "sourceReportedLabel": "Community grants",
+      "sourceFieldCodes": [
+        "statement:Community grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "interest_expense",
+      "valueThousands": 446.842,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Interest",
+      "sourceReportedLabel": "Interest",
+      "sourceFieldCodes": [
+        "statement:Interest"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "depreciation_object",
+      "valueThousands": 21400.462,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 21400.462,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "object_other",
+      "valueThousands": 3069.275,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Public relations + other",
+      "sourceReportedLabel": "Public relations + other",
+      "sourceFieldCodes": [
+        "statement:Public relations + other"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2023,
+      "metric": "total_expenditure_object",
+      "valueThousands": 104119.986,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2024/10/2023-City-of-Whitehorse_AR-WEB.pdf",
+      "sourceLabel": "City of Whitehorse 2023 Annual Report",
+      "sourceLocation": "Total expense by object",
+      "sourceReportedLabel": "Total expense by object",
+      "sourceFieldCodes": [
+        "statement:Total expense by object"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 171820.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 107554.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Liabilities",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "statement:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 4277.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Employee benefits",
+      "sourceReportedLabel": "Employee benefits",
+      "sourceFieldCodes": [
+        "statement:Employee benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 27800.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": 64266.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Net financial assets",
+      "sourceReportedLabel": "Net financial assets",
+      "sourceFieldCodes": [
+        "statement:Net financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 321409.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 35842.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Property taxation",
+      "sourceReportedLabel": "Property taxation",
+      "sourceFieldCodes": [
+        "statement:Property taxation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 23703.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "User charges / sales of services",
+      "sourceReportedLabel": "User charges / sales of services",
+      "sourceFieldCodes": [
+        "statement:User charges / sales of services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 40836.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Operating + capital government transfers",
+      "sourceReportedLabel": "Operating + capital government transfers",
+      "sourceFieldCodes": [
+        "statement:Operating + capital government transfers"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "investment_income",
+      "valueThousands": 5748.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "revenue_other",
+      "valueThousands": 5964.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Other operating revenue",
+      "sourceReportedLabel": "Other operating revenue",
+      "sourceFieldCodes": [
+        "statement:Other operating revenue"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 112093.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Operating revenue plus capital transfers",
+      "sourceReportedLabel": "Operating revenue plus capital transfers",
+      "sourceFieldCodes": [
+        "statement:Operating revenue plus capital transfers"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 16847.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "General government",
+      "sourceReportedLabel": "General government",
+      "sourceFieldCodes": [
+        "statement:General government"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 20079.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "public_works",
+      "valueThousands": 13596.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Public works",
+      "sourceReportedLabel": "Public works",
+      "sourceFieldCodes": [
+        "statement:Public works"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "solid_waste",
+      "valueThousands": 4149.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Solid waste",
+      "sourceReportedLabel": "Solid waste",
+      "sourceFieldCodes": [
+        "statement:Solid waste"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "utility_operations",
+      "valueThousands": 16257.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Water and sewer",
+      "sourceReportedLabel": "Water and sewer",
+      "sourceFieldCodes": [
+        "statement:Water and sewer"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 2384.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Planning and development",
+      "sourceReportedLabel": "Planning and development",
+      "sourceFieldCodes": [
+        "statement:Planning and development"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 85465.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "salaries_benefits",
+      "valueThousands": 30827.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Salaries, wages and benefits",
+      "sourceReportedLabel": "Salaries, wages and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries, wages and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "contracted_services",
+      "valueThousands": 29491.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Contracted and general services",
+      "sourceReportedLabel": "Contracted and general services",
+      "sourceFieldCodes": [
+        "statement:Contracted and general services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "goods",
+      "valueThousands": 1012.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Materials and supplies",
+      "sourceReportedLabel": "Materials and supplies",
+      "sourceFieldCodes": [
+        "statement:Materials and supplies"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "interest_expense",
+      "valueThousands": 1239.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Long-term debt interest + bank/short-term interest",
+      "sourceReportedLabel": "Long-term debt interest + bank/short-term interest",
+      "sourceFieldCodes": [
+        "statement:Long-term debt interest + bank/short-term interest"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "depreciation_object",
+      "valueThousands": 16001.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 16001.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "object_other",
+      "valueThousands": 16895.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Other audited expense objects",
+      "sourceReportedLabel": "Other audited expense objects",
+      "sourceFieldCodes": [
+        "statement:Other audited expense objects"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2023,
+      "metric": "total_expenditure_object",
+      "valueThousands": 85465.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2023-FINANCIAL-REPORT.pdf",
+      "sourceLabel": "City of Yellowknife 2023 Financial Report",
+      "sourceLocation": "Total expense by object",
+      "sourceReportedLabel": "Total expense by object",
+      "sourceFieldCodes": [
+        "statement:Total expense by object"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "financial_assets_total",
+      "valueThousands": 81181.558,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 70385.042,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Liabilities",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "statement:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 1478.638,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Post-employment benefits",
+      "sourceReportedLabel": "Post-employment benefits",
+      "sourceFieldCodes": [
+        "statement:Post-employment benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "long_term_debt",
+      "valueThousands": 22597.626,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "net_financial_assets",
+      "valueThousands": 10796.516,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Net financial assets",
+      "sourceReportedLabel": "Net financial assets",
+      "sourceFieldCodes": [
+        "statement:Net financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "capital_assets",
+      "valueThousands": 263975.76,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "net_taxes",
+      "valueThousands": 24941.525,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Taxes and grants in lieu",
+      "sourceReportedLabel": "Taxes and grants in lieu",
+      "sourceFieldCodes": [
+        "statement:Taxes and grants in lieu"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "user_charges",
+      "valueThousands": 19270.223,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Water/sewer + sanitation user revenue",
+      "sourceReportedLabel": "Water/sewer + sanitation user revenue",
+      "sourceFieldCodes": [
+        "statement:Water/sewer + sanitation user revenue"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "government_grants_total",
+      "valueThousands": 46591.656,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Operating government transfers + capital government transfers",
+      "sourceReportedLabel": "Operating government transfers + capital government transfers",
+      "sourceFieldCodes": [
+        "statement:Operating government transfers + capital government transfers"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "total_revenue",
+      "valueThousands": 102449.421,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Operating revenue plus capital government transfers",
+      "sourceReportedLabel": "Operating revenue plus capital government transfers",
+      "sourceFieldCodes": [
+        "statement:Operating revenue plus capital government transfers"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "general_government_total",
+      "valueThousands": 4933.56,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "General government",
+      "sourceReportedLabel": "General government",
+      "sourceFieldCodes": [
+        "statement:General government"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "public_safety_total",
+      "valueThousands": 5992.614,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Emergency services + bylaw enforcement",
+      "sourceReportedLabel": "Emergency services + bylaw enforcement",
+      "sourceFieldCodes": [
+        "statement:Emergency services + bylaw enforcement"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "transportation_total",
+      "valueThousands": 5526.98,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Public works / transportation",
+      "sourceReportedLabel": "Public works / transportation",
+      "sourceFieldCodes": [
+        "statement:Public works / transportation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "environmental_services",
+      "valueThousands": 10355.688,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Water/sewer + sanitation",
+      "sourceReportedLabel": "Water/sewer + sanitation",
+      "sourceFieldCodes": [
+        "statement:Water/sewer + sanitation"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "planning_development",
+      "valueThousands": 2499.399,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Land development/administration + engineering + economic development",
+      "sourceReportedLabel": "Land development/administration + engineering + economic development",
+      "sourceFieldCodes": [
+        "statement:Land development/administration + engineering + economic development"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "recreation_culture",
+      "valueThousands": 7000.821,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Recreation",
+      "sourceReportedLabel": "Recreation",
+      "sourceFieldCodes": [
+        "statement:Recreation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "grants_function",
+      "valueThousands": 14143.538,
+      "status": "pending_review",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Community funding",
+      "sourceReportedLabel": "Community funding",
+      "sourceFieldCodes": [
+        "statement:Community funding"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source function may include transfers not directly comparable to legacy grants."
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "depreciation_function",
+      "valueThousands": 10663.856,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2023,
+      "metric": "total_expenditure",
+      "valueThousands": 61116.456,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/city_of_iqaluit_2023_fs_-_english_-_cao_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2023 Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    }
+  ],
+  "mapping": {
+    "name": "LGPI Atlantic and territorial audited statements 2023",
+    "version": 1,
+    "notes": [
+      "Values are mapped from official audited municipal statements or official subsequent-year comparative columns where explicitly noted.",
+      "Source values reported in dollars are converted to thousands of Canadian dollars for LGPI display consistency.",
+      "Image-only audited statements were visually transcribed and retained with their official source labels; no missing value was converted to zero.",
+      "Derived groupings list their source meaning in notes; uncertain compatibility is marked pending_review.",
+      "The City of Moncton's 2023 values are taken from the official 2024 statement's comparative 2023 column because the direct 2023 resource is not reliably retrievable."
+    ]
+  },
+  "stats": {
+    "municipalityCount": 10,
+    "municipalitiesWithObservations": 10,
+    "observationCount": 223,
+    "reportedCount": 204,
+    "pendingReviewCount": 19
+  }
+}

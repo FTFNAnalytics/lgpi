@@ -8,7 +8,7 @@ The reconstruction now contains the complete **99-municipality LGPI product univ
 - 19 Quebec municipalities are present as financial profiles and are explicitly marked **Transparency score not published**.
 - 73 municipalities have the complete ten-component transparency breakdown.
 - The 56-field legacy financial catalogue is preserved.
-- 2,758 official 2023 financial observations are loaded for 88 municipalities.
+- 2,981 official 2023 financial observations are loaded for 98 municipalities, with Hamilton explicitly source-unavailable.
 - Hamilton is explicitly marked `source_unavailable` for Ontario's 2023 FIR rather than converted to zero.
 - Every financial observation preserves an official source, original source field/code, mapping method and review state.
 - City search, profiles, transparency explorer, comparisons, metric explorer and methodology/provenance views are functional.
@@ -22,13 +22,11 @@ The reconstruction now contains the complete **99-municipality LGPI product univ
 | Ontario FIR | 40 / 41 | 1,160 | Complete where source available; Hamilton unavailable |
 | Quebec MAMH | 19 / 19 | 589 | Complete core mapping; transparency intentionally unscored |
 | Prairie audited reports | 3 / 3 | 85 | Complete |
-| Remaining Atlantic / territorial statements | 10 | — | In progress |
+| Atlantic / territorial audited statements | 10 / 10 | 223 | Complete |
 
 ## Remaining presentation-week work
 
-The remaining 10 municipalities are Halifax, Cape Breton, Moncton, Fredericton, Saint John, St. John's, Charlottetown, Whitehorse, Yellowknife and Iqaluit.
-
-These are being treated as statement-based adapters: values are taken from official audited reports and normalized into the same LGPI model. Unavailable or non-comparable legacy fields stay explicit rather than being inferred.
+The 2023 financial-source pass is complete across the full 99-municipality universe. Ninety-eight municipalities have source-backed observations; Hamilton is explicitly source-unavailable in Ontario's 2023 FIR rather than represented with fabricated zeroes. Remaining work is presentation QA and denominator/calculated-field reconstruction.
 
 ## Methodology boundary
 
