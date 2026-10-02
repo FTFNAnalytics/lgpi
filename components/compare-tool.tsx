@@ -6,6 +6,7 @@ import {
   getFinancialObservations,
   getMetricDefinition,
   formatThousands,
+  metricCatalog,
   municipalities2023,
 } from "@/lib/lgpi-data";
 
@@ -30,13 +31,21 @@ export function CompareTool() {
     const a = getFinancialObservations(leftSlug);
     const b = getFinancialObservations(rightSlug);
     const keys = [...new Set([...a.map((x) => x.metric), ...b.map((x) => x.metric)])];
-    return keys.map((key) => ({
-      key,
-      label: getMetricDefinition(key)?.label ?? key,
-      left: a.find((x) => x.metric === key),
-      right: b.find((x) => x.metric === key),
-    }));
+    const catalogOrder = new Map(metricCatalog.map((metric, index) => [metric.key, index]));
+    return keys
+      .map((key) => ({
+        key,
+        label: getMetricDefinition(key)?.label ?? key,
+        left: a.find((x) => x.metric === key),
+        right: b.find((x) => x.metric === key),
+      }))
+      .sort((a, b) => (catalogOrder.get(a.key) ?? 999) - (catalogOrder.get(b.key) ?? 999));
   }, [leftSlug, rightSlug]);
+
+  const coreKeys = ["total_revenue", "total_expenditure", "long_term_debt", "capital_assets"];
+  const coreRows = coreKeys
+    .map((key) => financialRows.find((row) => row.key === key))
+    .filter((row): row is NonNullable<typeof row> => Boolean(row));
 
   const options = [...municipalities2023].sort((a, b) => a.name.localeCompare(b.name));
 
@@ -83,10 +92,32 @@ export function CompareTool() {
         </div>
       ) : <div className="empty-state">Published component scoring is unavailable for one or both selected municipalities. Quebec was not scored in the published 2023 LGPI edition.</div>}
 
-      <h2 style={{ marginTop: 38 }}>Verified financial observations</h2>
+      <h2 style={{ marginTop: 38 }}>Financial comparison</h2>
       <div className="notice" style={{ marginBottom: 16 }}>
         Financial comparisons are shown only where the reconstruction has source-mapped 2023 observations. Service responsibilities can differ substantially between municipalities.
       </div>
+
+      {coreRows.length > 0 && (
+        <div className="comparison-core-grid">
+          {coreRows.map((row) => (
+            <article className="comparison-core-card" key={"core-" + row.key}>
+              <span className="eyebrow">{row.label}</span>
+              <div className="comparison-values">
+                <div>
+                  <small>{left.name}</small>
+                  <strong>{row.left?.valueThousands != null ? formatThousands(row.left.valueThousands) : "—"}</strong>
+                </div>
+                <div>
+                  <small>{right.name}</small>
+                  <strong>{row.right?.valueThousands != null ? formatThousands(row.right.valueThousands) : "—"}</strong>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
+
+      <h2 style={{ marginTop: 38 }}>Full mapped field set</h2>
       {financialRows.length ? (
         <div className="table-wrap">
           <table>
