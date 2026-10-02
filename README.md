@@ -38,6 +38,7 @@ The transparency data is reconstructed from Frontier Centre's 2025 LGPI publicat
 - `/transparency` — sortable/filterable 2023 index
 - `/cities` — municipality directory
 - `/cities/[slug]` — evidence-backed municipality profile
+- `/coverage` — national reconstruction status and source coverage
 - `/compare` — two-municipality comparison
 - `/metrics` — legacy LGPI financial metric explorer
 - `/methodology` — reconstruction methodology and QA rules
@@ -63,6 +64,7 @@ See:
 - [Reconstruction status](docs/RECONSTRUCTION_STATUS.md)
 - [Data provenance and QA contract](docs/DATA_PROVENANCE.md)
 - [Next data tranche](docs/NEXT_DATA_TRANCHE.md)
+- [Presentation run-of-show](docs/PRESENTATION_RUN_OF_SHOW.md)
 
 ## Run locally
 

@@ -23,6 +23,12 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
   const financial = getFinancialObservations(slug);
   const financialSourceUnavailable = getFinancialSourceUnavailable(slug);
   const discrepancy = sourceDiscrepancies.find((item) => item.municipality === record.name);
+  const reportedCount = financial.filter((observation) => observation.status === "reported").length;
+  const pendingCount = financial.filter((observation) => observation.status === "pending_review").length;
+  const coreMetricKeys = ["total_revenue", "total_expenditure", "long_term_debt", "capital_assets"];
+  const coreFinancial = coreMetricKeys
+    .map((key) => financial.find((observation) => observation.metric === key))
+    .filter((observation): observation is NonNullable<typeof observation> => Boolean(observation));
 
   return (
     <main>
@@ -97,14 +103,69 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             </div>
             <p>Amounts below are source-mapped observations only. Per-household and provincial-average calculations stay off until their denominators and legacy mappings are independently verified.</p>
           </div>
+          <div className="stat-grid" style={{ marginBottom: 24 }}>
+            <div className="stat">
+              <strong>{financial.length || "—"}</strong>
+              <span>source-mapped financial observations</span>
+            </div>
+            <div className="stat">
+              <strong>{reportedCount || "—"}</strong>
+              <span>reported / accepted mappings</span>
+            </div>
+            <div className="stat">
+              <strong>{pendingCount || "0"}</strong>
+              <span>explicit pending-review mappings</span>
+            </div>
+            <div className="stat">
+              <strong>{financialSourceUnavailable ? "Unavailable" : financial.length ? "Resolved" : "Pending"}</strong>
+              <span>2023 financial-source status</span>
+            </div>
+          </div>
+
           {financialSourceUnavailable && (
             <div className="notice" style={{ marginBottom: 20 }}>
               <strong>2023 financial source unavailable:</strong> {financialSourceUnavailable.reason}
               The municipality remains in the LGPI universe; no missing financial value is treated as zero.
             </div>
           )}
+
+          {coreFinancial.length > 0 && (
+            <>
+              <div className="section-heading compact-heading">
+                <div>
+                  <p className="eyebrow">Core financial snapshot</p>
+                  <h2>At a glance</h2>
+                </div>
+                <p>Core fields shown first for presentation; the complete provenance-backed field set follows below.</p>
+              </div>
+              <div className="metric-grid core-metric-grid">
+                {coreFinancial.map((observation) => {
+                  const metric = getMetricDefinition(observation.metric);
+                  return (
+                    <article className="metric-card core-metric-card" key={"core-" + observation.metric}>
+                      <span className={"chip " + (observation.status === "reported" ? "good" : "pending")}>
+                        {observation.status.replaceAll("_", " ")}
+                      </span>
+                      <h3>{metric?.label ?? observation.metric}</h3>
+                      <span className="metric-value">{formatThousands(observation.valueThousands)}</span>
+                      <p className="metric-meta">{observation.sourceReportedLabel ?? observation.sourceLocation}</p>
+                    </article>
+                  );
+                })}
+              </div>
+            </>
+          )}
+
           {financial.length ? (
-            <div className="metric-grid">
+            <>
+              <div className="section-heading compact-heading detailed-heading">
+                <div>
+                  <p className="eyebrow">Field-level evidence</p>
+                  <h2>Detailed observations</h2>
+                </div>
+                <p>Every displayed value retains its original source concept, mapping status and official source link.</p>
+              </div>
+              <div className="metric-grid">
               {financial.map((observation) => {
                 const metric = getMetricDefinition(observation.metric);
                 return (
@@ -128,7 +189,8 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                   </article>
                 );
               })}
-            </div>
+              </div>
+            </>
           ) : (
             <div className="empty-state">
               {financialSourceUnavailable

@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const links = [
   ["Cities", "/cities"],
+  ["Coverage", "/coverage"],
   ["Transparency", "/transparency"],
   ["Compare", "/compare"],
   ["Metrics", "/metrics"],

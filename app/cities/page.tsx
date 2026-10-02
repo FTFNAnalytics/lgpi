@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { municipalities2023, provinceNames } from "@/lib/lgpi-data";
+import {
+  financialObservationCount,
+  municipalities2023,
+  municipalitiesWithFinancialObservations,
+  provinceNames,
+  TARGET_MUNICIPALITIES,
+} from "@/lib/lgpi-data";
 
 export default function CitiesPage() {
   const provinces = [...new Set(municipalities2023.map((record) => record.province))].sort();
@@ -10,11 +16,17 @@ export default function CitiesPage() {
         <div className="shell">
           <p className="eyebrow">2023 municipal profiles</p>
           <h1>Explore cities</h1>
-          <p>Open any verified municipality to inspect its transparency score, component evidence, source notes, and financial observations loaded so far.</p>
+          <p>Browse the complete 2023 LGPI municipality universe. Each profile separates published transparency evidence from reconstructed official-source financial data.</p>
         </div>
       </section>
       <section className="section">
         <div className="shell">
+          <div className="stat-grid" style={{ marginBottom: 42 }}>
+            <div className="stat"><strong>{TARGET_MUNICIPALITIES}/99</strong><span>municipalities represented</span></div>
+            <div className="stat"><strong>{municipalitiesWithFinancialObservations}</strong><span>with financial observations</span></div>
+            <div className="stat"><strong>{financialObservationCount.toLocaleString("en-CA")}</strong><span>source-backed observations</span></div>
+            <div className="stat"><strong>2023</strong><span>fiscal-year reconstruction</span></div>
+          </div>
           {provinces.map((province) => {
             const rows = municipalities2023
               .filter((record) => record.province === province)

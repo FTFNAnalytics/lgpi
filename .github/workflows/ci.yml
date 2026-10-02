@@ -21,7 +21,26 @@ jobs:
           node-version: 22
       - name: Install
         run: npm install
+      - name: Production dependency audit
+        run: npm audit --omit=dev --audit-level=high
       - name: Typecheck
         run: npm run typecheck
       - name: Build
         run: npm run build
+      - name: Presentation route smoke test
+        run: |
+          npm run start > /tmp/lgpi-next.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:3000/ >/dev/null; then
+              break
+            fi
+            sleep 1
+          done
+
+          for path in / /coverage /cities/calgary /compare /methodology; do
+            echo "Checking $path"
+            curl -fsS "http://127.0.0.1:3000$path" >/dev/null
+          done
