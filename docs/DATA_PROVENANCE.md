@@ -63,6 +63,15 @@ The app preserves those field identities in `metricCatalog`. Source terms are no
 
 ## Household normalization
 
-Historic LGPI pages provide total values, dollars per household, and percentage of provincial average. This reconstruction does not calculate the latter two until the exact dwelling denominator and provincial aggregation logic are verified for 2023.
+Historic LGPI pages provide total values, dollars per household, and percentage of provincial average. This reconstruction does not calculate the latter two until the exact dwelling denominator and provincial aggregation logic are verified for each financial year.
 
 That preserves comparability and prevents a convenient but methodologically different population denominator from replacing the published household convention.
+
+## Year-over-year publication rules
+
+- Only two `reported`, finite observations for the same municipality and metric in consecutive years produce a change.
+- Pending-review values remain visible with their labels and evidence, but never produce a calculated delta.
+- Dollar change is current minus prior; percentage change is that difference divided by a strictly positive prior value.
+- A zero or negative baseline retains its dollar change with an explanation for the absent percentage.
+- Figures are nominal CAD, not inflation adjusted. The original annual observations remain intact; no restatement reconciliation is implied.
+- City comparison cards and tables retain each value's year, review status, source concept, mapping note and source link.

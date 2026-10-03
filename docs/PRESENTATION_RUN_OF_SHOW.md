@@ -34,6 +34,8 @@ Show the published transparency components, the horizontal 2023 / 2024 financial
 
 Then click **2023** and back to **2024**.
 
+Expand either year's **source details** in a trend card. Explain that the amounts are nominal Canadian dollars from separately sourced annual observations. For a review-state example, open Toronto: debt values retain their review labels and the change is withheld. The 2023 transparency score stays explicitly labeled when financial year 2024 is selected.
+
 > This preserves the original LGPI interaction — choose a year and inspect the same field structure — while adding a compact year-over-year summary.
 
 ### 4. Compare — 60 seconds

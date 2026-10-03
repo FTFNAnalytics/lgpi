@@ -1,6 +1,6 @@
 # LGPI 2023–2024 reconstruction status
 
-Last reconstruction pass: 2026-10-01.
+Latest merged source pass: `b98cdb5` (2023–2024, PR #10). See [continuation handoff](CONTINUATION_HANDOFF.md) for recovery, presentation fixes and validation after that checkpoint.
 
 ## What is loaded
 

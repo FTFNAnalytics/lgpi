@@ -51,6 +51,18 @@ export default function MethodologyPage() {
             Values use explicit states: <span className="codeish">reported</span>, <span className="codeish">pending_review</span>, <span className="codeish">not_reported</span>, <span className="codeish">not_applicable</span>, and <span className="codeish">source_unavailable</span>. A blank is never silently converted to zero.
           </p>
 
+          <h2>Year-over-year change</h2>
+          <p>
+            City profiles compare the same metric in 2023 and 2024 using Canadian dollars, without inflation adjustment.
+            Dollar change is the later value minus the earlier value; percentage change divides that difference by a positive earlier value.
+            A zero or negative baseline has no displayed percentage change. Missing values and mappings still under review have no calculated change.
+          </p>
+          <p>
+            Each value retains its year, review state and source details. These are changes between the separately sourced annual observations:
+            earlier figures have not been replaced with restated comparatives from later reports. Accounting changes and municipal service responsibilities
+            should be considered before interpreting a change as improved or worsened performance.
+          </p>
+
           <h2>Household normalization</h2>
           <p>
             Legacy LGPI pages display totals, dollars per household, and percentage of provincial average. This reconstruction deliberately withholds the latter two until the exact year-specific dwelling denominators and aggregation rules are source-verified. Historical comparability takes priority over substituting a convenient population denominator.

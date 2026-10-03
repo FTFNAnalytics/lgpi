@@ -34,18 +34,19 @@ export default async function CoveragePage({
 
       <section className="year-nav-section">
         <div className="shell">
-          <div className="year-nav" aria-label="Coverage year">
+          <nav className="year-nav" aria-label="Coverage year">
             <span className="year-nav-label">Financial year</span>
             {[2023, 2024].map((item) => (
               <Link
                 key={item}
                 href={"/coverage?year=" + item}
                 className={"year-tab " + (year === item ? "active" : "")}
+                aria-current={year === item ? "page" : undefined}
               >
                 {item}
               </Link>
             ))}
-          </div>
+          </nav>
           <p className="year-context-note">
             Transparency remains the published 2023 LGPI index; this selector changes the financial-source coverage shown below.
           </p>

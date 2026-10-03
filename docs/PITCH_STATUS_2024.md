@@ -13,6 +13,8 @@ The rebuild now contains a two-year financial history across the complete **99-m
 - Compare supports independent year selection for each municipality.
 - Metric Explorer supports year selection.
 - Every financial observation preserves source, source concept/code, mapping method and review state.
+- Trend and Compare values expose review states and expandable evidence. Only accepted mappings produce year-over-year changes; missing or pending-review values do not.
+- The 2,987 records include 2,674 accepted mappings, 197 pending-review mappings and 116 explicit not-reported observations; the record count is not a count of accepted numeric values.
 
 ## 2024 source coverage
 
