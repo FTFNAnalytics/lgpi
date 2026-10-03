@@ -1,0 +1,47 @@
+name: Import structured 2024 municipal finance
+
+on:
+  push:
+    branches: [data/2024-reconstruction]
+    paths:
+      - "scripts/ingest_alberta_2024.py"
+      - "scripts/ingest_bc_2024.py"
+      - "scripts/ingest_ontario_2024.py"
+      - "scripts/ingest_quebec_2024.py"
+      - ".github/workflows/ingest-structured-2024.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-2024]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/2024-reconstruction
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Import Alberta 2024
+        run: python scripts/ingest_alberta_2024.py
+      - name: Import British Columbia 2024
+        run: python scripts/ingest_bc_2024.py
+      - name: Import Ontario 2024
+        run: python scripts/ingest_ontario_2024.py
+      - name: Import Quebec 2024
+        run: python scripts/ingest_quebec_2024.py
+      - name: Commit generated 2024 data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2024
+          if git diff --cached --quiet; then
+            echo "Generated 2024 data unchanged."
+            exit 0
+          fi
+          git commit -m "Import structured 2024 municipal finance [generated-2024]"
+          git push origin HEAD:data/2024-reconstruction
