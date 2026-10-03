@@ -1,0 +1,3385 @@
+{
+  "schemaVersion": 1,
+  "year": 2024,
+  "sourceType": "official_audited_statements",
+  "municipalities": [
+    {
+      "slug": "halifax",
+      "name": "Halifax",
+      "province": "NS",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceUnits": "thousands",
+      "observationCount": 28
+    },
+    {
+      "slug": "cape-breton",
+      "name": "Cape Breton",
+      "province": "NS",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceUnits": "dollars",
+      "observationCount": 24
+    },
+    {
+      "slug": "moncton",
+      "name": "Moncton",
+      "province": "NB",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 16
+    },
+    {
+      "slug": "fredericton",
+      "name": "Fredericton",
+      "province": "NB",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 26
+    },
+    {
+      "slug": "saint-john",
+      "name": "Saint John",
+      "province": "NB",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 9
+    },
+    {
+      "slug": "st-johns",
+      "name": "St. John's",
+      "province": "NL",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 19
+    },
+    {
+      "slug": "charlottetown",
+      "name": "Charlottetown",
+      "province": "PE",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceUnits": "dollars",
+      "observationCount": 23
+    },
+    {
+      "slug": "whitehorse",
+      "name": "Whitehorse",
+      "province": "YT",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceUnits": "dollars",
+      "observationCount": 29
+    },
+    {
+      "slug": "yellowknife",
+      "name": "Yellowknife",
+      "province": "NT",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceUnits": "thousands",
+      "observationCount": 21
+    },
+    {
+      "slug": "iqaluit",
+      "name": "Iqaluit",
+      "province": "NU",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceUnits": "dollars",
+      "observationCount": 21
+    }
+  ],
+  "observations": [
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 1216776.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 637215.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Financial liabilities",
+      "sourceReportedLabel": "Financial liabilities",
+      "sourceFieldCodes": [
+        "statement:Financial liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 245837.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": 579561.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Net financial assets",
+      "sourceReportedLabel": "Net financial assets",
+      "sourceFieldCodes": [
+        "statement:Net financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 2080155.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 999392.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Taxation + taxation from other governments",
+      "sourceReportedLabel": "Taxation + taxation from other governments",
+      "sourceFieldCodes": [
+        "statement:Taxation + taxation from other governments"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 159056.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "User fees and charges",
+      "sourceReportedLabel": "User fees and charges",
+      "sourceFieldCodes": [
+        "statement:User fees and charges"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 86359.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Government grants",
+      "sourceReportedLabel": "Government grants",
+      "sourceFieldCodes": [
+        "statement:Government grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "developer_contributions",
+      "valueThousands": 1617.0,
+      "status": "pending_review",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Development levies",
+      "sourceReportedLabel": "Development levies",
+      "sourceFieldCodes": [
+        "statement:Development levies"
+      ],
+      "mappingMethod": "direct",
+      "note": "Development levies retained as the closest explicit developer-related revenue line."
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 37830.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 56392.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Other consolidated revenue",
+      "sourceReportedLabel": "Other consolidated revenue",
+      "sourceFieldCodes": [
+        "statement:Other consolidated revenue"
+      ],
+      "mappingMethod": "derived_residual",
+      "note": "Residual to total revenue after mapped headline revenue categories."
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 1340446.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total revenue",
+      "sourceReportedLabel": "Total revenue",
+      "sourceFieldCodes": [
+        "statement:Total revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 151983.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "General government services",
+      "sourceReportedLabel": "General government services",
+      "sourceFieldCodes": [
+        "statement:General government services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 291549.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 372811.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Transportation services",
+      "sourceReportedLabel": "Transportation services",
+      "sourceFieldCodes": [
+        "statement:Transportation services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "environmental_services",
+      "valueThousands": 48389.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Environmental services",
+      "sourceReportedLabel": "Environmental services",
+      "sourceFieldCodes": [
+        "statement:Environmental services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "recreation_culture",
+      "valueThousands": 179313.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 42583.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Planning and development services",
+      "sourceReportedLabel": "Planning and development services",
+      "sourceFieldCodes": [
+        "statement:Planning and development services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 1274758.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "salaries_benefits",
+      "valueThousands": 498200.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Salaries, wages and benefits",
+      "sourceReportedLabel": "Salaries, wages and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries, wages and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "interest_expense",
+      "valueThousands": 6264.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Interest on long-term debt",
+      "sourceReportedLabel": "Interest on long-term debt",
+      "sourceFieldCodes": [
+        "statement:Interest on long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "goods",
+      "valueThousands": 85734.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Materials, goods, supplies and utilities",
+      "sourceReportedLabel": "Materials, goods, supplies and utilities",
+      "sourceFieldCodes": [
+        "statement:Materials, goods, supplies and utilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "contracted_services",
+      "valueThousands": 168053.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Contracted services",
+      "sourceReportedLabel": "Contracted services",
+      "sourceFieldCodes": [
+        "statement:Contracted services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "grants_object",
+      "valueThousands": 242049.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "External transfers and grants",
+      "sourceReportedLabel": "External transfers and grants",
+      "sourceFieldCodes": [
+        "statement:External transfers and grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 172504.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 172504.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "object_other",
+      "valueThousands": 101954.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Other operating expenses",
+      "sourceReportedLabel": "Other operating expenses",
+      "sourceFieldCodes": [
+        "statement:Other operating expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "halifax",
+      "year": 2024,
+      "metric": "total_expenditure_object",
+      "valueThousands": 1274758.0,
+      "status": "reported",
+      "sourceUrl": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/budget-finances/march-31-2024-audited-financial-statements-cao-approved.pdf",
+      "sourceLabel": "Halifax Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 83435.429,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total financial assets",
+      "sourceReportedLabel": "Total financial assets",
+      "sourceFieldCodes": [
+        "statement:Total financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 157064.925,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total financial liabilities",
+      "sourceReportedLabel": "Total financial liabilities",
+      "sourceFieldCodes": [
+        "statement:Total financial liabilities"
+      ],
+      "mappingMethod": "direct",
+      "note": "Total reconciles to the individual liability lines; the OCR text rendered the leading digit inconsistently."
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 7343.717,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Accrued employee benefits",
+      "sourceReportedLabel": "Accrued employee benefits",
+      "sourceFieldCodes": [
+        "statement:Accrued employee benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 67352.632,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": -73629.496,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Net debt",
+      "sourceReportedLabel": "Net debt",
+      "sourceFieldCodes": [
+        "statement:Net debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 475386.549,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Work in progress is reported separately and is not silently added to this legacy field."
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 141136.123,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Taxes + grants in lieu of taxes",
+      "sourceReportedLabel": "Taxes + grants in lieu of taxes",
+      "sourceFieldCodes": [
+        "statement:Taxes + grants in lieu of taxes"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 27215.284,
+      "status": "pending_review",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Services to other governments + sales of services + water utility revenue",
+      "sourceReportedLabel": "Services to other governments + sales of services + water utility revenue",
+      "sourceFieldCodes": [
+        "statement:Services to other governments + sales of services + water utility revenue"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Closest high-level legacy user-charge grouping."
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 42098.397,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Unconditional + conditional transfers + capital grants",
+      "sourceReportedLabel": "Unconditional + conditional transfers + capital grants",
+      "sourceFieldCodes": [
+        "statement:Unconditional + conditional transfers + capital grants"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 1313.531,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "developer_contributions",
+      "valueThousands": 6928.9,
+      "status": "pending_review",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Contributed assets",
+      "sourceReportedLabel": "Contributed assets",
+      "sourceFieldCodes": [
+        "statement:Contributed assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Contributed assets retained as the closest developer/contribution concept."
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 14278.673,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Other own-source / PSDC / disaster recovery / property gain",
+      "sourceReportedLabel": "Other own-source / PSDC / disaster recovery / property gain",
+      "sourceFieldCodes": [
+        "statement:Other own-source / PSDC / disaster recovery / property gain"
+      ],
+      "mappingMethod": "derived_residual"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 232970.908,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total revenues",
+      "sourceReportedLabel": "Total revenues",
+      "sourceFieldCodes": [
+        "statement:Total revenues"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 18809.258,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "General government services",
+      "sourceReportedLabel": "General government services",
+      "sourceFieldCodes": [
+        "statement:General government services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 51406.914,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 52989.151,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Transportation services",
+      "sourceReportedLabel": "Transportation services",
+      "sourceFieldCodes": [
+        "statement:Transportation services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "environmental_services",
+      "valueThousands": 26423.318,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Environmental health services",
+      "sourceReportedLabel": "Environmental health services",
+      "sourceFieldCodes": [
+        "statement:Environmental health services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "health_services",
+      "valueThousands": 3465.65,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Public health and welfare services",
+      "sourceReportedLabel": "Public health and welfare services",
+      "sourceFieldCodes": [
+        "statement:Public health and welfare services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 1182.88,
+      "status": "pending_review",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Environmental development services",
+      "sourceReportedLabel": "Environmental development services",
+      "sourceFieldCodes": [
+        "statement:Environmental development services"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level planning/development concept."
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "recreation_culture",
+      "valueThousands": 14891.487,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "utility_operations",
+      "valueThousands": 17495.843,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Water utility expenses",
+      "sourceReportedLabel": "Water utility expenses",
+      "sourceFieldCodes": [
+        "statement:Water utility expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "civic_corporations",
+      "valueThousands": 2380.052,
+      "status": "pending_review",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Port of Sydney Development Corporation",
+      "sourceReportedLabel": "Port of Sydney Development Corporation",
+      "sourceFieldCodes": [
+        "statement:Port of Sydney Development Corporation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 22776.736,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "cape-breton",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 206382.31,
+      "status": "reported",
+      "sourceUrl": "https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",
+      "sourceLabel": "Cape Breton Regional Municipality Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 221066.287,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 218253.506,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Liabilities",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "statement:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 14507.0,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Post-employment benefits",
+      "sourceReportedLabel": "Post-employment benefits",
+      "sourceFieldCodes": [
+        "statement:Post-employment benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 147507.0,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": 2812.781,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Net financial assets",
+      "sourceReportedLabel": "Net financial assets",
+      "sourceFieldCodes": [
+        "statement:Net financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 982991.992,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 185299.993,
+      "status": "pending_review",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Property tax warrant",
+      "sourceReportedLabel": "Property tax warrant",
+      "sourceFieldCodes": [
+        "statement:Property tax warrant"
+      ],
+      "mappingMethod": "direct",
+      "note": "Legacy grants-in-lieu treatment remains under review."
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 41038.679,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Water and wastewater user fees",
+      "sourceReportedLabel": "Water and wastewater user fees",
+      "sourceFieldCodes": [
+        "statement:Water and wastewater user fees"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 24659.744,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Community/equalization + operating/capital government transfers",
+      "sourceReportedLabel": "Community/equalization + operating/capital government transfers",
+      "sourceFieldCodes": [
+        "statement:Community/equalization + operating/capital government transfers"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 11320.694,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Interest and return on investments",
+      "sourceReportedLabel": "Interest and return on investments",
+      "sourceFieldCodes": [
+        "statement:Interest and return on investments"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "developer_contributions",
+      "valueThousands": 9018.264,
+      "status": "pending_review",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Contributed capital assets",
+      "sourceReportedLabel": "Contributed capital assets",
+      "sourceFieldCodes": [
+        "statement:Contributed capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 32484.623,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Other own-source revenue residual",
+      "sourceReportedLabel": "Other own-source revenue residual",
+      "sourceFieldCodes": [
+        "statement:Other own-source revenue residual"
+      ],
+      "mappingMethod": "derived_residual"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 303821.997,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Operating revenue plus capital transfers/contributions",
+      "sourceReportedLabel": "Operating revenue plus capital transfers/contributions",
+      "sourceFieldCodes": [
+        "statement:Operating revenue plus capital transfers/contributions"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Matches the 2023 LGPI reconstruction convention for Moncton."
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 234960.731,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 42849.196,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "moncton",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 42849.196,
+      "status": "reported",
+      "sourceUrl": "https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",
+      "sourceLabel": "City of Moncton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 126831.275,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 76052.982,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Liabilities",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "statement:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 23357.474,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "External long-term debt and capital lease obligations",
+      "sourceReportedLabel": "External long-term debt and capital lease obligations",
+      "sourceFieldCodes": [
+        "statement:External long-term debt and capital lease obligations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": 50778.293,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Net surplus",
+      "sourceReportedLabel": "Net surplus",
+      "sourceFieldCodes": [
+        "statement:Net surplus"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 701926.079,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 149424.529,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Property tax + community/equalization + federal grant-in-lieu adjustment",
+      "sourceReportedLabel": "Property tax + community/equalization + federal grant-in-lieu adjustment",
+      "sourceFieldCodes": [
+        "statement:Property tax + community/equalization + federal grant-in-lieu adjustment"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 43179.746,
+      "status": "pending_review",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Services to other governments + sales/fines/other fees",
+      "sourceReportedLabel": "Services to other governments + sales/fines/other fees",
+      "sourceFieldCodes": [
+        "statement:Services to other governments + sales/fines/other fees"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Broader than pure user charges; retained pending legacy mapping review."
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 26994.639,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Government transfers",
+      "sourceReportedLabel": "Government transfers",
+      "sourceFieldCodes": [
+        "statement:Government transfers"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 4830.726,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Interest and return on investments",
+      "sourceReportedLabel": "Interest and return on investments",
+      "sourceFieldCodes": [
+        "statement:Interest and return on investments"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "developer_contributions",
+      "valueThousands": 33408.146,
+      "status": "pending_review",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Third-party contributions",
+      "sourceReportedLabel": "Third-party contributions",
+      "sourceFieldCodes": [
+        "statement:Third-party contributions"
+      ],
+      "mappingMethod": "direct",
+      "note": "Broader than developer contributions."
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 6413.507,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Other revenue",
+      "sourceReportedLabel": "Other revenue",
+      "sourceFieldCodes": [
+        "statement:Other revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 230843.147,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total revenue",
+      "sourceReportedLabel": "Total revenue",
+      "sourceFieldCodes": [
+        "statement:Total revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 8849.918,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Governance & Civic Engagement + General Government Services - Corporate",
+      "sourceReportedLabel": "Governance & Civic Engagement + General Government Services - Corporate",
+      "sourceFieldCodes": [
+        "statement:Governance & Civic Engagement + General Government Services - Corporate"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 57713.541,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Public Safety",
+      "sourceReportedLabel": "Public Safety",
+      "sourceFieldCodes": [
+        "statement:Public Safety"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 37374.977,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Mobility including Transit",
+      "sourceReportedLabel": "Mobility including Transit",
+      "sourceFieldCodes": [
+        "statement:Mobility including Transit"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "environmental_services",
+      "valueThousands": 7171.104,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Environmental Stewardship",
+      "sourceReportedLabel": "Environmental Stewardship",
+      "sourceFieldCodes": [
+        "statement:Environmental Stewardship"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 41478.352,
+      "status": "pending_review",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Economic Vitality + Livable Community",
+      "sourceReportedLabel": "Economic Vitality + Livable Community",
+      "sourceFieldCodes": [
+        "statement:Economic Vitality + Livable Community"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Broader than the legacy planning/development field."
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "utility_operations",
+      "valueThousands": 19451.953,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Water and Wastewater",
+      "sourceReportedLabel": "Water and Wastewater",
+      "sourceFieldCodes": [
+        "statement:Water and Wastewater"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 175310.216,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "salaries_benefits",
+      "valueThousands": 89589.329,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Salaries and benefits",
+      "sourceReportedLabel": "Salaries and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "goods_services_total",
+      "valueThousands": 59586.719,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Goods and services",
+      "sourceReportedLabel": "Goods and services",
+      "sourceFieldCodes": [
+        "statement:Goods and services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 25448.079,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 25448.079,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "interest_expense",
+      "valueThousands": 701.454,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Interest",
+      "sourceReportedLabel": "Interest",
+      "sourceFieldCodes": [
+        "statement:Interest"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "object_other",
+      "valueThousands": -15.365,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Other (gain) loss on assets",
+      "sourceReportedLabel": "Other (gain) loss on assets",
+      "sourceFieldCodes": [
+        "statement:Other (gain) loss on assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "fredericton",
+      "year": 2024,
+      "metric": "total_expenditure_object",
+      "valueThousands": 175310.216,
+      "status": "reported",
+      "sourceUrl": "https://www.fredericton.ca/sites/default/files/2025-06/CoF-2024AnnualReport-EN-.pdf",
+      "sourceLabel": "City of Fredericton 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 294266.216,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total financial assets",
+      "sourceReportedLabel": "Total financial assets",
+      "sourceFieldCodes": [
+        "statement:Total financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 300343.424,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total financial liabilities",
+      "sourceReportedLabel": "Total financial liabilities",
+      "sourceFieldCodes": [
+        "statement:Total financial liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 157173.0,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": -6077.208,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Net debt",
+      "sourceReportedLabel": "Net debt",
+      "sourceFieldCodes": [
+        "statement:Net debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 1012608.566,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 266782.013,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Consolidated revenues",
+      "sourceReportedLabel": "Consolidated revenues",
+      "sourceFieldCodes": [
+        "statement:Consolidated revenues"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 227571.985,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Consolidated expenses",
+      "sourceReportedLabel": "Consolidated expenses",
+      "sourceFieldCodes": [
+        "statement:Consolidated expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 44532.711,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saint-john",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 44532.711,
+      "status": "reported",
+      "sourceUrl": "https://saintjohn.ca/sites/default/files/documents/City%20of%20Saint%20John%20-%202024%20Consolidated%20FS%20-%20Final%20-%20Eng%20Statements.pdf",
+      "sourceLabel": "City of Saint John 2024 Consolidated Financial Statements",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 237400.994,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 654811.512,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Financial liabilities",
+      "sourceReportedLabel": "Financial liabilities",
+      "sourceFieldCodes": [
+        "statement:Financial liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 230519.561,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Employee benefits",
+      "sourceReportedLabel": "Employee benefits",
+      "sourceFieldCodes": [
+        "statement:Employee benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 318754.531,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Debenture debt + long-term debt",
+      "sourceReportedLabel": "Debenture debt + long-term debt",
+      "sourceFieldCodes": [
+        "statement:Debenture debt + long-term debt"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": -417410.518,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Net debt",
+      "sourceReportedLabel": "Net debt",
+      "sourceFieldCodes": [
+        "statement:Net debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 1319111.542,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 251375.556,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Taxation + grants in lieu of taxes",
+      "sourceReportedLabel": "Taxation + grants in lieu of taxes",
+      "sourceFieldCodes": [
+        "statement:Taxation + grants in lieu of taxes"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 46974.627,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Grants and transfers",
+      "sourceReportedLabel": "Grants and transfers",
+      "sourceFieldCodes": [
+        "statement:Grants and transfers"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 60421.617,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Sales of goods and services",
+      "sourceReportedLabel": "Sales of goods and services",
+      "sourceFieldCodes": [
+        "statement:Sales of goods and services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 27318.453,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Other revenue from own sources",
+      "sourceReportedLabel": "Other revenue from own sources",
+      "sourceFieldCodes": [
+        "statement:Other revenue from own sources"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 386090.253,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total revenue",
+      "sourceReportedLabel": "Total revenue",
+      "sourceFieldCodes": [
+        "statement:Total revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 59562.795,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "General government services + fiscal services",
+      "sourceReportedLabel": "General government services + fiscal services",
+      "sourceFieldCodes": [
+        "statement:General government services + fiscal services"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 84485.619,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Transportation services",
+      "sourceReportedLabel": "Transportation services",
+      "sourceFieldCodes": [
+        "statement:Transportation services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 41579.64,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "environmental_services",
+      "valueThousands": 56947.838,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Environmental health services",
+      "sourceReportedLabel": "Environmental health services",
+      "sourceFieldCodes": [
+        "statement:Environmental health services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "recreation_culture",
+      "valueThousands": 40799.424,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 8261.146,
+      "status": "pending_review",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Environmental development services",
+      "sourceReportedLabel": "Environmental development services",
+      "sourceFieldCodes": [
+        "statement:Environmental development services"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level planning/development function."
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 51059.663,
+      "status": "pending_review",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Amortization and allowances",
+      "sourceReportedLabel": "Amortization and allowances",
+      "sourceFieldCodes": [
+        "statement:Amortization and allowances"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source combines amortization with allowances."
+    },
+    {
+      "municipalitySlug": "st-johns",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 342696.125,
+      "status": "reported",
+      "sourceUrl": "https://www.stjohns.ca/2024_Consolidated-Financial-Statements_City-of-St.-John%27s.pdf",
+      "sourceLabel": "City of St. John's 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 44628.544,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total Financial Assets",
+      "sourceReportedLabel": "Total Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Total Financial Assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "Official image-heavy statement extracted through targeted OCR."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "holdings_council_controlled",
+      "valueThousands": 2060.35,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Investment in Government Business Enterprise",
+      "sourceReportedLabel": "Investment in Government Business Enterprise",
+      "sourceFieldCodes": [
+        "statement:Investment in Government Business Enterprise"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest legacy council-controlled-operations concept."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "financial_assets_other",
+      "valueThousands": 42568.194,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Financial assets less Government Business Enterprise investment",
+      "sourceReportedLabel": "Financial assets less Government Business Enterprise investment",
+      "sourceFieldCodes": [
+        "statement:Financial assets less Government Business Enterprise investment"
+      ],
+      "mappingMethod": "derived_residual"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 177288.424,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total Liabilities",
+      "sourceReportedLabel": "Total Liabilities",
+      "sourceFieldCodes": [
+        "statement:Total Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 7006.135,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Sick leave and post-employment benefits",
+      "sourceReportedLabel": "Sick leave and post-employment benefits",
+      "sourceFieldCodes": [
+        "statement:Sick leave and post-employment benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 127032.013,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Long term debt",
+      "sourceReportedLabel": "Long term debt",
+      "sourceFieldCodes": [
+        "statement:Long term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": -132659.88,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Net Debt",
+      "sourceReportedLabel": "Net Debt",
+      "sourceFieldCodes": [
+        "statement:Net Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 372415.485,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 43892.492,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Property taxes",
+      "sourceReportedLabel": "Property taxes",
+      "sourceFieldCodes": [
+        "statement:Property taxes"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 24311.889,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Water/sewer + recreation + police services + parking + rentals",
+      "sourceReportedLabel": "Water/sewer + recreation + police services + parking + rentals",
+      "sourceFieldCodes": [
+        "statement:Water/sewer + recreation + police services + parking + rentals"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Selected service/user-charge lines; broader own-source revenues remain in other revenue."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 55001.31,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Operating transfers + capital transfers + municipal capital expenditure grant",
+      "sourceReportedLabel": "Operating transfers + capital transfers + municipal capital expenditure grant",
+      "sourceFieldCodes": [
+        "statement:Operating transfers + capital transfers + municipal capital expenditure grant"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 178.984,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Interest and other",
+      "sourceReportedLabel": "Interest and other",
+      "sourceFieldCodes": [
+        "statement:Interest and other"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source combines interest with other minor revenue."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 5426.467,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Other revenue / statement adjustments residual",
+      "sourceReportedLabel": "Other revenue / statement adjustments residual",
+      "sourceFieldCodes": [
+        "statement:Other revenue / statement adjustments residual"
+      ],
+      "mappingMethod": "derived_residual"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 128811.142,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Operating revenue + other revenues/expenditures",
+      "sourceReportedLabel": "Operating revenue + other revenues/expenditures",
+      "sourceFieldCodes": [
+        "statement:Operating revenue + other revenues/expenditures"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Full-statement basis retained pending exact legacy aggregation convention."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 9168.133,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "General government",
+      "sourceReportedLabel": "General government",
+      "sourceFieldCodes": [
+        "statement:General government"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 17913.412,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 16136.572,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Street maintenance and environment",
+      "sourceReportedLabel": "Street maintenance and environment",
+      "sourceFieldCodes": [
+        "statement:Street maintenance and environment"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level transportation/public-works function."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 15779.181,
+      "status": "pending_review",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Development, heritage, and other",
+      "sourceReportedLabel": "Development, heritage, and other",
+      "sourceFieldCodes": [
+        "statement:Development, heritage, and other"
+      ],
+      "mappingMethod": "direct",
+      "note": "Broader than the legacy planning/development field."
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "recreation_culture",
+      "valueThousands": 10049.193,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Parks and recreation",
+      "sourceReportedLabel": "Parks and recreation",
+      "sourceFieldCodes": [
+        "statement:Parks and recreation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "utility_operations",
+      "valueThousands": 8989.316,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Water and sewer",
+      "sourceReportedLabel": "Water and sewer",
+      "sourceFieldCodes": [
+        "statement:Water and sewer"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 12432.037,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "interest_expense",
+      "valueThousands": 3467.439,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Interest on long term debt",
+      "sourceReportedLabel": "Interest on long term debt",
+      "sourceFieldCodes": [
+        "statement:Interest on long term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "charlottetown",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 98067.919,
+      "status": "reported",
+      "sourceUrl": "https://www.charlottetown.ca/UserFiles/Servers/Server_10500298/File/Mayor%20and%20Council/Finance/Audited%20Financial%20Statements/Draft%202024%20CoC%20Consolidated%20Financial%20Statements%20(1).pdf",
+      "sourceLabel": "City of Charlottetown Consolidated Financial Statements — March 31, 2024",
+      "sourceLocation": "Total expenditures",
+      "sourceReportedLabel": "Total expenditures",
+      "sourceFieldCodes": [
+        "statement:Total expenditures"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 125831.761,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Total financial assets",
+      "sourceReportedLabel": "Total financial assets",
+      "sourceFieldCodes": [
+        "statement:Total financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 56006.879,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Total liabilities",
+      "sourceReportedLabel": "Total liabilities",
+      "sourceFieldCodes": [
+        "statement:Total liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 12365.538,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Debt",
+      "sourceReportedLabel": "Debt",
+      "sourceFieldCodes": [
+        "statement:Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": 69824.882,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Net financial assets",
+      "sourceReportedLabel": "Net financial assets",
+      "sourceFieldCodes": [
+        "statement:Net financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 471340.119,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 53025.323,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Taxes and payments in lieu of taxes",
+      "sourceReportedLabel": "Taxes and payments in lieu of taxes",
+      "sourceFieldCodes": [
+        "statement:Taxes and payments in lieu of taxes"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 34449.828,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Government transfers",
+      "sourceReportedLabel": "Government transfers",
+      "sourceFieldCodes": [
+        "statement:Government transfers"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 23770.171,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Sales of goods and services",
+      "sourceReportedLabel": "Sales of goods and services",
+      "sourceFieldCodes": [
+        "statement:Sales of goods and services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "developer_contributions",
+      "valueThousands": 716.176,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Developers' contributions",
+      "sourceReportedLabel": "Developers' contributions",
+      "sourceFieldCodes": [
+        "statement:Developers' contributions"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 4844.11,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 3832.711,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Licenses/permits/penalties/fines + other revenues",
+      "sourceReportedLabel": "Licenses/permits/penalties/fines + other revenues",
+      "sourceFieldCodes": [
+        "statement:Licenses/permits/penalties/fines + other revenues"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 124509.092,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Total revenues",
+      "sourceReportedLabel": "Total revenues",
+      "sourceFieldCodes": [
+        "statement:Total revenues"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 29882.431,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "General government services",
+      "sourceReportedLabel": "General government services",
+      "sourceFieldCodes": [
+        "statement:General government services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 13812.518,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Protective services",
+      "sourceReportedLabel": "Protective services",
+      "sourceFieldCodes": [
+        "statement:Protective services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 31585.697,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Transportation services",
+      "sourceReportedLabel": "Transportation services",
+      "sourceFieldCodes": [
+        "statement:Transportation services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "environmental_services",
+      "valueThousands": 21821.794,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Environmental services",
+      "sourceReportedLabel": "Environmental services",
+      "sourceFieldCodes": [
+        "statement:Environmental services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "health_services",
+      "valueThousands": 205.529,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Public health services",
+      "sourceReportedLabel": "Public health services",
+      "sourceFieldCodes": [
+        "statement:Public health services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 4040.485,
+      "status": "pending_review",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Community development services",
+      "sourceReportedLabel": "Community development services",
+      "sourceFieldCodes": [
+        "statement:Community development services"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest high-level planning/development field."
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "recreation_culture",
+      "valueThousands": 19634.359,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Recreation and cultural services",
+      "sourceReportedLabel": "Recreation and cultural services",
+      "sourceFieldCodes": [
+        "statement:Recreation and cultural services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 120982.813,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Total expenses",
+      "sourceReportedLabel": "Total expenses",
+      "sourceFieldCodes": [
+        "statement:Total expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "salaries_benefits",
+      "valueThousands": 60359.597,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Salaries and benefits",
+      "sourceReportedLabel": "Salaries and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "goods",
+      "valueThousands": 20359.942,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Materials and supplies",
+      "sourceReportedLabel": "Materials and supplies",
+      "sourceFieldCodes": [
+        "statement:Materials and supplies"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "contracted_services",
+      "valueThousands": 12203.521,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Professional services",
+      "sourceReportedLabel": "Professional services",
+      "sourceFieldCodes": [
+        "statement:Professional services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "grants_object",
+      "valueThousands": 2534.857,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Community grants",
+      "sourceReportedLabel": "Community grants",
+      "sourceFieldCodes": [
+        "statement:Community grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "interest_expense",
+      "valueThousands": 412.688,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Interest",
+      "sourceReportedLabel": "Interest",
+      "sourceFieldCodes": [
+        "statement:Interest"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 22058.921,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 22058.921,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "object_other",
+      "valueThousands": 3053.287,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Public relations + other",
+      "sourceReportedLabel": "Public relations + other",
+      "sourceFieldCodes": [
+        "statement:Public relations + other"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "whitehorse",
+      "year": 2024,
+      "metric": "total_expenditure_object",
+      "valueThousands": 120982.813,
+      "status": "reported",
+      "sourceUrl": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
+      "sourceLabel": "City of Whitehorse 2024 Annual Report",
+      "sourceLocation": "Total expense by object",
+      "sourceReportedLabel": "Total expense by object",
+      "sourceFieldCodes": [
+        "statement:Total expense by object"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 143024.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Total Financial Assets",
+      "sourceReportedLabel": "Total Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Total Financial Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 84192.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Total Liabilities",
+      "sourceReportedLabel": "Total Liabilities",
+      "sourceFieldCodes": [
+        "statement:Total Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 4473.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Accrued employee benefits",
+      "sourceReportedLabel": "Accrued employee benefits",
+      "sourceFieldCodes": [
+        "statement:Accrued employee benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 25118.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Debt",
+      "sourceReportedLabel": "Debt",
+      "sourceFieldCodes": [
+        "statement:Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": 58832.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Net Financial Assets",
+      "sourceReportedLabel": "Net Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Net Financial Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 342858.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 37931.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Municipal taxation",
+      "sourceReportedLabel": "Municipal taxation",
+      "sourceFieldCodes": [
+        "statement:Municipal taxation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 26092.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "User fees and sale of goods",
+      "sourceReportedLabel": "User fees and sale of goods",
+      "sourceFieldCodes": [
+        "statement:User fees and sale of goods"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 2951.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Grants and transfers",
+      "sourceReportedLabel": "Grants and transfers",
+      "sourceFieldCodes": [
+        "statement:Grants and transfers"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 5230.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 5143.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Land sales + fines/penalties + development levies + franchise fees",
+      "sourceReportedLabel": "Land sales + fines/penalties + development levies + franchise fees",
+      "sourceFieldCodes": [
+        "statement:Land sales + fines/penalties + development levies + franchise fees"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 77347.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Total Revenues",
+      "sourceReportedLabel": "Total Revenues",
+      "sourceFieldCodes": [
+        "statement:Total Revenues"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "salaries_benefits",
+      "valueThousands": 34910.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Salaries, wages and employee benefits",
+      "sourceReportedLabel": "Salaries, wages and employee benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries, wages and employee benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "contracted_services",
+      "valueThousands": 22674.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Contracted and general services",
+      "sourceReportedLabel": "Contracted and general services",
+      "sourceFieldCodes": [
+        "statement:Contracted and general services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "goods",
+      "valueThousands": 1255.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Materials and supplies",
+      "sourceReportedLabel": "Materials and supplies",
+      "sourceFieldCodes": [
+        "statement:Materials and supplies"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "interest_expense",
+      "valueThousands": 1163.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Bank/short-term interest + long-term debt interest",
+      "sourceReportedLabel": "Bank/short-term interest + long-term debt interest",
+      "sourceFieldCodes": [
+        "statement:Bank/short-term interest + long-term debt interest"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 15876.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Amortization of tangible assets",
+      "sourceReportedLabel": "Amortization of tangible assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 15876.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Amortization of tangible assets",
+      "sourceReportedLabel": "Amortization of tangible assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "object_other",
+      "valueThousands": 13557.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Other audited expense objects",
+      "sourceReportedLabel": "Other audited expense objects",
+      "sourceFieldCodes": [
+        "statement:Other audited expense objects"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 83435.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Total Expenses",
+      "sourceReportedLabel": "Total Expenses",
+      "sourceFieldCodes": [
+        "statement:Total Expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "yellowknife",
+      "year": 2024,
+      "metric": "total_expenditure_object",
+      "valueThousands": 83435.0,
+      "status": "reported",
+      "sourceUrl": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
+      "sourceLabel": "City of Yellowknife 2024 Financial Statements",
+      "sourceLocation": "Total Expenses",
+      "sourceReportedLabel": "Total Expenses",
+      "sourceFieldCodes": [
+        "statement:Total Expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 97255.381,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total Financial Assets",
+      "sourceReportedLabel": "Total Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Total Financial Assets"
+      ],
+      "mappingMethod": "direct",
+      "note": "2024 comparative column in the subsequent audited financial statements."
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 78549.49,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total Liabilities",
+      "sourceReportedLabel": "Total Liabilities",
+      "sourceFieldCodes": [
+        "statement:Total Liabilities"
+      ],
+      "mappingMethod": "direct",
+      "note": "2024 comparative column in the subsequent audited financial statements."
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 1900.931,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Post-employment benefits payable",
+      "sourceReportedLabel": "Post-employment benefits payable",
+      "sourceFieldCodes": [
+        "statement:Post-employment benefits payable"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 20382.297,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Long term debt",
+      "sourceReportedLabel": "Long term debt",
+      "sourceFieldCodes": [
+        "statement:Long term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": 18705.891,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Net Financial Assets",
+      "sourceReportedLabel": "Net Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Net Financial Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 294591.958,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 25085.56,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Taxes and grants in lieu",
+      "sourceReportedLabel": "Taxes and grants in lieu",
+      "sourceFieldCodes": [
+        "statement:Taxes and grants in lieu"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 26321.516,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Water and sewer + sanitation",
+      "sourceReportedLabel": "Water and sewer + sanitation",
+      "sourceFieldCodes": [
+        "statement:Water and sewer + sanitation"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 9048.029,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Operating government-transfer schedules",
+      "sourceReportedLabel": "Operating government-transfer schedules",
+      "sourceFieldCodes": [
+        "statement:Operating government-transfer schedules"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 10765.056,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Other own-source/service revenues",
+      "sourceReportedLabel": "Other own-source/service revenues",
+      "sourceFieldCodes": [
+        "statement:Other own-source/service revenues"
+      ],
+      "mappingMethod": "derived_residual"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 71220.161,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total Revenue",
+      "sourceReportedLabel": "Total Revenue",
+      "sourceFieldCodes": [
+        "statement:Total Revenue"
+      ],
+      "mappingMethod": "direct",
+      "note": "2024 actual reported in the City's official subsequent operating statement."
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 5628.779,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "General government",
+      "sourceReportedLabel": "General government",
+      "sourceFieldCodes": [
+        "statement:General government"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 6337.612,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Emergency services + by-law enforcement",
+      "sourceReportedLabel": "Emergency services + by-law enforcement",
+      "sourceFieldCodes": [
+        "statement:Emergency services + by-law enforcement"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 4707.306,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Public works and transportation",
+      "sourceReportedLabel": "Public works and transportation",
+      "sourceFieldCodes": [
+        "statement:Public works and transportation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "environmental_services",
+      "valueThousands": 23200.365,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Water/sewer + sanitation",
+      "sourceReportedLabel": "Water/sewer + sanitation",
+      "sourceFieldCodes": [
+        "statement:Water/sewer + sanitation"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 3091.88,
+      "status": "pending_review",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Land development + engineering + economic development",
+      "sourceReportedLabel": "Land development + engineering + economic development",
+      "sourceFieldCodes": [
+        "statement:Land development + engineering + economic development"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Closest high-level legacy planning/development grouping."
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "recreation_culture",
+      "valueThousands": 7037.251,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Recreational and cultural",
+      "sourceReportedLabel": "Recreational and cultural",
+      "sourceFieldCodes": [
+        "statement:Recreational and cultural"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "grants_function",
+      "valueThousands": 4324.5,
+      "status": "pending_review",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Community funding",
+      "sourceReportedLabel": "Community funding",
+      "sourceFieldCodes": [
+        "statement:Community funding"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source function may include transfers broader than the legacy grants field."
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 10808.811,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Depreciation",
+      "sourceReportedLabel": "Depreciation",
+      "sourceFieldCodes": [
+        "statement:Depreciation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 10808.811,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Depreciation",
+      "sourceReportedLabel": "Depreciation",
+      "sourceFieldCodes": [
+        "statement:Depreciation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "iqaluit",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 65136.504,
+      "status": "reported",
+      "sourceUrl": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
+      "sourceLabel": "City of Iqaluit 2024 Consolidated Financial Statements",
+      "sourceLocation": "Total Expenses",
+      "sourceReportedLabel": "Total Expenses",
+      "sourceFieldCodes": [
+        "statement:Total Expenses"
+      ],
+      "mappingMethod": "direct",
+      "note": "2024 actual reported in the City's official subsequent operating statement."
+    }
+  ],
+  "mapping": {
+    "name": "LGPI Atlantic and territorial audited statements 2024",
+    "version": 1,
+    "notes": [
+      "Core financial-position, revenue and expenditure fields are required for every municipality.",
+      "Values reported in dollars are normalized to thousands of Canadian dollars; Halifax and Yellowknife already report in thousands.",
+      "Image-heavy statements were extracted with targeted OCR; subsequent audited comparative columns are used where a municipal PDF cannot be reliably machine-fetched.",
+      "Derived mappings preserve source labels and uncertain legacy compatibility is marked pending_review.",
+      "No missing source value is converted to numeric zero."
+    ]
+  },
+  "stats": {
+    "municipalityCount": 10,
+    "municipalitiesWithObservations": 10,
+    "observationCount": 216,
+    "reportedCount": 194,
+    "pendingReviewCount": 22
+  }
+}
