@@ -1,0 +1,55 @@
+name: Resolve scanned 2024 municipal statements
+on:
+  push:
+    branches: [data/2024-reconstruction]
+    paths:
+      - .github/workflows/resolve-scanned-2024.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils tesseract-ocr >/dev/null
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install beautifulsoup4
+      - name: Resolve Yellowknife
+        run: |
+          python - <<'PY'
+          import urllib.request
+          from bs4 import BeautifulSoup
+          url="https://www.yellowknife.ca/budget-and-initiatives/past-and-present-budgets"
+          req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 LGPI-reconstruction/0.2"})
+          html=urllib.request.urlopen(req,timeout=60).read()
+          soup=BeautifulSoup(html,"html.parser")
+          for a in soup.find_all("a",href=True):
+              text=" ".join(a.stripped_strings)
+              if "2024" in text and "Financial Report" in text:
+                  print("YELLOWKNIFE",repr(text),urllib.parse.urljoin(url,a["href"]))
+          PY
+      - name: OCR Cape Breton and Moncton core statements
+        run: |
+          python - <<'PY'
+          import ssl, urllib.request
+          sources={
+            "cape-breton":("https://cbrm.ns.ca/wp-content/uploads/2026/01/2023-2024-CBRM_2023-24.pdf",False),
+            "moncton":("https://www5.moncton.ca/docs/budget/2024_Consolidated_Financial_Statements.pdf",True),
+          }
+          for slug,(url,insecure) in sources.items():
+              req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 LGPI-reconstruction/0.2"})
+              ctx=ssl._create_unverified_context() if insecure else None
+              with urllib.request.urlopen(req,timeout=120,context=ctx) as r:
+                  open(f"/tmp/{slug}.pdf","wb").write(r.read())
+          PY
+          for slug in cape-breton moncton; do
+            mkdir -p /tmp/$slug
+            pdftoppm -f 1 -l 15 -jpeg -r 180 /tmp/$slug.pdf /tmp/$slug/page >/dev/null 2>&1
+            echo "===== $slug ====="
+            for img in /tmp/$slug/*.jpg; do
+              echo "--- $img ---"
+              tesseract "$img" stdout --psm 6 2>/dev/null
+            done
+          done
