@@ -66,6 +66,7 @@ See:
 - [Data provenance and QA contract](docs/DATA_PROVENANCE.md)
 - [Next data tranche](docs/NEXT_DATA_TRANCHE.md)
 - [Presentation run-of-show](docs/PRESENTATION_RUN_OF_SHOW.md)
+- [2024 pitch status](docs/PITCH_STATUS_2024.md)
 
 ## Run locally
 
