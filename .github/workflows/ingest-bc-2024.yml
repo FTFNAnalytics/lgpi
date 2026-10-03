@@ -35,4 +35,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/2024/bc.json
           git commit -m "Import BC 2024 schedule data [generated-data]"
-          git push origin HEAD:data/2024-reconstruction
+          for attempt in 1 2 3 4 5; do
+            git fetch origin data/2024-reconstruction
+            git rebase origin/data/2024-reconstruction
+            if git push origin HEAD:data/2024-reconstruction; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo "Failed to push generated data after retries." >&2
+          exit 1
