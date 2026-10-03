@@ -271,8 +271,8 @@ export default async function CityPage({
           ) : (
             <div className="empty-state">
               {financialSourceUnavailable
-                ? "The official 2023 structured financial source is unavailable for this municipality. No zero values have been inferred."
-                : "Transparency evidence is loaded; 2023 financial field mapping for this municipality is still queued. This is not a zero-value record."}
+                ? `The official ${year} financial source is unavailable for this municipality. No zero values have been inferred.`
+                : `Transparency evidence is loaded; ${year} financial field mapping is unavailable for this municipality. This is not a zero-value record.`}
             </div>
           )}
         </div>
