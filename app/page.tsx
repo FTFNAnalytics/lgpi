@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { MunicipalitySearch } from "@/components/municipality-search";
 import {
-  financialObservationCount,
-  municipalitiesWithFinancialObservations,
+  financialSummary2024,
   TARGET_MUNICIPALITIES,
   VERIFIED_COMPONENT_BREAKDOWNS,
   VERIFIED_TRANSPARENCY_TOTALS,
@@ -16,10 +15,10 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="shell">
-          <p className="eyebrow">LGPI 2023 · national reconstruction</p>
+          <p className="eyebrow">LGPI 2023–2024 · national reconstruction</p>
           <h1>Canadian municipal finance, rebuilt for inspection.</h1>
           <p className="hero-deck">
-            The complete 99-municipality LGPI product universe, reconstructed from the published transparency methodology and official 2023 municipal financial sources.
+            The complete 99-municipality LGPI product universe, with published 2023 transparency scoring and source-cited municipal financial data updated through 2024.
           </p>
           <div style={{ marginTop: 30 }}>
             <MunicipalitySearch />
@@ -36,15 +35,15 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">Reconstruction status</p>
-              <h2>The 2023 source pass is complete.</h2>
+              <h2>The 2024 financial source pass is complete.</h2>
             </div>
-            <p>All 99 LGPI municipalities now have a resolved financial-data status. Missing, unavailable and broader-than-legacy source concepts remain explicit rather than being converted to zero.</p>
+            <p>Both 2023 and 2024 now resolve the complete LGPI municipality universe. Missing, unavailable and broader-than-legacy source concepts remain explicit rather than being converted to zero.</p>
           </div>
           <div className="stat-grid">
             <div className="stat"><strong>{TARGET_MUNICIPALITIES}/99</strong><span>municipalities represented</span></div>
-            <div className="stat"><strong>{municipalitiesWithFinancialObservations}</strong><span>municipalities with financial observations</span></div>
-            <div className="stat"><strong>{VERIFIED_TRANSPARENCY_TOTALS}/80</strong><span>published non-Quebec transparency scores loaded</span></div>
-            <div className="stat"><strong>{financialObservationCount.toLocaleString("en-CA")}</strong><span>official/source-backed 2023 observations</span></div>
+            <div className="stat"><strong>{financialSummary2024.municipalitiesWithObservations}</strong><span>with 2024 financial observations</span></div>
+            <div className="stat"><strong>{VERIFIED_TRANSPARENCY_TOTALS}/80</strong><span>published 2023 non-Quebec transparency scores</span></div>
+            <div className="stat"><strong>{financialSummary2024.observationCount.toLocaleString("en-CA")}</strong><span>official/source-backed 2024 observations</span></div>
           </div>
         </div>
       </section>
@@ -62,8 +61,8 @@ export default function Home() {
             <article className="card feature-card">
               <span className="chip good">City profile</span>
               <h2 style={{ marginTop: 14 }}>Calgary</h2>
-              <p>Full transparency components plus structured Alberta financial-source mappings and provenance.</p>
-              <Link className="card-link" href="/cities/calgary">Open Calgary →</Link>
+              <p>Published transparency components plus structured Alberta financial data with 2023→2024 change and provenance.</p>
+              <Link className="card-link" href="/cities/calgary?year=2024">Open Calgary →</Link>
             </article>
             <article className="card feature-card">
               <span className="chip good">Cross-jurisdiction</span>
@@ -121,7 +120,7 @@ export default function Home() {
             <article className="card">
               <p className="eyebrow">03</p>
               <h2>Financial explorer</h2>
-              <p>Browse the reconstructed legacy LGPI field catalogue and see which 2023 observations have verified source mappings.</p>
+              <p>Browse the reconstructed legacy LGPI field catalogue by year and compare source-mapped 2023 and 2024 observations.</p>
               <Link className="card-link" href="/metrics">Explore metrics →</Link>
             </article>
           </div>
