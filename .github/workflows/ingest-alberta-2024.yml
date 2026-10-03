@@ -5,7 +5,7 @@ on:
     branches: [data/2024-reconstruction]
     paths:
       - "scripts/ingest_alberta_2024.py"
-      - ".github/workflows/ingest-alberta.yml"
+      - ".github/workflows/ingest-alberta-2024.yml"
   workflow_dispatch:
 
 permissions:
