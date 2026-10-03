@@ -43,8 +43,7 @@ CONFIG = {
         "direct": "https://www.whitehorse.ca/wp-content/uploads/2025/10/COW-2024-AR-Web.pdf",
     },
     "yellowknife": {
-        "page": "https://www.yellowknife.ca/budget-and-initiatives/past-and-present-budgets",
-        "must": ["financial report", "2024"],
+        "direct": "https://www.yellowknife.ca/en/city-government/resources/Reports/Annual_Report/2024-FINANCIAL-STATEMENTS.pdf",
     },
     "iqaluit": {
         "direct": "https://iqaluit.ca/sites/default/files/2024_consolidated_financial_statements_eng_-_signed.pdf",
