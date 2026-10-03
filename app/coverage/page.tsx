@@ -1,27 +1,53 @@
 import Link from "next/link";
 import {
-  financialCoverageByProvince,
-  financialObservationCount,
-  financialSourceUnavailableCount,
-  municipalitiesWithFinancialObservations,
-  pendingFinancialObservationCount,
-  reportedFinancialObservationCount,
+  FinancialYear,
+  getFinancialCoverageByProvince,
+  getFinancialSummary,
   TARGET_MUNICIPALITIES,
   VERIFIED_COMPONENT_BREAKDOWNS,
   VERIFIED_TRANSPARENCY_TOTALS,
 } from "@/lib/lgpi-data";
 
-export default function CoveragePage() {
+export default async function CoveragePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ year?: string }>;
+}) {
+  const query = await searchParams;
+  const year: FinancialYear = Number(query.year) === 2023 ? 2023 : 2024;
+  const summary = getFinancialSummary(year);
+  const coverage = getFinancialCoverageByProvince(year);
+
   return (
     <main>
       <section className="page-hero">
         <div className="shell">
-          <p className="eyebrow">2023 reconstruction · national status</p>
+          <p className="eyebrow">2023–2024 reconstruction · national status</p>
           <h1>Coverage</h1>
           <p>
-            The 2023 financial-source pass now resolves the complete 99-municipality LGPI universe.
-            This page separates what is complete from what is intentionally withheld pending exact
-            historical-method reproduction.
+            Both financial-source passes resolve the complete 99-municipality LGPI universe.
+            Switch years to inspect source availability and observation coverage without changing
+            the published 2023 transparency-score layer.
+          </p>
+        </div>
+      </section>
+
+      <section className="year-nav-section">
+        <div className="shell">
+          <div className="year-nav" aria-label="Coverage year">
+            <span className="year-nav-label">Financial year</span>
+            {[2023, 2024].map((item) => (
+              <Link
+                key={item}
+                href={"/coverage?year=" + item}
+                className={"year-tab " + (year === item ? "active" : "")}
+              >
+                {item}
+              </Link>
+            ))}
+          </div>
+          <p className="year-context-note">
+            Transparency remains the published 2023 LGPI index; this selector changes the financial-source coverage shown below.
           </p>
         </div>
       </section>
@@ -34,33 +60,35 @@ export default function CoveragePage() {
               <span>municipalities represented in the product</span>
             </div>
             <div className="stat">
-              <strong>{municipalitiesWithFinancialObservations}</strong>
-              <span>municipalities with source-backed financial observations</span>
+              <strong>{summary.municipalitiesWithObservations}</strong>
+              <span>municipalities with {year} financial observations</span>
             </div>
             <div className="stat">
-              <strong>{financialObservationCount.toLocaleString("en-CA")}</strong>
-              <span>official/source-backed 2023 financial observations</span>
+              <strong>{summary.observationCount.toLocaleString("en-CA")}</strong>
+              <span>source-backed {year} financial observations</span>
             </div>
             <div className="stat">
               <strong>{VERIFIED_TRANSPARENCY_TOTALS}/80</strong>
-              <span>published non-Quebec transparency scores loaded</span>
+              <span>published 2023 non-Quebec transparency scores</span>
             </div>
           </div>
 
           <div className="coverage-band">
             <div>
-              <span className="chip good">Complete source pass</span>
-              <h2>Every municipality has a resolved 2023 financial-data status.</h2>
+              <span className="chip good">Resolved source pass</span>
+              <h2>Every municipality has a resolved {year} financial-data status.</h2>
               <p>
-                Ninety-eight municipalities have financial observations. Hamilton is preserved as
-                source unavailable because Ontario does not publish its 2023 FIR.
+                {summary.municipalitiesWithObservations} municipalities have financial observations.
+                {summary.sourceUnavailableCount > 0
+                  ? " Hamilton remains source unavailable in Ontario's FIR and is not treated as zero."
+                  : " No municipality is represented with fabricated zeroes."}
               </p>
             </div>
             <div className="coverage-band-stats">
-              <div><strong>{reportedFinancialObservationCount.toLocaleString("en-CA")}</strong><span>reported / accepted mappings</span></div>
-              <div><strong>{pendingFinancialObservationCount.toLocaleString("en-CA")}</strong><span>explicit pending-review mappings</span></div>
-              <div><strong>{financialSourceUnavailableCount}</strong><span>source-unavailable municipality</span></div>
-              <div><strong>{VERIFIED_COMPONENT_BREAKDOWNS}</strong><span>full transparency component breakdowns</span></div>
+              <div><strong>{summary.reportedCount.toLocaleString("en-CA")}</strong><span>reported / accepted mappings</span></div>
+              <div><strong>{summary.pendingReviewCount.toLocaleString("en-CA")}</strong><span>explicit pending-review mappings</span></div>
+              <div><strong>{summary.notReportedCount.toLocaleString("en-CA")}</strong><span>explicit not-reported observations</span></div>
+              <div><strong>{VERIFIED_COMPONENT_BREAKDOWNS}</strong><span>full 2023 transparency component breakdowns</span></div>
             </div>
           </div>
         </div>
@@ -70,12 +98,12 @@ export default function CoveragePage() {
         <div className="shell">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Province and territory coverage</p>
+              <p className="eyebrow">{year} province and territory coverage</p>
               <h2>National source coverage</h2>
             </div>
             <p>
-              Financial observations are drawn from provincial structured returns where available,
-              and official audited municipal statements elsewhere.
+              Structured provincial returns are used where available; official audited municipal
+              statements are used for the remaining jurisdictions.
             </p>
           </div>
 
@@ -91,7 +119,7 @@ export default function CoveragePage() {
                 </tr>
               </thead>
               <tbody>
-                {financialCoverageByProvince.map((row) => (
+                {coverage.map((row) => (
                   <tr key={row.province}>
                     <td><strong>{row.name}</strong></td>
                     <td>{row.municipalities}</td>
@@ -111,7 +139,7 @@ export default function CoveragePage() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">Deliberate boundaries</p>
-              <h2>What is not being faked for the demo</h2>
+              <h2>What remains intentionally withheld</h2>
             </div>
           </div>
           <div className="card-grid">
@@ -120,7 +148,7 @@ export default function CoveragePage() {
               <h2 style={{ marginTop: 14 }}>Per-household values</h2>
               <p>
                 The historic LGPI used a dwelling denominator. Those calculated views stay off until
-                the exact Statistics Canada denominator convention is reproduced.
+                the exact Statistics Canada denominator convention is reproduced for each year.
               </p>
             </article>
             <article className="card">
@@ -133,10 +161,10 @@ export default function CoveragePage() {
             </article>
             <article className="card">
               <span className="chip good">Preserved</span>
-              <h2 style={{ marginTop: 14 }}>Quebec transparency status</h2>
+              <h2 style={{ marginTop: 14 }}>Transparency year</h2>
               <p>
-                The published LGPI edition omitted Quebec transparency scores. Quebec is therefore
-                shown as unscored, not zero and not independently rescored.
+                The latest public transparency edition identified is based on 2023 statements.
+                Financial data can advance to 2024 without inventing a 2024 transparency score.
               </p>
             </article>
           </div>
