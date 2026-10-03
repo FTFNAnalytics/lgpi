@@ -1,0 +1,1515 @@
+{
+  "schemaVersion": 1,
+  "year": 2024,
+  "sourceType": "audited_annual_reports",
+  "municipalities": [
+    {
+      "slug": "regina",
+      "name": "Regina",
+      "province": "SK",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "observationCount": 36
+    },
+    {
+      "slug": "saskatoon",
+      "name": "Saskatoon",
+      "province": "SK",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "observationCount": 34
+    },
+    {
+      "slug": "winnipeg",
+      "name": "Winnipeg",
+      "province": "MB",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "observationCount": 28
+    }
+  ],
+  "observations": [
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 658155,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Financial assets total",
+      "sourceReportedLabel": "Financial assets total",
+      "sourceFieldCodes": [
+        "statement:Financial assets total"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Derived from audited financial liabilities less net financial debt."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 794928,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Financial liabilities",
+      "sourceReportedLabel": "Financial liabilities",
+      "sourceFieldCodes": [
+        "statement:Financial liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": -136773,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Net financial debt",
+      "sourceReportedLabel": "Net financial debt",
+      "sourceFieldCodes": [
+        "statement:Net financial debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 2947916,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Tangible capital assets - net book value",
+      "sourceReportedLabel": "Tangible capital assets - net book value",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets - net book value"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 440006,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Long-term debt",
+      "sourceReportedLabel": "Long-term debt",
+      "sourceFieldCodes": [
+        "statement:Long-term debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 98615,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Employee benefit obligations",
+      "sourceReportedLabel": "Employee benefit obligations",
+      "sourceFieldCodes": [
+        "statement:Employee benefit obligations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 332414,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Taxation",
+      "sourceReportedLabel": "Taxation",
+      "sourceFieldCodes": [
+        "statement:Taxation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 283936,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Fees and charges",
+      "sourceReportedLabel": "Fees and charges",
+      "sourceFieldCodes": [
+        "statement:Fees and charges"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 145115,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Government transfers",
+      "sourceReportedLabel": "Government transfers",
+      "sourceFieldCodes": [
+        "statement:Government transfers"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 15964,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Interest on investments",
+      "sourceReportedLabel": "Interest on investments",
+      "sourceFieldCodes": [
+        "statement:Interest on investments"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "developer_contributions",
+      "valueThousands": 17703,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Servicing agreement fees + contribution of tangible capital assets",
+      "sourceReportedLabel": "Servicing agreement fees + contribution of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Servicing agreement fees + contribution of tangible capital assets"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 101962,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Other consolidated revenue categories",
+      "sourceReportedLabel": "Other consolidated revenue categories",
+      "sourceFieldCodes": [
+        "statement:Other consolidated revenue categories"
+      ],
+      "mappingMethod": "derived_sum",
+      "note": "Residual of total revenue after LGPI headline categories."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 897094,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Total consolidated revenue",
+      "sourceReportedLabel": "Total consolidated revenue",
+      "sourceFieldCodes": [
+        "statement:Total consolidated revenue"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "recreation_culture",
+      "valueThousands": 152081,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Parks, recreation and community services",
+      "sourceReportedLabel": "Parks, recreation and community services",
+      "sourceFieldCodes": [
+        "statement:Parks, recreation and community services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "police",
+      "valueThousands": 125247,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Police",
+      "sourceReportedLabel": "Police",
+      "sourceFieldCodes": [
+        "statement:Police"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "fire",
+      "valueThousands": 57913,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Fire",
+      "sourceReportedLabel": "Fire",
+      "sourceFieldCodes": [
+        "statement:Fire"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 183160,
+      "status": "pending_review",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Police + Fire",
+      "sourceReportedLabel": "Police + Fire",
+      "sourceFieldCodes": [
+        "statement:Police + Fire"
+      ],
+      "mappingMethod": "direct",
+      "note": "Other protective services are not separately identified in the high-level statement."
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 105647,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Legislative and administrative services",
+      "sourceReportedLabel": "Legislative and administrative services",
+      "sourceFieldCodes": [
+        "statement:Legislative and administrative services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "environmental_services",
+      "valueThousands": 152349,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Water, wastewater and drainage + waste collection and disposal",
+      "sourceReportedLabel": "Water, wastewater and drainage + waste collection and disposal",
+      "sourceFieldCodes": [
+        "statement:Water, wastewater and drainage + waste collection and disposal"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "transportation",
+      "valueThousands": 95979,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Roads and traffic",
+      "sourceReportedLabel": "Roads and traffic",
+      "sourceFieldCodes": [
+        "statement:Roads and traffic"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "transit",
+      "valueThousands": 51268,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Transit",
+      "sourceReportedLabel": "Transit",
+      "sourceFieldCodes": [
+        "statement:Transit"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 147247,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Roads and traffic + Transit",
+      "sourceReportedLabel": "Roads and traffic + Transit",
+      "sourceFieldCodes": [
+        "statement:Roads and traffic + Transit"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "grants_function",
+      "valueThousands": 16310,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Grants",
+      "sourceReportedLabel": "Grants",
+      "sourceFieldCodes": [
+        "statement:Grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 19750,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Planning and development",
+      "sourceReportedLabel": "Planning and development",
+      "sourceFieldCodes": [
+        "statement:Planning and development"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 776544,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Total consolidated expenses",
+      "sourceReportedLabel": "Total consolidated expenses",
+      "sourceFieldCodes": [
+        "statement:Total consolidated expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "salaries_benefits",
+      "valueThousands": 361380,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Wages and benefits",
+      "sourceReportedLabel": "Wages and benefits",
+      "sourceFieldCodes": [
+        "statement:Wages and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "goods",
+      "valueThousands": 76304,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Materials, supplies and other goods",
+      "sourceReportedLabel": "Materials, supplies and other goods",
+      "sourceFieldCodes": [
+        "statement:Materials, supplies and other goods"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "contracted_services",
+      "valueThousands": 167337,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Contracted and general services",
+      "sourceReportedLabel": "Contracted and general services",
+      "sourceFieldCodes": [
+        "statement:Contracted and general services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "goods_services_other",
+      "valueThousands": 21585,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Utilities",
+      "sourceReportedLabel": "Utilities",
+      "sourceFieldCodes": [
+        "statement:Utilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "goods_services_total",
+      "valueThousands": 265226,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Materials + contracted services + utilities",
+      "sourceReportedLabel": "Materials + contracted services + utilities",
+      "sourceFieldCodes": [
+        "statement:Materials + contracted services + utilities"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "grants_object",
+      "valueThousands": 17279,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Transfer payments/grants",
+      "sourceReportedLabel": "Transfer payments/grants",
+      "sourceFieldCodes": [
+        "statement:Transfer payments/grants"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "interest_expense",
+      "valueThousands": 15023,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Interest and bank charges",
+      "sourceReportedLabel": "Interest and bank charges",
+      "sourceFieldCodes": [
+        "statement:Interest and bank charges"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 114339,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Amortization of tangible assets",
+      "sourceReportedLabel": "Amortization of tangible assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 114339,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Amortization of tangible assets",
+      "sourceReportedLabel": "Amortization of tangible assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "object_other",
+      "valueThousands": 3297,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Accretion",
+      "sourceReportedLabel": "Accretion",
+      "sourceFieldCodes": [
+        "statement:Accretion"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "regina",
+      "year": 2024,
+      "metric": "total_expenditure_object",
+      "valueThousands": 776544,
+      "status": "reported",
+      "sourceUrl": "https://openregina.ca/dataset/5e011351-3612-4a51-919d-914dcef52ffb/resource/f84fc149-0569-4a6b-8fc2-62c2ed18a138/download/cor-2024-annual-report.pdf",
+      "sourceLabel": "City of Regina 2024 Annual Report",
+      "sourceLocation": "Total expenses by object",
+      "sourceReportedLabel": "Total expenses by object",
+      "sourceFieldCodes": [
+        "statement:Total expenses by object"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 1053048,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Total Financial Assets",
+      "sourceReportedLabel": "Total Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Total Financial Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 606572,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Total Financial Liabilities",
+      "sourceReportedLabel": "Total Financial Liabilities",
+      "sourceFieldCodes": [
+        "statement:Total Financial Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": 446476,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Total Net Financial Assets",
+      "sourceReportedLabel": "Total Net Financial Assets",
+      "sourceFieldCodes": [
+        "statement:Total Net Financial Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 4991002,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Tangible Capital Assets",
+      "sourceReportedLabel": "Tangible Capital Assets",
+      "sourceFieldCodes": [
+        "statement:Tangible Capital Assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 296878,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Long-Term Debt",
+      "sourceReportedLabel": "Long-Term Debt",
+      "sourceFieldCodes": [
+        "statement:Long-Term Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 44716,
+      "status": "pending_review",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Employee Benefits Payable",
+      "sourceReportedLabel": "Employee Benefits Payable",
+      "sourceFieldCodes": [
+        "statement:Employee Benefits Payable"
+      ],
+      "mappingMethod": "direct",
+      "note": "Source label is broader than the legacy employee-future-benefit field."
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 347753,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Taxation",
+      "sourceReportedLabel": "Taxation",
+      "sourceFieldCodes": [
+        "statement:Taxation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 497486,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "User Fees",
+      "sourceReportedLabel": "User Fees",
+      "sourceFieldCodes": [
+        "statement:User Fees"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 146203,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Government Transfers - Capital + Operating",
+      "sourceReportedLabel": "Government Transfers - Capital + Operating",
+      "sourceFieldCodes": [
+        "statement:Government Transfers - Capital + Operating"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 25548,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Investment Income",
+      "sourceReportedLabel": "Investment Income",
+      "sourceFieldCodes": [
+        "statement:Investment Income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "developer_contributions",
+      "valueThousands": 181624,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Contributions from Developers & Others - Capital + Operating",
+      "sourceReportedLabel": "Contributions from Developers & Others - Capital + Operating",
+      "sourceFieldCodes": [
+        "statement:Contributions from Developers & Others - Capital + Operating"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 110874,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Franchise Fees + General Revenues + Grants in lieu",
+      "sourceReportedLabel": "Franchise Fees + General Revenues + Grants in lieu",
+      "sourceFieldCodes": [
+        "statement:Franchise Fees + General Revenues + Grants in lieu"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 1309488,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Total Revenues",
+      "sourceReportedLabel": "Total Revenues",
+      "sourceFieldCodes": [
+        "statement:Total Revenues"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 77967,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Corporate Asset Management + Corporate Governance & Finance + Taxation and General Revenues",
+      "sourceReportedLabel": "Corporate Asset Management + Corporate Governance & Finance + Taxation and General Revenues",
+      "sourceFieldCodes": [
+        "statement:Corporate Asset Management + Corporate Governance & Finance + Taxation and General Revenues"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "public_safety_total",
+      "valueThousands": 199661,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Saskatoon Fire + Saskatoon Police Service",
+      "sourceReportedLabel": "Saskatoon Fire + Saskatoon Police Service",
+      "sourceFieldCodes": [
+        "statement:Saskatoon Fire + Saskatoon Police Service"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "fire",
+      "valueThousands": 62208,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Saskatoon Fire",
+      "sourceReportedLabel": "Saskatoon Fire",
+      "sourceFieldCodes": [
+        "statement:Saskatoon Fire"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "police",
+      "valueThousands": 137453,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Saskatoon Police Service",
+      "sourceReportedLabel": "Saskatoon Police Service",
+      "sourceFieldCodes": [
+        "statement:Saskatoon Police Service"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "transportation_total",
+      "valueThousands": 204072,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Transportation",
+      "sourceReportedLabel": "Transportation",
+      "sourceFieldCodes": [
+        "statement:Transportation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "environmental_services",
+      "valueThousands": 36983,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Environmental Health",
+      "sourceReportedLabel": "Environmental Health",
+      "sourceFieldCodes": [
+        "statement:Environmental Health"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "utility_operations",
+      "valueThousands": 243414,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Utilities",
+      "sourceReportedLabel": "Utilities",
+      "sourceFieldCodes": [
+        "statement:Utilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 68997,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Land Development + Urban Planning and Development",
+      "sourceReportedLabel": "Land Development + Urban Planning and Development",
+      "sourceFieldCodes": [
+        "statement:Land Development + Urban Planning and Development"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "recreation_culture",
+      "valueThousands": 144189,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Arts, Culture and Events Venues + Recreation and Culture + Saskatoon Public Library",
+      "sourceReportedLabel": "Arts, Culture and Events Venues + Recreation and Culture + Saskatoon Public Library",
+      "sourceFieldCodes": [
+        "statement:Arts, Culture and Events Venues + Recreation and Culture + Saskatoon Public Library"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 1011078,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Total Expenses",
+      "sourceReportedLabel": "Total Expenses",
+      "sourceFieldCodes": [
+        "statement:Total Expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "salaries_benefits",
+      "valueThousands": 422323,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Wages and Benefits",
+      "sourceReportedLabel": "Wages and Benefits",
+      "sourceFieldCodes": [
+        "statement:Wages and Benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "contracted_services",
+      "valueThousands": 196079,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Contracted and General Services",
+      "sourceReportedLabel": "Contracted and General Services",
+      "sourceFieldCodes": [
+        "statement:Contracted and General Services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "goods",
+      "valueThousands": 90639,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Material, Goods and Supplies",
+      "sourceReportedLabel": "Material, Goods and Supplies",
+      "sourceFieldCodes": [
+        "statement:Material, Goods and Supplies"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "goods_services_other",
+      "valueThousands": 127412,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Heating, Lighting, Power, Water and Telephone",
+      "sourceReportedLabel": "Heating, Lighting, Power, Water and Telephone",
+      "sourceFieldCodes": [
+        "statement:Heating, Lighting, Power, Water and Telephone"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "goods_services_total",
+      "valueThousands": 414130,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Contracted services + utilities + goods",
+      "sourceReportedLabel": "Contracted services + utilities + goods",
+      "sourceFieldCodes": [
+        "statement:Contracted services + utilities + goods"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "grants_object",
+      "valueThousands": 12354,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Donations, Grants and Subsidies",
+      "sourceReportedLabel": "Donations, Grants and Subsidies",
+      "sourceFieldCodes": [
+        "statement:Donations, Grants and Subsidies"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "interest_expense",
+      "valueThousands": 11839,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Finance Charges",
+      "sourceReportedLabel": "Finance Charges",
+      "sourceFieldCodes": [
+        "statement:Finance Charges"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 162498,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 162498,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Amortization",
+      "sourceReportedLabel": "Amortization",
+      "sourceFieldCodes": [
+        "statement:Amortization"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "object_other",
+      "valueThousands": -12066,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Accretion (Recovery)",
+      "sourceReportedLabel": "Accretion (Recovery)",
+      "sourceFieldCodes": [
+        "statement:Accretion (Recovery)"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "saskatoon",
+      "year": 2024,
+      "metric": "total_expenditure_object",
+      "valueThousands": 1011078,
+      "status": "reported",
+      "sourceUrl": "https://www.saskatoon.ca/sites/default/files/documents/asset-financial-management/COS_2024-AnnualReport-Aug28-F.pdf",
+      "sourceLabel": "City of Saskatoon 2024 Annual Report",
+      "sourceLocation": "Total",
+      "sourceReportedLabel": "Total",
+      "sourceFieldCodes": [
+        "statement:Total"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "financial_assets_total",
+      "valueThousands": 1906577,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Financial assets",
+      "sourceReportedLabel": "Financial assets",
+      "sourceFieldCodes": [
+        "statement:Financial assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "holdings_council_controlled",
+      "valueThousands": 20865,
+      "status": "pending_review",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Investment in business partnerships",
+      "sourceReportedLabel": "Investment in business partnerships",
+      "sourceFieldCodes": [
+        "statement:Investment in business partnerships"
+      ],
+      "mappingMethod": "direct",
+      "note": "Closest legacy council-controlled-operations concept."
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "financial_assets_other",
+      "valueThousands": 1885712,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Financial assets less investment in business partnerships",
+      "sourceReportedLabel": "Financial assets less investment in business partnerships",
+      "sourceFieldCodes": [
+        "statement:Financial assets less investment in business partnerships"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "financial_liabilities_total",
+      "valueThousands": 3174980,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Liabilities",
+      "sourceReportedLabel": "Liabilities",
+      "sourceFieldCodes": [
+        "statement:Liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "net_financial_assets",
+      "valueThousands": -1268403,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Net financial liabilities",
+      "sourceReportedLabel": "Net financial liabilities",
+      "sourceFieldCodes": [
+        "statement:Net financial liabilities"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "capital_assets",
+      "valueThousands": 8793696,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Tangible capital assets",
+      "sourceReportedLabel": "Tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "long_term_debt",
+      "valueThousands": 1629027,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Debt",
+      "sourceReportedLabel": "Debt",
+      "sourceFieldCodes": [
+        "statement:Debt"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "employee_future_benefit_liability",
+      "valueThousands": 297666,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Employee benefits obligations",
+      "sourceReportedLabel": "Employee benefits obligations",
+      "sourceFieldCodes": [
+        "statement:Employee benefits obligations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "net_taxes",
+      "valueThousands": 915450,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Taxation",
+      "sourceReportedLabel": "Taxation",
+      "sourceFieldCodes": [
+        "statement:Taxation"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "user_charges",
+      "valueThousands": 735846,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Sales of services and regulatory fees",
+      "sourceReportedLabel": "Sales of services and regulatory fees",
+      "sourceFieldCodes": [
+        "statement:Sales of services and regulatory fees"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "government_grants_total",
+      "valueThousands": 471602,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Government transfers + capital-related transfers",
+      "sourceReportedLabel": "Government transfers + capital-related transfers",
+      "sourceFieldCodes": [
+        "statement:Government transfers + capital-related transfers"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "investment_income",
+      "valueThousands": 75358,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Investment income",
+      "sourceReportedLabel": "Investment income",
+      "sourceFieldCodes": [
+        "statement:Investment income"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "developer_contributions",
+      "valueThousands": 90966,
+      "status": "pending_review",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Developer contributions-in-kind related to capital",
+      "sourceReportedLabel": "Developer contributions-in-kind related to capital",
+      "sourceFieldCodes": [
+        "statement:Developer contributions-in-kind related to capital"
+      ],
+      "mappingMethod": "direct",
+      "note": "Direct capital developer contribution."
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "revenue_other",
+      "valueThousands": 60133,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Land sales/other + other capital contributions",
+      "sourceReportedLabel": "Land sales/other + other capital contributions",
+      "sourceFieldCodes": [
+        "statement:Land sales/other + other capital contributions"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "total_revenue",
+      "valueThousands": 2349355,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Operating revenues + capital revenues",
+      "sourceReportedLabel": "Operating revenues + capital revenues",
+      "sourceFieldCodes": [
+        "statement:Operating revenues + capital revenues"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "general_government_total",
+      "valueThousands": 211253,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Finance and administration + General government",
+      "sourceReportedLabel": "Finance and administration + General government",
+      "sourceFieldCodes": [
+        "statement:Finance and administration + General government"
+      ],
+      "mappingMethod": "derived_sum"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "utility_operations",
+      "valueThousands": 581996,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Utility operations",
+      "sourceReportedLabel": "Utility operations",
+      "sourceFieldCodes": [
+        "statement:Utility operations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "public_works",
+      "valueThousands": 384980,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Public works",
+      "sourceReportedLabel": "Public works",
+      "sourceFieldCodes": [
+        "statement:Public works"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "planning_development",
+      "valueThousands": 137196,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Property and development",
+      "sourceReportedLabel": "Property and development",
+      "sourceFieldCodes": [
+        "statement:Property and development"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "civic_corporations",
+      "valueThousands": 111082,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Civic corporations",
+      "sourceReportedLabel": "Civic corporations",
+      "sourceFieldCodes": [
+        "statement:Civic corporations"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "total_expenditure",
+      "valueThousands": 2077723,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Total Expenses",
+      "sourceReportedLabel": "Total Expenses",
+      "sourceFieldCodes": [
+        "statement:Total Expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "salaries_benefits",
+      "valueThousands": 1081361,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Salaries and benefits",
+      "sourceReportedLabel": "Salaries and benefits",
+      "sourceFieldCodes": [
+        "statement:Salaries and benefits"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "goods_services_total",
+      "valueThousands": 558363,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Goods and services",
+      "sourceReportedLabel": "Goods and services",
+      "sourceFieldCodes": [
+        "statement:Goods and services"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "depreciation_object",
+      "valueThousands": 316063,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "depreciation_function",
+      "valueThousands": 316063,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Amortization of tangible capital assets",
+      "sourceReportedLabel": "Amortization of tangible capital assets",
+      "sourceFieldCodes": [
+        "statement:Amortization of tangible capital assets"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "interest_expense",
+      "valueThousands": 78669,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Interest",
+      "sourceReportedLabel": "Interest",
+      "sourceFieldCodes": [
+        "statement:Interest"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "object_other",
+      "valueThousands": 43267,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Other expenses",
+      "sourceReportedLabel": "Other expenses",
+      "sourceFieldCodes": [
+        "statement:Other expenses"
+      ],
+      "mappingMethod": "direct"
+    },
+    {
+      "municipalitySlug": "winnipeg",
+      "year": 2024,
+      "metric": "total_expenditure_object",
+      "valueThousands": 2077723,
+      "status": "reported",
+      "sourceUrl": "https://legacy.winnipeg.ca/finance/files/2024AnnualReport.pdf",
+      "sourceLabel": "City of Winnipeg 2024 Annual Financial Report",
+      "sourceLocation": "Total expenses by object",
+      "sourceReportedLabel": "Total expenses by object",
+      "sourceFieldCodes": [
+        "statement:Total expenses by object"
+      ],
+      "mappingMethod": "direct"
+    }
+  ],
+  "stats": {
+    "municipalityCount": 3,
+    "observationCount": 98,
+    "reportedCount": 94,
+    "pendingReviewCount": 4
+  }
+}

@@ -1,122 +1,85 @@
-# LGPI 2023 presentation run-of-show
+# LGPI 2023–2024 presentation run-of-show
 
 ## Five-minute walkthrough
 
-### 1. Open the homepage — 30 seconds
+### 1. Homepage — 30 seconds
 
 Lead with the core claim:
 
-> The original LGPI can be reproduced from public evidence and turned into a maintainable annual data product.
+> The original LGPI can be reproduced from public evidence, updated annually, and presented as a traceable municipal-finance product.
 
 Point to:
 
 - 99 / 99 municipalities represented
-- 98 municipalities with source-backed financial observations
+- 98 municipalities with source-backed 2024 financial observations
 - Hamilton explicitly source-unavailable
-- 2,981 official/source-backed 2023 observations
-- 80 / 80 published non-Quebec transparency scores loaded
+- 2,987 source-backed 2024 observations
+- 80 / 80 published non-Quebec 2023 transparency scores loaded
 
 Then open **Coverage**.
 
 ### 2. Coverage — 45 seconds
 
-Use the coverage page to show that the product distinguishes:
+Switch the Financial year control between **2023** and **2024**.
 
-- complete municipality coverage
-- source-backed financial observations
-- published transparency-score coverage
-- explicit source-unavailable states
-- deliberately withheld calculated views
+Show that the product separates annual financial-source coverage from the published 2023 transparency-score layer, explicit source-unavailable states, pending-review mappings, and deliberately withheld calculated views.
 
-Emphasize **missing does not mean zero**.
-
-The main methodological boundary to explain is that dollars-per-household and percentage-of-provincial-average views have not been re-enabled until the historical Statistics Canada dwelling denominator is reproduced exactly.
+> We can advance the financial database annually without pretending Frontier has published a new transparency score.
 
 ### 3. Calgary profile — 75 seconds
 
-Open the Calgary city profile.
+Open `/cities/calgary?year=2024`.
 
-Show:
+Show the published transparency components, the horizontal 2023 / 2024 financial-year strip, the compact 2023 → 2024 change cards, the selected-year core financial snapshot, and detailed source provenance.
 
-1. Published transparency score and component breakdown.
-2. Financial-source status strip.
-3. Core financial snapshot:
-   - total revenue
-   - total expenditure
-   - long-term debt
-   - capital assets
-4. Detailed observations with:
-   - normalized LGPI field
-   - original source field
-   - mapping status
-   - official source link
+Then click **2023** and back to **2024**.
 
-Message:
+> This preserves the original LGPI interaction — choose a year and inspect the same field structure — while adding a compact year-over-year summary.
 
-> This is no longer a black-box spreadsheet. A user can trace a displayed number back to the field it came from.
+### 4. Compare — 60 seconds
 
-### 4. Compare Calgary and Edmonton — 60 seconds
+Open `/compare`. Use Calgary and Edmonton first because both are generated from Alberta's standardized FIR/SIR source.
 
-Open the comparison page.
+Show that each side can independently select municipality and financial year. Demonstrate Calgary 2023 vs Calgary 2024, or Calgary 2024 vs Edmonton 2024.
 
-Use Calgary and Edmonton because both are generated from the same standardized Alberta FIR/SIR source.
+> The comparison layer now supports both cross-city and cross-year analysis without changing the underlying metric definitions.
 
-Show:
+### 5. Metric Explorer — 40 seconds
 
-- transparency components side-by-side
-- core financial values first
-- full mapped field set below
+Open `/metrics`. Pick a legacy metric such as long-term debt or total revenue and switch between 2023 and 2024.
 
-Then explain the caution:
+### 6. Quebec example — 35 seconds
 
-> The tool exposes comparisons without pretending that every municipality provides the same bundle of services.
+Open Montréal with financial year 2024. Its financial profile comes from MAMH's official 2024 data while transparency remains **not published**.
 
-### 5. Quebec example — 45 seconds
+### 7. Methodology — 35 seconds
 
-Open Montréal or Québec.
+Close on `/methodology`. Highlight the preserved 33-point transparency framework, stable 2023–2024 financial catalogue, source provenance, explicit observation states, and denominator-dependent views that remain gated.
 
-Point out that:
+## Pitch close
 
-- the financial profile is populated from MAMH's official 2023 open-data workbook
-- transparency is shown as **not published**
-- no zero or substitute score is invented
+The reconstruction demonstrates that LGPI can operate as an annual product:
 
-Message:
-
-> The new architecture can represent a real absence honestly instead of making the interface look complete by filling it with a number.
-
-### 6. Methodology — 45 seconds
-
-Close on the methodology page.
-
-Highlight:
-
-- published 33-point transparency framework preserved
-- source provenance retained
-- explicit observation states
-- known publication conflicts surfaced
-- denominator-dependent calculated views intentionally gated
-
-## Suggested pitch close
-
-The reconstruction demonstrates that LGPI can become an annual product rather than a periodic manual exercise:
-
-1. province/source-specific ingestion adapters collect the strongest available official data;
-2. mappings normalize those sources into the stable LGPI field catalogue;
-3. QA catches source and entity anomalies before publication;
-4. provenance remains visible in the public interface;
-5. the same pipeline can be rerun for 2024 and subsequent years.
+1. source-specific adapters collect official annual data;
+2. stable mappings normalize each source into the LGPI field catalogue;
+3. QA catches schema drift, entity ambiguity and accounting inconsistencies;
+4. the UI switches years without changing metric definitions;
+5. provenance remains visible;
+6. the same process can now be repeated for 2025.
 
 ## Questions to be ready for
 
-**Why are Quebec transparency scores blank?**  
-Because the published 2023 LGPI edition omitted Quebec transparency scoring. The reconstruction preserves the published result rather than inventing replacement scores.
+**Why does the transparency score still say 2023 when I select 2024?**  
+Because the latest public Frontier transparency edition identified is based on 2023 municipal statements. The 2024 update is a financial-data update, not an invented transparency rescoring.
 
 **Why is Hamilton missing financial data?**  
-Ontario lists Hamilton's 2023 FIR as unavailable. The product exposes that source state explicitly instead of treating missing fields as zero.
+Ontario's FIR source is unavailable for Hamilton. The product exposes that source state instead of treating missing fields as zero.
 
 **Why are per-household values not shown yet?**  
-The historical LGPI used a dwelling denominator. That calculated view is intentionally gated until the exact Statistics Canada denominator and provincial aggregation convention are reproduced.
+The historical LGPI used a Statistics Canada dwelling denominator. That calculated view remains gated until the exact year-specific denominator and provincial aggregation convention are reproduced.
+
+**How does the new year-over-year experience relate to the old site?**  
+The old site changes the city financial table when the user selects a year, and its Metric/Compare tools also include year controls. The rebuild preserves that behavior and adds a compact two-year summary on city profiles.
 
 **Is this a new fiscal-performance score?**  
-No. The pitch build first reconstructs the existing product faithfully. A future performance methodology can be designed as a separate, clearly versioned layer.
+No. The rebuild first preserves and updates the existing product architecture. Any future performance methodology should be a separate, versioned layer.

@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import {
+  availableFinancialYears,
+  FinancialYear,
   getComponentRows,
   getFinancialObservations,
   getMetricDefinition,
@@ -13,6 +15,8 @@ import {
 export function CompareTool() {
   const [leftSlug, setLeftSlug] = useState("calgary");
   const [rightSlug, setRightSlug] = useState("edmonton");
+  const [leftYear, setLeftYear] = useState<FinancialYear>(2024);
+  const [rightYear, setRightYear] = useState<FinancialYear>(2024);
   const left = municipalities2023.find((record) => record.slug === leftSlug)!;
   const right = municipalities2023.find((record) => record.slug === rightSlug)!;
 
@@ -28,8 +32,8 @@ export function CompareTool() {
   }, [left, right]);
 
   const financialRows = useMemo(() => {
-    const a = getFinancialObservations(leftSlug);
-    const b = getFinancialObservations(rightSlug);
+    const a = getFinancialObservations(leftSlug, leftYear);
+    const b = getFinancialObservations(rightSlug, rightYear);
     const keys = [...new Set([...a.map((x) => x.metric), ...b.map((x) => x.metric)])];
     const catalogOrder = new Map(metricCatalog.map((metric, index) => [metric.key, index]));
     return keys
@@ -40,7 +44,7 @@ export function CompareTool() {
         right: b.find((x) => x.metric === key),
       }))
       .sort((a, b) => (catalogOrder.get(a.key) ?? 999) - (catalogOrder.get(b.key) ?? 999));
-  }, [leftSlug, rightSlug]);
+  }, [leftSlug, rightSlug, leftYear, rightYear]);
 
   const coreKeys = ["total_revenue", "total_expenditure", "long_term_debt", "capital_assets"];
   const coreRows = coreKeys
@@ -51,24 +55,40 @@ export function CompareTool() {
 
   return (
     <>
-      <div className="two-col">
-        <label>
-          <span className="eyebrow">Municipality A</span>
-          <select value={leftSlug} onChange={(event) => setLeftSlug(event.target.value)}>
-            {options.map((record) => <option key={record.slug} value={record.slug}>{record.name}, {record.province}</option>)}
-          </select>
-        </label>
-        <label>
-          <span className="eyebrow">Municipality B</span>
-          <select value={rightSlug} onChange={(event) => setRightSlug(event.target.value)}>
-            {options.map((record) => <option key={record.slug} value={record.slug}>{record.name}, {record.province}</option>)}
-          </select>
-        </label>
+      <div className="compare-selector-grid">
+        <div className="compare-selector-card">
+          <label>
+            <span className="eyebrow">Municipality A</span>
+            <select value={leftSlug} onChange={(event) => setLeftSlug(event.target.value)}>
+              {options.map((record) => <option key={record.slug} value={record.slug}>{record.name}, {record.province}</option>)}
+            </select>
+          </label>
+          <label>
+            <span className="eyebrow">Financial year</span>
+            <select value={leftYear} onChange={(event) => setLeftYear(Number(event.target.value) as FinancialYear)}>
+              {availableFinancialYears.map((year) => <option key={year} value={year}>{year}</option>)}
+            </select>
+          </label>
+        </div>
+        <div className="compare-selector-card">
+          <label>
+            <span className="eyebrow">Municipality B</span>
+            <select value={rightSlug} onChange={(event) => setRightSlug(event.target.value)}>
+              {options.map((record) => <option key={record.slug} value={record.slug}>{record.name}, {record.province}</option>)}
+            </select>
+          </label>
+          <label>
+            <span className="eyebrow">Financial year</span>
+            <select value={rightYear} onChange={(event) => setRightYear(Number(event.target.value) as FinancialYear)}>
+              {availableFinancialYears.map((year) => <option key={year} value={year}>{year}</option>)}
+            </select>
+          </label>
+        </div>
       </div>
 
       <div className="stat-grid" style={{ marginTop: 24 }}>
-        <div className="stat"><strong>{left.score === null ? "Unscored" : `${left.score}/33`}</strong><span>{left.name} transparency status</span></div>
-        <div className="stat"><strong>{right.score === null ? "Unscored" : `${right.score}/33`}</strong><span>{right.name} transparency status</span></div>
+        <div className="stat"><strong>{leftYear}</strong><span>{left.name} financial year</span></div>
+        <div className="stat"><strong>{rightYear}</strong><span>{right.name} financial year</span></div>
         <div className="stat"><strong>{!left.transparencyPublished ? "—" : left.components ? "10/10" : "Total"}</strong><span>{left.name} component evidence</span></div>
         <div className="stat"><strong>{!right.transparencyPublished ? "—" : right.components ? "10/10" : "Total"}</strong><span>{right.name} component evidence</span></div>
       </div>
@@ -94,7 +114,7 @@ export function CompareTool() {
 
       <h2 style={{ marginTop: 38 }}>Financial comparison</h2>
       <div className="notice" style={{ marginBottom: 16 }}>
-        Financial comparisons are shown only where the reconstruction has source-mapped 2023 observations. Service responsibilities can differ substantially between municipalities.
+        Financial comparisons use the independently selected year for each municipality. Service responsibilities can differ substantially between municipalities.
       </div>
 
       {coreRows.length > 0 && (
@@ -104,11 +124,11 @@ export function CompareTool() {
               <span className="eyebrow">{row.label}</span>
               <div className="comparison-values">
                 <div>
-                  <small>{left.name}</small>
+                  <small>{left.name} · {leftYear}</small>
                   <strong>{row.left?.valueThousands != null ? formatThousands(row.left.valueThousands) : "—"}</strong>
                 </div>
                 <div>
-                  <small>{right.name}</small>
+                  <small>{right.name} · {rightYear}</small>
                   <strong>{row.right?.valueThousands != null ? formatThousands(row.right.valueThousands) : "—"}</strong>
                 </div>
               </div>
@@ -121,7 +141,7 @@ export function CompareTool() {
       {financialRows.length ? (
         <div className="table-wrap">
           <table>
-            <thead><tr><th>Metric</th><th>{left.name}</th><th>{right.name}</th></tr></thead>
+            <thead><tr><th>Metric</th><th>{left.name} · {leftYear}</th><th>{right.name} · {rightYear}</th></tr></thead>
             <tbody>
               {financialRows.map((row) => (
                 <tr key={row.key}>

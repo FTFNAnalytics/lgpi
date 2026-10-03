@@ -1,0 +1,47 @@
+name: Import BC 2024 schedules
+
+on:
+  push:
+    branches: [data/2024-reconstruction]
+    paths:
+      - "scripts/ingest_bc_2024.py"
+      - ".github/workflows/ingest-bc-2024.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-data]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/2024-reconstruction
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Generate BC 2024 data
+        run: python scripts/ingest_bc_2024.py
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data/2024/bc.json && git ls-files --error-unmatch data/2024/bc.json >/dev/null 2>&1; then
+            echo "Generated data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2024/bc.json
+          git commit -m "Import BC 2024 schedule data [generated-data]"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin data/2024-reconstruction
+            git rebase origin/data/2024-reconstruction
+            if git push origin HEAD:data/2024-reconstruction; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo "Failed to push generated data after retries." >&2
+          exit 1

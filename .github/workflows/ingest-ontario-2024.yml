@@ -1,0 +1,48 @@
+name: Import Ontario 2024 FIR
+# Ontario FIR bulk importer
+
+on:
+  push:
+    branches: [data/2024-reconstruction]
+    paths:
+      - "scripts/ingest_ontario_2024.py"
+      - ".github/workflows/ingest-ontario-2024.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-data]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/2024-reconstruction
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Generate Ontario 2024 data
+        run: python scripts/ingest_ontario_2024.py
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data/2024/ontario.json && git ls-files --error-unmatch data/2024/ontario.json >/dev/null 2>&1; then
+            echo "Generated data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2024/ontario.json
+          git commit -m "Import Ontario 2024 FIR data [generated-data]"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin data/2024-reconstruction
+            git rebase origin/data/2024-reconstruction
+            if git push origin HEAD:data/2024-reconstruction; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo "Failed to push generated data after retries." >&2
+          exit 1

@@ -1,0 +1,33 @@
+name: Import final Atlantic and territorial 2024 data
+on:
+  push:
+    branches: [data/2024-reconstruction]
+    paths:
+      - scripts/ingest_atlantic_territories_2024.py
+      - .github/workflows/ingest-atlantic-territories-2024.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-2024-final]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/2024-reconstruction
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/ingest_atlantic_territories_2024.py
+      - name: Commit generated file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2024/atlantic_territories.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "Import final 2024 municipal statements [generated-2024-final]"
+          git push origin HEAD:data/2024-reconstruction

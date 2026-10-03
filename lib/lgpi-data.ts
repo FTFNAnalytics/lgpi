@@ -4,6 +4,12 @@ import ontario2023 from "@/data/2023/ontario.json";
 import quebec2023 from "@/data/2023/quebec.json";
 import prairies2023 from "@/data/2023/prairies.json";
 import atlanticTerritories2023 from "@/data/2023/atlantic_territories.json";
+import alberta2024 from "@/data/2024/alberta.json";
+import bc2024 from "@/data/2024/bc.json";
+import ontario2024 from "@/data/2024/ontario.json";
+import quebec2024 from "@/data/2024/quebec.json";
+import prairies2024 from "@/data/2024/prairies.json";
+import atlanticTerritories2024 from "@/data/2024/atlantic_territories.json";
 
 export const REPORT_URL =
   "https://frontiercentre.org/wp-content/uploads/PR148_LGPI2025_JN0525_F1.pdf";
@@ -315,7 +321,7 @@ export type ObservationStatus =
 
 export type FinancialObservation = {
   municipalitySlug: string;
-  year: 2023;
+  year: 2023 | 2024;
   metric: string;
   valueThousands: number | null;
   status: ObservationStatus;
@@ -341,6 +347,19 @@ const prairiesFinancial2023 =
 const atlanticTerritoriesFinancial2023 =
   atlanticTerritories2023.observations as unknown as FinancialObservation[];
 
+const albertaFinancial2024 =
+  alberta2024.observations as unknown as FinancialObservation[];
+const bcFinancial2024 =
+  bc2024.observations as unknown as FinancialObservation[];
+const ontarioFinancial2024 =
+  ontario2024.observations as unknown as FinancialObservation[];
+const quebecFinancial2024 =
+  quebec2024.observations as unknown as FinancialObservation[];
+const prairiesFinancial2024 =
+  prairies2024.observations as unknown as FinancialObservation[];
+const atlanticTerritoriesFinancial2024 =
+  atlanticTerritories2024.observations as unknown as FinancialObservation[];
+
 export const financial2023: FinancialObservation[] = [
   ...albertaFinancial2023,
   ...bcFinancial2023,
@@ -349,6 +368,23 @@ export const financial2023: FinancialObservation[] = [
   ...prairiesFinancial2023,
   ...atlanticTerritoriesFinancial2023,
 ];
+
+export const financial2024: FinancialObservation[] = [
+  ...albertaFinancial2024,
+  ...bcFinancial2024,
+  ...ontarioFinancial2024,
+  ...quebecFinancial2024,
+  ...prairiesFinancial2024,
+  ...atlanticTerritoriesFinancial2024,
+];
+
+export const financialByYear: Record<2023 | 2024, FinancialObservation[]> = {
+  2023: financial2023,
+  2024: financial2024,
+};
+
+export const availableFinancialYears = [2023, 2024] as const;
+export type FinancialYear = (typeof availableFinancialYears)[number];
 
 export const alberta2023MunicipalityContext = alberta2023.municipalities;
 export const bc2023MunicipalityContext = bc2023.municipalities;
@@ -368,12 +404,21 @@ export function getOntarioMunicipalityContext(slug: string) {
   return ontario2023MunicipalityContext.find((record) => record.slug === slug);
 }
 
-export function getFinancialSourceUnavailable(slug: string) {
-  return ontario2023SourceUnavailable.find((record) => record.slug === slug);
+export const ontario2024SourceUnavailable = ontario2024.sourceUnavailableMunicipalities;
+
+export function getFinancialSourceUnavailable(slug: string, year: FinancialYear = 2024) {
+  const sourceUnavailable = year === 2024 ? ontario2024SourceUnavailable : ontario2023SourceUnavailable;
+  return sourceUnavailable.find((record) => record.slug === slug);
 }
 
-export function getFinancialObservations(slug: string) {
-  return financial2023.filter((observation) => observation.municipalitySlug === slug);
+export function getFinancialObservations(slug: string, year: FinancialYear = 2024) {
+  return financialByYear[year].filter((observation) => observation.municipalitySlug === slug);
+}
+
+export function getFinancialObservation(slug: string, year: FinancialYear, metric: string) {
+  return financialByYear[year].find(
+    (observation) => observation.municipalitySlug === slug && observation.metric === metric,
+  );
 }
 
 export function getMetricDefinition(key: string) {
@@ -389,32 +434,45 @@ export function formatThousands(value: number | null) {
   }).format(value * 1000);
 }
 
-export const financialObservationCount = financial2023.length;
-export const reportedFinancialObservationCount = financial2023.filter(
-  (observation) => observation.status === "reported",
-).length;
-export const pendingFinancialObservationCount = financial2023.filter(
-  (observation) => observation.status === "pending_review",
-).length;
-export const municipalitiesWithFinancialObservations = new Set(
-  financial2023.map((observation) => observation.municipalitySlug),
-).size;
-export const financialSourceUnavailableCount = ontario2023SourceUnavailable.length;
+export function getFinancialSummary(year: FinancialYear) {
+  const observations = financialByYear[year];
+  const sourceUnavailable = year === 2024 ? ontario2024SourceUnavailable : ontario2023SourceUnavailable;
+  return {
+    observationCount: observations.length,
+    reportedCount: observations.filter((observation) => observation.status === "reported").length,
+    pendingReviewCount: observations.filter((observation) => observation.status === "pending_review").length,
+    notReportedCount: observations.filter((observation) => observation.status === "not_reported").length,
+    municipalitiesWithObservations: new Set(observations.map((observation) => observation.municipalitySlug)).size,
+    sourceUnavailableCount: sourceUnavailable.length,
+  };
+}
 
-export const financialCoverageByProvince = Object.entries(provinceNames).map(
-  ([province, name]) => {
+export const financialSummary2023 = getFinancialSummary(2023);
+export const financialSummary2024 = getFinancialSummary(2024);
+
+// Backward-compatible 2023 presentation aliases.
+export const financialObservationCount = financialSummary2023.observationCount;
+export const reportedFinancialObservationCount = financialSummary2023.reportedCount;
+export const pendingFinancialObservationCount = financialSummary2023.pendingReviewCount;
+export const municipalitiesWithFinancialObservations = financialSummary2023.municipalitiesWithObservations;
+export const financialSourceUnavailableCount = financialSummary2023.sourceUnavailableCount;
+
+export function getFinancialCoverageByProvince(year: FinancialYear) {
+  const observationsForYear = financialByYear[year];
+  const sourceUnavailableForYear = year === 2024 ? ontario2024SourceUnavailable : ontario2023SourceUnavailable;
+  return Object.entries(provinceNames).map(([province, name]) => {
     const municipalitySlugs = municipalities2023
       .filter((record) => record.province === province)
       .map((record) => record.slug);
     const withObservations = new Set(
-      financial2023
+      observationsForYear
         .filter((observation) => municipalitySlugs.includes(observation.municipalitySlug))
         .map((observation) => observation.municipalitySlug),
     ).size;
-    const sourceUnavailable = ontario2023SourceUnavailable.filter((record) =>
+    const sourceUnavailable = sourceUnavailableForYear.filter((record) =>
       municipalitySlugs.includes(record.slug),
     ).length;
-    const observations = financial2023.filter((observation) =>
+    const observations = observationsForYear.filter((observation) =>
       municipalitySlugs.includes(observation.municipalitySlug),
     ).length;
 
@@ -426,8 +484,11 @@ export const financialCoverageByProvince = Object.entries(provinceNames).map(
       sourceUnavailable,
       observations,
     };
-  },
-);
+  });
+}
+
+export const financialCoverageByProvince = getFinancialCoverageByProvince(2023);
+export const financialCoverageByProvince2024 = getFinancialCoverageByProvince(2024);
 
 export const coverageByProvince = Object.entries(provinceNames).map(([province, name]) => {
   const verified = transparency2023.filter((record) => record.province === province).length;

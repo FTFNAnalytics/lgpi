@@ -1,4 +1,4 @@
-# LGPI 2023 reconstruction status
+# LGPI 2023–2024 reconstruction status
 
 Last reconstruction pass: 2026-10-01.
 
@@ -63,3 +63,15 @@ Current financial coverage:
 - Alberta population/SIR dwelling fields, B.C. population fields, Ontario Schedule 02 household/population fields and Quebec MAMH population are retained as source context only. They are not yet used for LGPI per-household normalization.
 
 Financial observations are now loaded for 98 municipalities. Hamilton is explicitly source-unavailable, giving all 99 LGPI municipalities a resolved 2023 financial-data status. Statistics Canada dwelling denominators and provincial-average calculations remain gated until the exact LGPI denominator convention is reproduced.
+
+
+## 2024 financial-data status
+
+- Alberta: 9 municipalities, 414 observations.
+- British Columbia: 17 municipalities, 510 observations.
+- Ontario: 40 source-available municipalities, 1,160 observations; Hamilton remains explicitly source-unavailable.
+- Quebec: 19 municipalities, 589 observations from MAMH 2024 data.
+- Prairie audited reports: Regina, Saskatoon and Winnipeg, 98 observations.
+- Atlantic and territorial audited statements: 10 municipalities, 216 observations.
+- Total: 2,987 source-backed 2024 financial observations across 98 municipalities, with all 99 municipalities assigned a resolved data/source status.
+- Published transparency scoring remains the 2023 Frontier edition; no 2024 transparency score is inferred.
