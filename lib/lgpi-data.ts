@@ -4,6 +4,10 @@ import ontario2023 from "@/data/2023/ontario.json";
 import quebec2023 from "@/data/2023/quebec.json";
 import prairies2023 from "@/data/2023/prairies.json";
 import atlanticTerritories2023 from "@/data/2023/atlantic_territories.json";
+import alberta2024 from "@/data/2024/alberta.json";
+import bc2024 from "@/data/2024/bc.json";
+import ontario2024 from "@/data/2024/ontario.json";
+import quebec2024 from "@/data/2024/quebec.json";
 
 export const REPORT_URL =
   "https://frontiercentre.org/wp-content/uploads/PR148_LGPI2025_JN0525_F1.pdf";
@@ -315,7 +319,7 @@ export type ObservationStatus =
 
 export type FinancialObservation = {
   municipalitySlug: string;
-  year: 2023;
+  year: 2023 | 2024;
   metric: string;
   valueThousands: number | null;
   status: ObservationStatus;
@@ -341,6 +345,15 @@ const prairiesFinancial2023 =
 const atlanticTerritoriesFinancial2023 =
   atlanticTerritories2023.observations as unknown as FinancialObservation[];
 
+const albertaFinancial2024 =
+  alberta2024.observations as unknown as FinancialObservation[];
+const bcFinancial2024 =
+  bc2024.observations as unknown as FinancialObservation[];
+const ontarioFinancial2024 =
+  ontario2024.observations as unknown as FinancialObservation[];
+const quebecFinancial2024 =
+  quebec2024.observations as unknown as FinancialObservation[];
+
 export const financial2023: FinancialObservation[] = [
   ...albertaFinancial2023,
   ...bcFinancial2023,
@@ -349,6 +362,21 @@ export const financial2023: FinancialObservation[] = [
   ...prairiesFinancial2023,
   ...atlanticTerritoriesFinancial2023,
 ];
+
+export const financial2024: FinancialObservation[] = [
+  ...albertaFinancial2024,
+  ...bcFinancial2024,
+  ...ontarioFinancial2024,
+  ...quebecFinancial2024,
+];
+
+export const financialByYear: Record<2023 | 2024, FinancialObservation[]> = {
+  2023: financial2023,
+  2024: financial2024,
+};
+
+export const availableFinancialYears = [2023, 2024] as const;
+export type FinancialYear = (typeof availableFinancialYears)[number];
 
 export const alberta2023MunicipalityContext = alberta2023.municipalities;
 export const bc2023MunicipalityContext = bc2023.municipalities;
@@ -368,12 +396,21 @@ export function getOntarioMunicipalityContext(slug: string) {
   return ontario2023MunicipalityContext.find((record) => record.slug === slug);
 }
 
-export function getFinancialSourceUnavailable(slug: string) {
-  return ontario2023SourceUnavailable.find((record) => record.slug === slug);
+export const ontario2024SourceUnavailable = ontario2024.sourceUnavailableMunicipalities;
+
+export function getFinancialSourceUnavailable(slug: string, year: FinancialYear = 2024) {
+  const sourceUnavailable = year === 2024 ? ontario2024SourceUnavailable : ontario2023SourceUnavailable;
+  return sourceUnavailable.find((record) => record.slug === slug);
 }
 
-export function getFinancialObservations(slug: string) {
-  return financial2023.filter((observation) => observation.municipalitySlug === slug);
+export function getFinancialObservations(slug: string, year: FinancialYear = 2024) {
+  return financialByYear[year].filter((observation) => observation.municipalitySlug === slug);
+}
+
+export function getFinancialObservation(slug: string, year: FinancialYear, metric: string) {
+  return financialByYear[year].find(
+    (observation) => observation.municipalitySlug === slug && observation.metric === metric,
+  );
 }
 
 export function getMetricDefinition(key: string) {
