@@ -1,0 +1,38 @@
+name: Import Alberta 2024 FIR
+
+on:
+  push:
+    branches: [data/2024-reconstruction]
+    paths:
+      - "scripts/ingest_alberta_2024.py"
+      - ".github/workflows/ingest-alberta.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: "!contains(github.event.head_commit.message, '[generated-data]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data/2024-reconstruction
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Generate Alberta 2024 data
+        run: python scripts/ingest_alberta_2024.py
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data/2024/alberta.json && git ls-files --error-unmatch data/2024/alberta.json >/dev/null 2>&1; then
+            echo "Generated data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/2024/alberta.json
+          git commit -m "Import Alberta 2024 FIR data [generated-data]"
+          git push origin HEAD:data/2024-reconstruction
