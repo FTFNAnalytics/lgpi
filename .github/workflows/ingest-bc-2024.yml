@@ -5,7 +5,7 @@ on:
     branches: [data/2024-reconstruction]
     paths:
       - "scripts/ingest_bc_2024.py"
-      - ".github/workflows/ingest-bc.yml"
+      - ".github/workflows/ingest-bc-2024.yml"
   workflow_dispatch:
 
 permissions:
