@@ -40,7 +40,7 @@ jobs:
             sleep 1
           done
 
-          for path in / /coverage /cities/calgary /compare /methodology; do
+          for path in / /coverage?year=2024 /coverage?year=2023 /cities/calgary?year=2024 /cities/calgary?year=2023 /compare /metrics /methodology; do
             echo "Checking $path"
             curl -fsS "http://127.0.0.1:3000$path" >/dev/null
           done
