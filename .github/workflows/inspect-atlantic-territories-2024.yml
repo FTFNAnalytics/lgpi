@@ -1,0 +1,21 @@
+name: Inspect Atlantic and territorial 2024 statements
+on:
+  push:
+    branches: [data/2024-reconstruction]
+    paths:
+      - scripts/inspect_atlantic_territories_2024.py
+      - .github/workflows/inspect-atlantic-territories-2024.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install beautifulsoup4
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils >/dev/null
+      - run: python scripts/inspect_atlantic_territories_2024.py
