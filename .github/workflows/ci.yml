@@ -20,11 +20,13 @@ jobs:
         with:
           node-version: 22
       - name: Install
-        run: npm install
+        run: npm ci
       - name: Production dependency audit
         run: npm audit --omit=dev --audit-level=high
       - name: Typecheck
         run: npm run typecheck
+      - name: Financial data and year-over-year regression tests
+        run: npm test
       - name: Build
         run: npm run build
       - name: Presentation route smoke test
@@ -40,7 +42,4 @@ jobs:
             sleep 1
           done
 
-          for path in / /coverage?year=2024 /coverage?year=2023 /cities/calgary?year=2024 /cities/calgary?year=2023 /compare /metrics /methodology; do
-            echo "Checking $path"
-            curl -fsS "http://127.0.0.1:3000$path" >/dev/null
-          done
+          npm run test:smoke

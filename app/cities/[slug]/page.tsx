@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FinancialValue } from "@/components/financial-value";
+import { coreMetricKeys, getFinancialChange } from "@/lib/financial-comparison";
 import {
   availableFinancialYears,
   FinancialYear,
@@ -38,7 +40,6 @@ export default async function CityPage({
   const discrepancy = sourceDiscrepancies.find((item) => item.municipality === record.name);
   const reportedCount = financial.filter((observation) => observation.status === "reported").length;
   const pendingCount = financial.filter((observation) => observation.status === "pending_review").length;
-  const coreMetricKeys = ["total_revenue", "total_expenditure", "long_term_debt", "capital_assets"];
   const coreFinancial = coreMetricKeys
     .map((key) => financial.find((observation) => observation.metric === key))
     .filter((observation): observation is NonNullable<typeof observation> => Boolean(observation));
@@ -69,7 +70,7 @@ export default async function CityPage({
           </div>
           <div className="big-score">
             {record.score === null ? "—" : record.score}
-            <small>{record.score === null ? "Transparency score not published" : "Transparency score / 33"}</small>
+            <small>{record.score === null ? "2023 transparency score not published" : "2023 transparency score / 33"}</small>
           </div>
         </div>
       </section>
@@ -81,7 +82,7 @@ export default async function CityPage({
           <div className="section-heading">
             <div>
               <p className="eyebrow">Published scoring evidence</p>
-              <h2>Transparency components</h2>
+              <h2>2023 transparency components</h2>
             </div>
             <p>Component values are transcribed from the detailed regional tables where those tables have been recovered.</p>
           </div>
@@ -115,18 +116,19 @@ export default async function CityPage({
 
       <section className="year-nav-section">
         <div className="shell">
-          <div className="year-nav" aria-label="Financial year">
+          <nav className="year-nav" aria-label="Financial year">
             <span className="year-nav-label">Financial year</span>
             {availableFinancialYears.map((item) => (
               <Link
                 key={item}
                 href={"/cities/" + slug + "?year=" + item}
                 className={"year-tab " + (year === item ? "active" : "")}
+                aria-current={year === item ? "page" : undefined}
               >
                 {item}
               </Link>
             ))}
-          </div>
+          </nav>
           {year === 2024 && (
             <p className="year-context-note">
               Financial data shown for 2024. Transparency remains the published 2023 LGPI score because no later public transparency edition has been identified.
@@ -142,28 +144,24 @@ export default async function CityPage({
               <p className="eyebrow">Year over year</p>
               <h2>2023 → 2024 core financial change</h2>
             </div>
-            <p>The legacy site switches the full table by year; this summary adds a compact two-year comparison without replacing that interaction.</p>
+            <p>Amounts are in Canadian dollars, without inflation adjustment. Change uses accepted mappings from each year's source; earlier observations have not been restated to the later report's accounting basis.</p>
           </div>
           <div className="yoy-grid">
             {trendRows.map((row) => {
-              const prior = row.prior?.valueThousands ?? null;
-              const current = row.current?.valueThousands ?? null;
-              const change = prior !== null && current !== null ? current - prior : null;
-              const percent = prior !== null && current !== null && prior !== 0
-                ? (change! / Math.abs(prior)) * 100
-                : null;
+              const { changeThousands: change, percentChange: percent, explanation } = getFinancialChange(row.prior, row.current);
               return (
                 <article className="yoy-card" key={row.metric}>
                   <span className="eyebrow">{row.definition?.label ?? row.metric}</span>
                   <div className="yoy-values">
-                    <div><small>2023</small><strong>{formatThousands(prior)}</strong></div>
-                    <div><small>2024</small><strong>{formatThousands(current)}</strong></div>
+                    <div><small>2023</small><FinancialValue observation={row.prior} year={2023} sourceUnavailable={Boolean(getFinancialSourceUnavailable(slug, 2023))} /></div>
+                    <div><small>2024</small><FinancialValue observation={row.current} year={2024} sourceUnavailable={Boolean(getFinancialSourceUnavailable(slug, 2024))} /></div>
                   </div>
                   <p className="yoy-change">
                     {change === null
-                      ? "Comparable value unavailable"
-                      : `${change >= 0 ? "+" : "−"}${formatThousands(Math.abs(change))}${percent === null ? "" : ` · ${percent >= 0 ? "+" : ""}${percent.toFixed(1)}%`}`}
+                      ? explanation
+                      : `${change > 0 ? "+" : change < 0 ? "−" : ""}${formatThousands(Math.abs(change))}${percent === null ? "" : ` · ${percent > 0 ? "+" : ""}${percent.toFixed(1)}%`}`}
                   </p>
+                  {change !== null && explanation && <p className="metric-meta">{explanation}</p>}
                 </article>
               );
             })}

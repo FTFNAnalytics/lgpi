@@ -17,7 +17,7 @@ This project starts by faithfully reproducing the published LGPI transparency me
 - Source links and review states on financial observations.
 - Explicit missing-data semantics: pending is never treated as zero.
 - Known publication discrepancies documented rather than hidden.
-- CI typecheck and production build.
+- CI data/comparison regression tests, typecheck, production build and content-aware route checks.
 
 ## Current coverage
 
@@ -65,13 +65,14 @@ See:
 - [Reconstruction status](docs/RECONSTRUCTION_STATUS.md)
 - [Data provenance and QA contract](docs/DATA_PROVENANCE.md)
 - [Next data tranche](docs/NEXT_DATA_TRANCHE.md)
+- [Recovered checkpoint and continuation](docs/CONTINUATION_HANDOFF.md)
 - [Presentation run-of-show](docs/PRESENTATION_RUN_OF_SHOW.md)
 - [2024 pitch status](docs/PITCH_STATUS_2024.md)
 
 ## Run locally
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -79,8 +80,11 @@ For validation:
 
 ```bash
 npm run typecheck
+npm test
 npm run build
 ```
+
+With the production server running (`npm start`), run `npm run test:smoke` to verify the selected-year content and missing/review states. Set `LGPI_TEST_URL` when using a port other than 3000.
 
 ## Status
 

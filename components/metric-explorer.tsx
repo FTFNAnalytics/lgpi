@@ -59,7 +59,7 @@ export function MetricExplorer() {
               {rows.map(({ observation, municipality }) => (
                 <tr key={observation.municipalitySlug}>
                   <td>
-                    {municipality ? <Link href={"/cities/" + municipality.slug}><strong>{municipality.name}</strong></Link> : observation.municipalitySlug}
+                    {municipality ? <Link href={"/cities/" + municipality.slug + "?year=" + year}><strong>{municipality.name}</strong></Link> : observation.municipalitySlug}
                   </td>
                   <td>{formatThousands(observation.valueThousands)}</td>
                   <td><span className={"chip " + (observation.status === "reported" ? "good" : "pending")}>{observation.status.replaceAll("_", " ")}</span></td>
