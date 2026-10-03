@@ -6,7 +6,7 @@ on:
     branches: [data/2024-reconstruction]
     paths:
       - "scripts/ingest_ontario_2024.py"
-      - ".github/workflows/ingest-ontario.yml"
+      - ".github/workflows/ingest-ontario-2024.yml"
   workflow_dispatch:
 
 permissions:
